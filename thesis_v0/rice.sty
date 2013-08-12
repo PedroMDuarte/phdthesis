@@ -1,0 +1,466 @@
+% rice.sty  ASU theses/dissertations
+% brief instructions at the beginning
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Usage:
+% ======
+%
+% A template for a thesis is provided in the file "asthesis.tex", 
+% available from the same place where you obtained this file.
+%
+% In the following I will introduce some commands defined:
+% ==============
+%
+%
+% \settitle        % title of dissertation.
+% \setauthor       % author of dissertation.
+% \masters         % use if going for a Masters degree
+% \doctors         % use if going for a PhD
+% \setdefdate      % defence date
+% \setgraddate     % graduation date
+% \setchair        % committee chair
+% \setmembers      % committee members
+% \setdedication   % set dedication
+% \asuabstract     % abstract
+% \asuacknowledgements    % acknowledgements
+% \biosketch       % biographical 
+%=============================
+%
+% With all the names, you are ready to start your journey
+% BY YOURSELVES
+% ...
+% ...
+% ...
+% ...
+% ...
+% ...
+% ...
+% Ok, I will show you how. 
+% Roll down, skip all the definitions. 
+% Find a session that starts with "Here it is!"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{rice}[2009/04/18 v0.3 ASU thesis]
+%% Only works with the memoir class!!!!!!!!!!!!!!!
+\@ifclassloaded{memoir}{\let\endrice\relax}{\let\endrice\endinput
+  \PackageError{rice}{The rice package only works with the memoir class}{\@ehd}}
+\endrice
+       
+% Some useful lengths for layout purposes
+\newlength{\toptafiddle}
+\newlength{\bottafiddle}
+\newlength{\topfiddle}
+\newlength{\botfiddle}
+\newlength{\linespace}
+
+%% The stock size required by Rice is letterpaper (8.5 by 11)
+%% which is the default stock size of the memoir class.
+% set up margins, 
+% left, right and textwidth
+\setlrmarginsandblock{1.5in}{1in}{*}
+
+\setulmarginsandblock{1.2in}{1in}{*}
+\setheadfoot{\onelineskip}{\onelineskip}
+\newlength{\headspace}
+\setlength{\headspace}{0.8\baselineskip}
+\setheaderspaces{*}{\headspace}{*}
+
+
+%% for main body
+%% bottom of text at 1in, footer below
+%% top of header at 1in, first text line double spaced below base of header
+%\setlength{\linespace}{\baselineskip} %% the current equivalent of \onelineskip
+%\setlength{\headheight}{\onelineskip}
+%\setlength{\headsep}{\linespace}
+%\addtolength{\headsep}{-\topskip}
+%\setlength{\uppermargin}{1in}
+%\addtolength{\uppermargin}{\headheight}
+%\addtolength{\uppermargin}{\headsep}
+%\setlength{\lowermargin}{1in}
+%\setlength{\footskip}{\onelineskip}
+%\setlength{\textheight}{\paperheight}
+%\addtolength{\textheight}{-\uppermargin}
+%\addtolength{\textheight}{-\lowermargin}
+%% the fiddle lengths (..ta.. for title/approval page, others for prelims)
+%% (determined by many trials and errors)
+\setlength{\toptafiddle}{2\linespace}
+\setlength{\topfiddle}{\toptafiddle}
+\setlength{\bottafiddle}{\onelineskip}
+\setlength{\botfiddle}{0pt} % actually this is not used
+
+\checkandfixthelayout[nearest]
+
+%%% Make sure numbers are included up to the subsection
+\setsecnumdepth{subsection}
+
+
+%%%%%%%%%%%%%%%%% pagestyles for controlling the headers and footers
+%% the main text
+\makepagestyle{rice}
+  \makeheadrule{rice}{\textwidth}{\normalrulethickness}
+
+  \renewcommand{\@ruledmarks}{%
+    \def\chaptermark##1{%
+      \markboth{%
+        \ifnum \c@secnumdepth >\m@ne
+          \if@mainmatter
+            \thechapter. \ %
+          \fi
+        \fi
+        ##1}{}}
+    \def\sectionmark##1{\markright{##1}}
+    \def\tocmark{\markboth{\contentsname}{}}
+    \def\lofmark{\markboth{\listfigurename}{}}
+    \def\lotmark{\markboth{\listtablename}{}}
+    \def\bibmark{\markboth{\bibname}{}}
+    \def\indexmark{\markboth{\indexname}{}}
+    \def\glossarymark{\markboth{\glossaryname}{}}
+  }
+  \renewcommand*{\@ruledmarks}{%
+    \nouppercaseheads
+    \createmark{chapter}{left}{shownumber}{}{. \space}
+    \createmark{section}{right}{shownumber}{}{. \space}
+    \createplainmark{toc}{both}{\contentsname}
+    \createplainmark{lof}{both}{\listfigurename}
+    \createplainmark{lot}{both}{\listtablename}
+    \createplainmark{bib}{both}{\bibname}
+    \createplainmark{index}{both}{\indexname}
+    \createplainmark{glossary}{both}{\glossaryname}}
+  \makepsmarks{rice}{\@ruledmarks}
+  
+  \makeevenhead{rice}{\thepage}{}{}
+  \makeoddhead{rice}{\scshape\leftmark}{}{\thepage}
+
+%% for continuation pages of the ToC, LoF, LoT
+\makepagestyle{toc}
+  \makeevenfoot{toc}{}{\thepage}{}
+  \makeoddfoot{toc}{}{\thepage}{}
+  \makeevenhead{toc}{Chapter}{}{Page}
+  \makeoddhead{toc}{Chapter}{}{Page}
+
+\makepagestyle{lof}
+  \makeevenfoot{lof}{}{\thepage}{}
+  \makeoddfoot{lof}{}{\thepage}{}
+  \makeevenhead{lof}{Figure}{}{Page}
+  \makeoddhead{lof}{Figure}{}{Page}
+
+\makepagestyle{lot}
+  \makeevenfoot{lot}{}{\thepage}{}
+  \makeoddfoot{lot}{}{\thepage}{}
+  \makeevenhead{lot}{Table}{}{Page}
+  \makeoddhead{lot}{Table}{}{Page}
+
+%% use pagestyle{plain} for prelims
+
+% This font is used for chapter titles, including Contents, List of Figures,
+% and list of Tables
+%\renewcommand{\chaptitlefont}{\bfseries \sffamily \Large}
+
+%% chapter style
+\makechapterstyle{rice}{%
+%  \setlength{\beforechapskip}{-\topfiddle}
+%  \setlength{\afterchapskip}{1.5\onelineskip}
+  \setlength{\beforechapskip}{0pt}
+  \setlength{\afterchapskip}{0pt}
+  \renewcommand{\chaptitlefont}{ \mdseries \Large}
+  \renewcommand*{\chapnamefont}{\normalfont}
+  \renewcommand*{\printchaptername}{}
+  \renewcommand*{\chapternamenum}{~\hfill}
+  \renewcommand*{\chapnumfont}{\chaptitlefont}
+  \renewcommand*{\printchapternum}{}
+  \renewcommand*{\printchapternonum}{}
+  \renewcommand*{\afterchapternum}{}
+  \renewcommand*{\afterchaptertitle}{\vspace*{-\onelineskip}\hskip -0.5\marginparwidth \rule{\textwidth}{2pt}\\\vspace*{3\onelineskip}}
+%  \renewcommand*{\chaptitlefont}{\normalfont\centering\vspace*{-\onelineskip}}
+}
+%% chapter style for appendices, text comes on following page
+\makechapterstyle{riceappendix}{%
+%  \setlength{\beforechapskip}{-\topfiddle}
+%  \setlength{\afterchapskip}{1.5\onelineskip}
+  \setlength{\beforechapskip}{0pt}
+  \setlength{\afterchapskip}{0pt}
+  \renewcommand{\chaptitlefont}{ \mdseries \Large}
+  \renewcommand*{\chapnamefont}{\normalfont}
+  \renewcommand*{\printchaptername}{}
+  \renewcommand*{\chapternamenum}{~\hfill}
+  \renewcommand*{\chapnumfont}{\chaptitlefont}
+  \renewcommand*{\printchapternum}{}
+  \renewcommand*{\printchapternonum}{}
+  \renewcommand*{\afterchapternum}{}
+  \renewcommand*{\afterchaptertitle}{\vspace*{-\onelineskip}\hskip -0.5\marginparwidth \rule{\textwidth}{2pt}\\\vspace*{3\onelineskip}}
+}
+\aliaspagestyle{chapter}{empty}
+
+%%% different chapter style for appendices, (and double spaced?)
+\let\oldapp\appendix
+\renewcommand*{\appendix}{\oldapp\chapterstyle{riceappendix}\DoubleSpace}
+
+%%% (subsub)section styles
+
+\setbeforesecskip{2em}
+\setbeforesubsecskip{2em}
+\setbeforesubsubsecskip{2em}
+\setaftersecskip{1em}
+\setaftersubsecskip{1em}
+\setaftersubsubsecskip{1em}
+
+
+\setsecheadstyle{\bfseries \large \vspace*{-\onelineskip}}
+\setsubsecheadstyle{\bfseries \vspace*{-\onelineskip}}
+\setsubsubsecheadstyle{\bfseries \vspace*{-\onelineskip}}
+\setlength{\aftersecskip}{3pt}
+
+
+%%%% Do the ToC
+\let\oldtoc\tableofcontents
+\renewcommand{\tableofcontents}{\clearpage\pagestyle{toc}\oldtoc}
+%\let\oldtoc*\tableofcontents*
+%\renewcommand{\tableofcontents*}{\clearpage\pagestyle{toc}\oldtoc*}
+
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\listfigurename}{List of Figures}
+\renewcommand{\listtablename}{List of Tables}
+%\renewcommand*{\tocheadstart}{\vspace*{-\topfiddle}}
+\renewcommand*{\tocheadstart}{\vspace*{0in}}
+\renewcommand*{\aftertoctitle}{\thispagestyle{plain}  \par\nobreak \mbox{}\hfill\par\nobreak}
+\renewcommand*{\cftchapterfont}{\normalfont \bfseries}
+\renewcommand*{\cftchapterpagefont}{\normalfont \bfseries}
+%\renewcommand*{\cftchapterleader}{  \cftchapterfont\cftdotfill{\cftchapterdotsep}}
+\renewcommand*{\cftchapterleader}{  \hfill}
+\renewcommand*{\cftchapterdotsep}{\cftdotsep}
+%\renewcommand*{\cftchaptername}{CHAPTER~}
+%%% no extra space before the entry
+\setlength{\cftbeforechapterskip}{1.5em}
+\setlength{\cftbeforesectionskip}{0.5em}
+%% no extra `chapter' space in LoF/LoT
+\renewcommand*{\insertchapterspace}{}
+
+%% And the LoF and LoT
+\let\oldlof\listoffigures
+\renewcommand{\listoffigures}{\clearpage\pagestyle{lof}\oldlof}
+\renewcommand*{\lofheadstart}{\vspace*{-\topfiddle}}
+\renewcommand*{\afterloftitle}{\thispagestyle{plain}%
+  \par\nobreak {\normalfont Figure \hfill Page}\par\nobreak}
+
+\let\oldlot\listoftables
+\renewcommand{\listoftables}{\clearpage\pagestyle{lot}\oldlot}
+\renewcommand*{\lotheadstart}{\vspace*{-\topfiddle}}
+\renewcommand*{\afterlottitle}{\thispagestyle{plain}%
+  \par\nobreak {\normalfont Table \hfill Page}\par\nobreak}
+
+%%% general macro for Abstract, etc., headings
+\newcommand*{\pretoctitle}[1]{{\clearpage\centering \vspace*{-\topfiddle}#1\par}}
+
+%%% Start the ABSTRACT
+\newcommand{\riceabstract}{\pretoctitle{\large \scshape Abstract }
+\vspace*{0.2in}
+{\centering
+{\large \bfseries \ricetitle}
+
+by 
+
+{\large \bfseries \riceauthor}\par 
+\vspace*{0.2in}
+}}
+
+
+%%% Start the ACKNOWLEDGEMENTS
+\newcommand{\riceacknowledgements}{\pretoctitle{\large \scshape Acknowledgements}
+\vspace*{0.2in}
+
+}
+
+
+
+%% make it easy to center any dedication
+\newcommand{\setdedication}[1]{\def\ricededication{{\clearpage\mbox{}\vfill\centering #1 \par\vfill\clearpage}}}
+\setdedication{}
+%\setdedication{All for my parrot}
+
+%% for any headings after the tocloft and before the main body
+\newcommand{\prelimtitle}[1]{\pretoctitle{#1}\addcontentsline{toc}{chapter}{#1}}
+%% for REFERENCE section
+\renewcommand*{\bibname}{BIBLIOGRAPHY}
+\setlength{\bibitemsep}{\onelineskip}
+
+%%% put your biographical text in this environment
+%% \begin{biosketch} I'm a person who has accomplished .... \end{biosketch}
+\newenvironment{biosketch}{%
+  \pretoctitle{\large \scshape Biographical Sketch}\thispagestyle{empty}\SingleSpacing}%
+  {}
+
+
+%% for the title page and approval page. 
+\newcommand{\settitle}[1]{\def\ricetitle{#1}}  % your title
+\newcommand{\setauthor}[1]{\def\riceauthor{#1}} % you
+\newcommand{\setdoctype}[1]{\def\ricedoctype{#1}} % document type (e.g., thesis)
+\newcommand{\masters}{\def\ricedegree{Master of Science}}
+\newcommand{\doctors}{\def\ricedegree{Doctor of Philosophy}}
+\newcommand{\setgraddate}[1]{\def\ricegraddate{#1}} % graduation date
+
+% Committee
+\newcommand{\setchair}[1]{\def\ricechair{#1, \emph{Chair}}} % Committee chair
+\newcommand{\setchairaffiliation}[1]{\def\ricechairaffiliation{#1}} % Committee chair
+% orCo-chairs if chairs > 1 
+%\newcommand{\setchairs}[2]{\def\ricechair{#1, Co-chair \\ #2, Co-chair}} 
+\newcommand{\setmemberone}[1]{\def\ricememberone{#1\par}} % the other committee members
+\newcommand{\setmembertwo}[1]{\def\ricemembertwo{#1\par}} 
+\newcommand{\setmemberthree}[1]{\def\ricememberthree{#1\par}} 
+\newcommand{\setmemberfour}[1]{\def\ricememberfour{#1\par}}
+% Committee affiliations 
+\newcommand{\setmemberoneaffiliation}[1]{\def\ricememberoneaffiliation{#1\par}} 
+\newcommand{\setmembertwoaffiliation}[1]{\def\ricemembertwoaffiliation{#1\par}}
+\newcommand{\setmemberthreeaffiliation}[1]{\def\ricememberthreeaffiliation{#1\par}} 
+\newcommand{\setmemberfouraffiliation}[1]{\def\ricememberfouraffiliation{#1\par}} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%"Here it is!"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%
+% Use them like this, and if you don't use them then you will
+% get unacceptable title and/or approval pages
+%
+%
+% Change this part for your own title
+
+\settitle{Observation of antiferromagnetic correlations in the Fermi-Hubbad
+model}
+
+% Change this part for you name
+\setauthor{Pedro M Duarte}
+\setdoctype{Thesis}
+
+% comment out the part you don't need using '%' and free the part you need
+
+%%\masters  % going for a Masters degree
+\doctors % going for a PhD
+
+% set your freedom date
+\setgraddate{December 2012}
+
+% who is your chair
+\setchair{Randall G. Hulet}
+\setchairaffiliation{Fayez Sarofim Professor of Physics and \\ Astronomy}
+	
+% and members
+\setmemberone{ Thomas. C. Killian}
+\setmemberoneaffiliation{ Professor of Physics and Astronomy}
+\setmembertwo{ Somebody Else}
+\setmembertwoaffiliation{ Professor of Physics and Astronomy}
+%
+
+% your dedication
+%\setdedication{All for my dogs}
+%
+
+% put your biographical like this
+% \begin{biosketch} I was kissed by a donky when I was 5.... \end{biosketch}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% typesets the TITLE page
+\newcommand{\thetitlepage}{{%
+\clearpage
+\pagestyle{empty}
+\centering
+\vspace*{-\toptafiddle}
+
+{\large \scshape Rice University }
+\vspace*{\fill}
+
+{\large \bfseries \ricetitle}
+\vspace*{\fill}
+
+by 
+\vspace*{\fill}
+
+{\large \bfseries \riceauthor} 
+\vspace*{\fill}
+
+
+{ \SingleSpace \large \scshape
+A \ricedoctype\ Submitted \\
+in Partial Fulfillment of the \\
+Requirements for the Degree \\
+}
+\vspace*{\fill}
+
+{\large \bfseries \ricedegree}
+
+\vspace{-0.45in}
+
+\flushright
+\parbox[][5.0in][s]{3in}{
+	\SingleSpace
+	\vspace*{\fill}
+	{ \scshape Approved, Thesis Committee:}
+	\vspace*{\fill}
+
+	\hrule
+	\vspace*{0.08in}
+	\ricechair \par
+	\ricechairaffiliation \par
+	\vspace*{\fill}
+	
+	
+	\hrule
+	\vspace*{0.08in}
+	\ricememberone \par
+	\ricememberoneaffiliation \par
+	\vspace*{\fill}
+
+	\hrule
+	\vspace*{0.08in}
+	\ricemembertwo \par
+	\ricemembertwoaffiliation \par
+	\vspace*{\fill}
+
+ 	\ifx \@ricememberthree \undefined
+	\else
+		\hrule
+		\vspace*{0.08in}
+		\ricememberthree \par
+		\ricememberthreeaffiliation \par
+		\vspace*{\fill}
+		
+		\ifx \@ricememberfour \undefined
+		\else
+			\hrule		
+			\vspace*{0.08in}
+			\ricememberfour \par
+			\ricememberfouraffiliation \par
+			\vspace*{\fill}
+		\fi
+	\fi
+	}
+
+\vspace{-0.3in}
+\centering 
+{ \SingleSpace \scshape
+  Houston, Texas \\ 
+\vspace{-0.1in} 
+\ricegraddate } 
+
+%\enlargethispage{\bottafiddle}
+\clearpage}}
+
+
+%% use the rice chapterstyle
+\chapterstyle{rice}
+
+%% place footnotes below floats
+\feetbelowfloat
+
+%%%%%%%%%%%%%%% end of *.sty file
+\endinput

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+gpl=diffpol.gpl
+
+gnuplot $gpl 
+#sed -i 's/tof/tofexpansion\/tof/g' tof.tex
+#sed -i 's/put(0,0)/put(500,0)/g' tof.tex
+
+latex diffpoleps.tex; dvips diffpoleps.dvi -o diffpoleps.eps
+
+ps2eps -f diffpoleps.eps
+mv diffpoleps.eps.eps diffpoleps.eps
+epstopdf diffpoleps.eps
+

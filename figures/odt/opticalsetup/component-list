@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+latex component-list.tex; dvips component-list.dvi -o component-list.eps

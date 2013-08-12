@@ -1,0 +1,13 @@
+#!/bin/bash
+
+gpl=evap.gpl
+
+gnuplot $gpl 
+i#sed -i 's/evap/evaporation\/evap/g' evap.tex
+sed -i 's/put(0,0)/put(525,0)/g' evap.tex
+#sed -i 's/put(0,0)/put(525,0)/g' evap_standalone.tex
+
+latex evapeps.tex; dvips evapeps.dvi -o evapeps.eps
+latex tfeps.tex; dvips tfeps.dvi -o tfeps.eps
+
+

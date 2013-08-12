@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#mpost timing.mp; latex timing.tex; dvipdf timing.dvi; dvips timing.dvi -o timing.eps
+
+#cd ../tofexpansion
+#./tof
+#cd ../timingdiagram
+
+rm timing.1 timing.aux timing.eps timing.log mpx* 
+
+mpost timing.mp; latex timing.tex; dvips timing.dvi -o timing.eps
+
+ps2eps -f timing.eps
+mv timing.eps.eps timing.eps
+
+epstopdf timing.eps

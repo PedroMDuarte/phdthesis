@@ -1,0 +1,36 @@
+pi=4.*atan(1.0);
+#lorentz(x)= a*g/( (2*pi*(x-c))**2 + (pi*g)**2 ) + dc;
+Dlorentz(x) = -(a*g/((2*pi*(x-c))**2 + (pi*g)**2)**2)*8*pi*(x-c) + o;
+a=-100.;
+g=5.8;
+c=-0.01;
+o=-0.01;
+
+s= 97.628;
+off=-0.93;
+scale(x) = (x-off)*s;
+
+range=30.;
+
+set samples 1000
+#set title "lock error signal"
+
+set xlabel "detuning [MHz]"
+set ylabel "lock error signal [V]"
+#set y2label "FP piezo control [V]"
+set size ratio 0.8
+
+set ytics nomirror
+#set y2tics
+set key top left
+set xr [-range:range]
+
+set label 6 "Locked linewidth:" at 4,0.07
+set label 4 "pk-pk: 230 +/- ??? kHz" at 3,0.05
+set label 5 "rms  :  50 +/- ??? kHz" at 3,0.03
+
+plot \
+Dlorentz(x) using (scale($1)):2 title 'trap'
+#"trace.dat" using (scale($1)):2 axes x1y2 title 'FP sweep', \
+#f(x) axes x1y2 notitle
+

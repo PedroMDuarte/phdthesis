@@ -1,0 +1,14 @@
+#!/bin/bash
+
+gpl=sim.gpl
+
+gnuplot $gpl 
+#sed -i 's/evap/evaporation\/evap/g' evap.tex
+#sed -i 's/put(0,0)/put(525,0)/g' evap.tex
+#sed -i 's/put(0,0)/put(525,0)/g' evap_standalone.tex
+
+latex simeps.tex; dvips simeps.dvi -o simeps.eps
+
+ps2eps -f simeps.eps 
+mv simeps.eps.eps simeps.eps
+epstopdf simeps.eps

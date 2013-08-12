@@ -1,0 +1,39 @@
+reset
+
+#Numbers from Bartenstein et.al. PRL 94, 103201 (2005)
+
+ab=-1405.
+b0=834.149
+d=300.
+alpha=0.00040
+
+a(B)=ab*(1+d/(B-b0))*(1+alpha*(B-b0))
+
+set xl "\\sf Magnetic field (Gauss)" offset 0,-1
+set yl "\\sf Scattering length ($\\sf a_{0}/10^{3}$)" offset 4.5,0
+
+set xr [700:1000]
+set yr [-20:20]
+
+set arrow from 834,-20 to 834,20 nohead lc rgbcolor "black"  lw 0.3
+
+set xtics format ""
+set xtics 700, 50, 1000
+set xtics add ("\\sf 700" 700, "\\sf 750" 750, "\\sf 800" 800, "\\sf 850" 850, "\\sf 900" 900, "\\sf 950" 950, "\\sf 1000" 1000)
+
+set ytics format ""
+set ytics -20, 10, 20
+set ytics add ("\\sf -20" -20, "\\sf -10" -10, "\\sf 0" 0, "\\sf 10" 10, "\\sf 20" 20)
+
+set mxtics 2
+set mytics 4
+
+set grid xtics ytics mxtics mytics lc rgbcolor "#AAAAAA"
+
+unset key
+
+set terminal epslatex size 3.85,2.5 color lw 3
+set output "feshbach.tex"
+
+
+plot a(x)/1000. lc rgbcolor "black" lw 2.2 

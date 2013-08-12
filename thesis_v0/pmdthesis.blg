@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: pmdthesis.aux
+The style file: osa.bst
+Database file #1: pmd.bib
+Warning--Warning: title missing in entry Wineland1975.
+Warning--We don't use thesis titles in Phys. Rev, see \cite{Junker2007}
+Warning--We don't use thesis titles in Phys. Rev, see \cite{Ramsey2006}
+Warning--We don't use thesis titles in Phys. Rev, see \cite{DeMarco2001}
+You've used 43 entries,
+            2048 wiz_defined-function locations,
+            814 strings with 10878 characters,
+and the built_in function-call counts, 10194 in all, are:
+= -- 409
+> -- 653
+< -- 0
++ -- 205
+- -- 162
+* -- 1229
+:= -- 1341
+add.period$ -- 43
+call.type$ -- 43
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 47
+duplicate$ -- 415
+empty$ -- 998
+format.name$ -- 205
+if$ -- 2106
+int.to.chr$ -- 0
+int.to.str$ -- 43
+missing$ -- 0
+newline$ -- 132
+num.names$ -- 43
+pop$ -- 177
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 457
+stack$ -- 0
+substring$ -- 882
+swap$ -- 249
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 90
+width$ -- 45
+write$ -- 214
+(There were 4 warnings)

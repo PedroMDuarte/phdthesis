@@ -1,0 +1,163 @@
+#!/bin/bash
+
+rUV=110719_7505to7522.TOFDAT
+NUV=110719_7505to7522.NUMDAT
+UV=110719_7505to7522.TOF
+
+rCNC=110720_7568to7573,7593to7604.TOFDAT
+NCNC=110720_7568to7573,7593to7604.NUMDAT
+CNC=110720_7568to7573,7593to7604.TOF
+
+rUV2=110911_7622to7639.TOFDAT
+NUV2=110911_7622to7639.NUMDAT
+UV2=110911_7622to7639.TOF
+
+TUV2=`awk 'NR==2 { printf("%.3f",$1)}' $UV2`
+TUV2_err=`awk 'NR==2 { printf("%.3f",$2)}' $UV2`
+
+r0UV2=`awk 'NR==2 { printf("%.3f",$3)}' $UV2`
+r0UV2_err=`awk 'NR==2 { printf("%.3f",$4)}' $UV2`
+
+N0UV2=`awk 'NR==2 { printf("%.3e",$5)}' $UV2`
+N0UV2_err=`awk 'NR==2 { printf("%.3e",$6)}' $UV2`
+
+nUV2=`awk 'NR==2 { printf("%.3e",$7)}' $UV2`
+nUV2_err=`awk 'NR==2 { printf("%.3e",$8)}' $UV2`
+
+pUV2=`awk 'NR==2 { printf("%.1e",$9)}' $UV2`
+pUV2_err=`awk 'NR==2 { printf("%.1e",$10)}' $UV2`
+
+echo "-------- UVMOT2 --------"
+echo " T = $TUV2  +/- $TUV2_err" 
+echo "r0 = $r0UV2 +/- $r0UV2_err" 
+echo " N = $N0UV2 +/- $N0UV2_err"
+echo " n = $nUV2  +/- $nUV2_err"
+echo " p = $pUV2  +/- $pUV2_err" 
+
+TUV=`awk 'NR==2 { printf("%.3f",$1)}' $UV`
+TUV_err=`awk 'NR==2 { printf("%.3f",$2)}' $UV`
+
+r0UV=`awk 'NR==2 { printf("%.3f",$3)}' $UV`
+r0UV_err=`awk 'NR==2 { printf("%.3f",$4)}' $UV`
+
+N0UV=`awk 'NR==2 { printf("%.3e",$5)}' $UV`
+N0UV_err=`awk 'NR==2 { printf("%.3e",$6)}' $UV`
+
+nUV=`awk 'NR==2 { printf("%.3e",$7)}' $UV`
+nUV_err=`awk 'NR==2 { printf("%.3e",$8)}' $UV`
+
+pUV=`awk 'NR==2 { printf("%.1e",$9)}' $UV`
+pUV_err=`awk 'NR==2 { printf("%.1e",$10)}' $UV`
+
+echo "-------- UVMOT --------"
+echo " T = $TUV  +/- $TUV_err" 
+echo "r0 = $r0UV +/- $r0UV_err" 
+echo " N = $N0UV +/- $N0UV_err"
+echo " n = $nUV  +/- $nUV_err"
+echo " p = $pUV  +/- $pUV_err" 
+
+TCNC=`awk 'NR==2 { printf("%.3f",$1)}' $CNC`
+TCNC_err=`awk 'NR==2 { printf("%.3f",$2)}' $CNC`
+
+r0CNC=`awk 'NR==2 { printf("%.3f",$3)}' $CNC`
+r0CNC_err=`awk 'NR==2 { printf("%.3f",$4)}' $CNC`
+
+N0CNC=`awk 'NR==2 { printf("%.3e",$5)}' $CNC`
+N0CNC_err=`awk 'NR==2 { printf("%.3e",$6)}' $CNC`
+
+nCNC=`awk 'NR==2 { printf("%.3e",$7)}' $CNC`
+nCNC_err=`awk 'NR==2 { printf("%.3e",$8)}' $CNC`
+
+pCNC=`awk 'NR==2 { printf("%.1e",$9)}' $CNC`
+pCNC_err=`awk 'NR==2 { printf("%.1e",$10)}' $CNC`
+
+echo "-------- CNCMOT --------"
+echo " T = $TCNC  +/- $TCNC_err" 
+echo "r0 = $r0CNC +/- $r0CNC_err" 
+echo " N = $N0CNC +/- $N0CNC_err"
+echo " n = $nCNC  +/- $nCNC_err"
+echo " p = $pCNC  +/- $pCNC_err" 
+
+
+
+gpl=tof.gpl
+rm -f $gpl
+
+echo "reset " >> $gpl
+echo "set fit errorvariables" >> $gpl
+echo "set fit logfile \"mylog.fit\"" >> $gpl
+echo "kbm=13.85e-06 #kb/m in cm^2/ms^2/uK" >> $gpl
+
+echo "rUV2(x)= x>0?sqrt($r0UV2**2+2*kbm*$TUV2*x**2):$r0UV2" >>$gpl
+echo "rUV(x)= x>0?sqrt($r0UV**2+2*kbm*$TUV*x**2):$r0UV" >>$gpl
+echo "rCNC(x)= x>0?sqrt($r0CNC**2+2*kbm*$TCNC*x**2):$r0CNC" >>$gpl
+
+echo "set xl \"\\\\sf  Time of flight \(ms\)\" offset 0,-0.5;" >> $gpl
+echo 'set yl "\\sf  Radius (cm)" offset 4.5,0;' >> $gpl
+#echo "set key 4.8, 0.13 samplen 0.5;" >> $gpl
+echo "unset key" >> $gpl
+echo "set yr [0.1:0.4]" >> $gpl
+echo "set xr [0:5]" >> $gpl
+
+echo "set ytics format \"\"" >> $gpl
+echo "set ytics add (\"\\\\sf 0.1\" 0.1, \"\\\\sf 0.2\" 0.2, \"\\\\sf 0.3\" 0.3, \"\\\\sf 0.4\" 0.4)" >> $gpl
+echo "set mytics 2" >> $gpl
+
+echo "set xtics format \"\"" >> $gpl
+echo "set xtics add (\"\\\\sf 0\" 0, \"\\\\sf 1\" 1, \"\\\\sf 2\" 2, \"\\\\sf 3\" 3, \"\\\\sf 4\" 4, \"\\\\sf 5\" 5)" >> $gpl
+echo "set mxtics 2" >> $gpl
+
+echo "TUV2=$TUV2" >> $gpl
+echo "TUV2_err=$TUV2" >> $gpl
+echo "pUV2=$pUV2" >> $gpl
+echo "pUV2_err=$pUV2_err" >> $gpl
+
+echo "TUV=$TUV" >> $gpl
+echo "TUV_err=$TUV" >> $gpl
+echo "pUV=$pUV" >> $gpl
+echo "pUV_err=$pUV_err" >> $gpl
+
+echo "TCNC=$TCNC" >> $gpl
+echo "TCNC_err=$TCNC" >> $gpl
+echo "pCNC=$pCNC" >> $gpl
+echo "pCNC_err=$pCNC_err" >> $gpl
+
+echo "ls=0.027" >> $gpl
+
+echo "set terminal epslatex size 3.85,2.8 color lw 3" >> $gpl
+echo "set size 1,0.9" >> $gpl
+echo "set output \"tofstandalone.tex\" " >> $gpl
+
+printf 'set label 1 \"$\\\\sf T = %.0f\\\\pm %.0f \\\\ \\\\mu$K\" at 0.6,0.35\n' $TCNC $TCNC_err >> $gpl 
+printf 'set label 2 \"$\\\\sf \\\\rho_{\\\\mathsf{ps}} = %.1f\\\\times10^{-6}$\" at 0.6,0.35-ls\n' `echo "" | awk -v a=$pCNC '{print a*1e6}'` >> $gpl
+printf 'set label 3 \"$\\\\sf T = %.0f\\\\pm %.0f \\\\ \\\\mu$K\" at 2.7,0.265\n' $TUV $TUV_err >> $gpl
+printf 'set label 4 \"$\\\\sf \\\\rho_{\\\\mathsf{ps}} = %.1f\\\\times10^{-5}$\" at 2.7,0.265-ls\n' `echo "" | awk -v a=$pUV '{print a*1e5}'` >> $gpl
+printf 'set label 3 \"$\\\\sf T = %.0f\\\\pm %.0f \\\\ \\\\mu$K\" at 2.8,0.275\n' $TUV2 $TUV2_err >> $gpl
+printf 'set label 4 \"$\\\\sf \\\\rho_{\\\\mathsf{ps}} = %.1f\\\\times10^{-5}$\" at 2.8,0.275-ls\n' `echo "" | awk -v a=$pUV2 '{print a*1e5}'` >> $gpl
+
+
+
+echo "plot \\" >> $gpl
+echo "\"$rCNC\" u 1:2 lc rgbcolor \"red\" ps 2.0 pt 5 title \"\\\\sf CMOT (671 nm)\" ,\\" >> $gpl
+#echo "\"$rUV\" u 1:2 lc rgbcolor \"#7030A0\" ps 2.0 pt 7 title \"\\\\sf UVMOT (323 nm)\" ,\\" >> $gpl
+echo "\"$rUV2\" u 1:2 lc rgbcolor \"#7030A0\" ps 2.0 pt 7 title \"\\\\sf UVMOT (323 nm)\" ,\\" >> $gpl
+echo "rCNC(x) lw 2 lc rgbcolor \"red\" notitle,\\" >> $gpl
+#echo "rUV(x) lw 2 lc rgbcolor \"#7030A0\" notitle" >>$gpl
+echo "rUV2(x) lw 2 lc rgbcolor \"#7030A0\" notitle" >>$gpl
+
+printf 'set label 5 \"{\\\\Large \\\\\sffamily (b)}\" at 4.5,0.38-ls\n' >> $gpl
+echo "set output \"tof.tex\" " >> $gpl
+echo "replot " >> $gpl
+
+gnuplot $gpl 
+#sed -i 's/tof/tofexpansion\/tof/g' tof.tex
+#sed -i 's/put(0,0)/put(500,0)/g' tof.tex
+
+latex tofeps.tex; dvips tofeps.dvi -o tofeps.eps
+
+ps2eps -f tofeps.eps
+mv tofeps.eps.eps tofeps.eps
+epstopdf tofeps.eps
+
+#cp tof.tex ../timingdiagram/
+#cp tof.eps ../timingdiagram/

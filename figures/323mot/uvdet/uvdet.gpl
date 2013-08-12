@@ -1,0 +1,18 @@
+
+f="uvdet_4291_4308.dat"
+
+
+set xl "\\sf UV detuning (MHz)"
+set yl "\\sf Number/$\\sf 10^{6}$" offset 1.5,0
+
+set yr [1.5:5.0]
+set ytics 1, 1.0, 5.0
+set mytics 2
+
+set grid xtics ytics mytics lc rgbcolor "#AAAAAA" 
+
+set terminal epslatex size 3.85, 2.5 color lw 3
+set output "uvdet.tex"
+
+
+plot f u 1:($2/1.e6)  ps 2 pt 7 lc rgbcolor "black" notit

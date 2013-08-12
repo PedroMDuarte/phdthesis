@@ -1,0 +1,110 @@
+% GNUPLOT: LaTeX picture with Postscript
+\begingroup
+  \makeatletter
+  \providecommand\color[2][]{%
+    \GenericError{(gnuplot) \space\space\space\@spaces}{%
+      Package color not loaded in conjunction with
+      terminal option `colourtext'%
+    }{See the gnuplot documentation for explanation.%
+    }{Either use 'blacktext' in gnuplot or load the package
+      color.sty in LaTeX.}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\includegraphics[2][]{%
+    \GenericError{(gnuplot) \space\space\space\@spaces}{%
+      Package graphicx or graphics not loaded%
+    }{See the gnuplot documentation for explanation.%
+    }{The gnuplot epslatex terminal needs graphicx.sty or graphics.sty.}%
+    \renewcommand\includegraphics[2][]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \@ifundefined{ifGPcolor}{%
+    \newif\ifGPcolor
+    \GPcolorfalse
+  }{}%
+  \@ifundefined{ifGPblacktext}{%
+    \newif\ifGPblacktext
+    \GPblacktexttrue
+  }{}%
+  % define a \g@addto@macro without @ in the name:
+  \let\gplgaddtomacro\g@addto@macro
+  % define empty templates for all commands taking text:
+  \gdef\gplbacktext{}%
+  \gdef\gplfronttext{}%
+  \makeatother
+  \ifGPblacktext
+    % no textcolor at all
+    \def\colorrgb#1{}%
+    \def\colorgray#1{}%
+  \else
+    % gray or color?
+    \ifGPcolor
+      \def\colorrgb#1{\color[rgb]{#1}}%
+      \def\colorgray#1{\color[gray]{#1}}%
+      \expandafter\def\csname LTw\endcsname{\color{white}}%
+      \expandafter\def\csname LTb\endcsname{\color{black}}%
+      \expandafter\def\csname LTa\endcsname{\color{black}}%
+      \expandafter\def\csname LT0\endcsname{\color[rgb]{1,0,0}}%
+      \expandafter\def\csname LT1\endcsname{\color[rgb]{0,1,0}}%
+      \expandafter\def\csname LT2\endcsname{\color[rgb]{0,0,1}}%
+      \expandafter\def\csname LT3\endcsname{\color[rgb]{1,0,1}}%
+      \expandafter\def\csname LT4\endcsname{\color[rgb]{0,1,1}}%
+      \expandafter\def\csname LT5\endcsname{\color[rgb]{1,1,0}}%
+      \expandafter\def\csname LT6\endcsname{\color[rgb]{0,0,0}}%
+      \expandafter\def\csname LT7\endcsname{\color[rgb]{1,0.3,0}}%
+      \expandafter\def\csname LT8\endcsname{\color[rgb]{0.5,0.5,0.5}}%
+    \else
+      % gray
+      \def\colorrgb#1{\color{black}}%
+      \def\colorgray#1{\color[gray]{#1}}%
+      \expandafter\def\csname LTw\endcsname{\color{white}}%
+      \expandafter\def\csname LTb\endcsname{\color{black}}%
+      \expandafter\def\csname LTa\endcsname{\color{black}}%
+      \expandafter\def\csname LT0\endcsname{\color{black}}%
+      \expandafter\def\csname LT1\endcsname{\color{black}}%
+      \expandafter\def\csname LT2\endcsname{\color{black}}%
+      \expandafter\def\csname LT3\endcsname{\color{black}}%
+      \expandafter\def\csname LT4\endcsname{\color{black}}%
+      \expandafter\def\csname LT5\endcsname{\color{black}}%
+      \expandafter\def\csname LT6\endcsname{\color{black}}%
+      \expandafter\def\csname LT7\endcsname{\color{black}}%
+      \expandafter\def\csname LT8\endcsname{\color{black}}%
+    \fi
+  \fi
+  \setlength{\unitlength}{0.0500bp}%
+  \begin{picture}(6480.00,4320.00)%
+    \gplgaddtomacro\gplbacktext{%
+      \csname LTb\endcsname%
+      \put(1585,704){\makebox(0,0)[r]{\strut{}-0.2}}%
+      \put(1585,1123){\makebox(0,0)[r]{\strut{}-0.15}}%
+      \put(1585,1542){\makebox(0,0)[r]{\strut{}-0.1}}%
+      \put(1585,1961){\makebox(0,0)[r]{\strut{}-0.05}}%
+      \put(1585,2380){\makebox(0,0)[r]{\strut{} 0}}%
+      \put(1585,2799){\makebox(0,0)[r]{\strut{} 0.05}}%
+      \put(1585,3218){\makebox(0,0)[r]{\strut{} 0.1}}%
+      \put(1585,3637){\makebox(0,0)[r]{\strut{} 0.15}}%
+      \put(1585,4056){\makebox(0,0)[r]{\strut{} 0.2}}%
+      \put(1717,484){\makebox(0,0){\strut{}50}}%
+      \put(2316,484){\makebox(0,0){\strut{}0}}%
+      \put(2914,484){\makebox(0,0){\strut{}-50}}%
+      \put(3513,484){\makebox(0,0){\strut{}-100}}%
+      \put(4111,484){\makebox(0,0){\strut{}-150}}%
+      \put(4710,484){\makebox(0,0){\strut{}-200}}%
+      \put(5308,484){\makebox(0,0){\strut{}-250}}%
+      \put(5907,484){\makebox(0,0){\strut{}-300}}%
+      \put(815,2380){\rotatebox{90}{\makebox(0,0){\strut{}\sf Lock error signal (V)}}}%
+      \put(3812,154){\makebox(0,0){\strut{}\sf Detuning (MHz)}}%
+      \put(2076,1374){\makebox(0,0)[l]{\strut{}\sf \small 6.1 MHz}}%
+      \put(3393,1458){\makebox(0,0)[l]{\strut{}\sf \small 5.9 MHz}}%
+      \put(5129,1039){\makebox(0,0)[l]{\strut{}\sf \small 5.6 MHz}}%
+      \put(3237,3386){\makebox(0,0)[l]{\strut{}\sf \small CROSSOVER}}%
+      \put(2076,3469){\makebox(0,0)[l]{\strut{}\sf \small F=1/2}}%
+      \put(5141,3679){\makebox(0,0)[l]{\strut{}\sf \small F=3/2}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplbacktext
+    \put(0,0){\includegraphics{errsig}}%
+    \gplfronttext
+  \end{picture}%
+\endgroup

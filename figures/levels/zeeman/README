@@ -1,0 +1,48 @@
+Use paste commmand to join two files together, for example to join the 2S with the 2P files. 
+
+Then remove the ^M characters left by Mathematica in vim using :%s/ctrl-vctrl-m//g  
+
+Then use gnuplot scripts to plot and analyze the joined data. 
+
+ 
+2S3Pcombined.dat, 2S2Pcombined.dat:
+
+1st and 8th column are the field, and they are redundent.
+
+2S3Pcombined and , 2S2Pcombined
+2nd column S state mj=-1/2, mI=1
+3rd column S state mj=-1/2, mI=0
+4th column S state mj=-1/2, mI=-1
+5th column S state mj=1/2, mI=1
+6th column S state mj=1/2, mI=0
+7th column S state mj=1/2, mI=-1
+
+2S3Pcombined
+
+9th column P state mj=3/2, mI=1
+10th column P state mj=-3/2, mI=1
+11th column P state mj=-3/2, mI=0
+12th column P state mj=3/2, mI=0
+13th column P state mj=-3/2, mI=-1
+14th column P state mj=3/2, mI=-1
+15th column P state mj=1/2, mI=1
+16th column P state mj=-1/2, mI=1
+17th column P state mj=1/2, mI=0
+18th column P state mj=-1/2, mI=0
+19th column P state mj=-1/2, mI=-1
+20th column P state mj=1/2, mI=-1
+
+2S2Pcombined
+
+9th column P state mj=3/2, mI=1
+10th column P state mj=-3/2, mI=1
+11th column P state mj=3/2, mI=0
+12th column P state mj=-3/2, mI=0
+13th column P state mj=-3/2, mI=-1
+14th column P state mj=3/2, mI=-1
+15th column P state mj=1/2, mI=1
+16th column P state mj=-1/2, mI=1
+17th column P state mj=1/2, mI=0
+18th column P state mj=-1/2, mI=0
+19th column P state mj=-1/2, mI=-1
+20th column P state mj=1/2, mI=-1

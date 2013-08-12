@@ -1,0 +1,28 @@
+
+#f="uvpow_numload_4247_4290.dat"
+f="uvpow4728_4764_110822.dat"
+
+
+set xl "\\sf Intensity per beam ($\\sf I_{\\mathsf{sat}}^{3P}$)"
+set yl "\\sf Number/$\\sf 10^{6}$" offset 1.5,0
+
+set yr [1.0:8.0]
+set ytics 2, 2.0, 8.0
+set mytics 2
+
+set xtics 0, 0.2, 1.0
+set mxtics 2
+
+set grid xtics ytics mytics mxtics lc rgbcolor "#AAAAAA" 
+
+set terminal epslatex size 3.85, 2.5 color lw 3
+set output "uvpow.tex"
+
+#Max pow at pinhole = 17.0
+#Pow on laser when I/Isat =1.05 ==> 27.4
+#Pow on laser for this data
+
+scale= 1.05*26.5/27.4/17.0
+
+
+plot f u ($1*scale):($2/1.e6)  ps 2 pt 7 lc rgbcolor "black" notit

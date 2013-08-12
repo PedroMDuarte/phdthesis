@@ -1,0 +1,36 @@
+reset 
+set fit errorvariables
+set fit logfile "mylog.fit"
+kbm=13.85e-06 #kb/m in cm^2/ms^2/uK
+rUV(x)= x>0?sqrt(0.129**2+2*kbm*56.738*x**2):0.129
+rCNC(x)= x>0?sqrt(0.175**2+2*kbm*287.599*x**2):0.175
+set xl "\\sf  time of flight \(ms\)" offset 0,0.5;
+set yl "\\sf  $\\mathsf{e}^{\\mathsf{-1}}$ cloud radius (cm)" offset 2.5,0;
+set key 4.8, 0.13 samplen 0.5;
+set yr [0.05:0.4]
+set xr [0:5]
+set ytics 0.1
+set mytics 4
+set xtics 1
+set mxtics 2
+TUV=56.738
+TUV_err=56.738
+pUV=1.7e-05
+pUV_err=2.1e-06
+TCNC=287.599
+TCNC_err=287.599
+pCNC=2.5e-06
+pCNC_err=1.9e-07
+ls=0.027
+set label 1 "$T = 288 \\ \\mu$K" at 0.6,0.35
+set label 2 "$\\varpi = 2.5\\times10^{-6}$" at 0.6,0.35-ls
+set label 3 "$T = 57 \\ \\mu$K" at 2.7,0.255
+set label 4 "$\\varpi = 1.7\\times10^{-5}$" at 2.7,0.255-ls
+set terminal epslatex size 7.0,2.54 color lw 3
+set size 0.5,1
+set output "tof.tex" 
+plot \
+"110720_7568to7573,7593to7604.TOFDAT" u 1:2 lc rgbcolor "red" ps 2.0 pt 5 title "\\sf CMOT (671 nm)" ,\
+"110719_7505to7522.TOFDAT" u 1:2 lc rgbcolor "#7030A0" ps 2.0 pt 7 title "\\sf UVMOT (323 nm)" ,\
+rCNC(x) lw 2 lc rgbcolor "red" notitle,\
+rUV(x) lw 2 lc rgbcolor "#7030A0" notitle
