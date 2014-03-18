@@ -1,0 +1,13 @@
+#!/bin/bash
+
+gpl=doppler.gpl
+
+gnuplot $gpl 
+#sed -i 's/tof/tofexpansion\/tof/g' tof.tex
+#sed -i 's/put(0,0)/put(500,0)/g' tof.tex
+
+latex dopplereps.tex; dvips dopplereps.dvi -o dopplereps.eps
+
+ps2eps -f dopplereps.eps
+mv dopplereps.eps.eps dopplereps.eps
+epstopdf dopplereps.eps

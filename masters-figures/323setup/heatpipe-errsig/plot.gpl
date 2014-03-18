@@ -1,0 +1,75 @@
+reset
+
+pi=4.*atan(1.0);
+#lorentz(x)= a*g/( (2*pi*(x-c))**2 + (pi*g)**2 ) + o;
+Dlorentz(x) = -(a*g/((2*pi*(x-c))**2 + (pi*g)**2)**2)*8*pi*(x-c) + o;
+a=1.0;
+g=2.0;
+c=0.01;
+o=-0.32;
+fit [-50:10] Dlorentz(x) "scaled.dat" using 1:2 via a,g,c,o
+
+#lorentz2(x)= a2*g2/( (2*pi*(x-c2))**2 + (pi*g2)**2 ) + o2;
+Dlorentz2(x) = -(a2*g2/((2*pi*(x-c2))**2 + (pi*g2)**2)**2)*8*pi*(x-c2) + o2;
+a2=5.0;
+g2=10.0;
+c2=228.2;
+o2=-0.32;
+fit [180:280] Dlorentz2(x) "scaled.dat" using 1:2 via a2,g2,c2,o2
+
+#note that crossover is inverted so get rid of the minus sign!
+Dlorentz3(x) = (a3*g3/((2*pi*(x-c3))**2 + (pi*g3)**2)**2)*8*pi*(x-c3) + o3;
+a3=5.0;
+g3=10.0;
+c3=120;
+o3=-0.32;
+fit [50:170] Dlorentz3(x) "scaled.dat" using 1:2 via a3,g3,c3,o3
+
+print c2-c
+
+s= 228.2/(c2-c); 
+#s=1
+
+g1=g
+
+fit [-50:50] Dlorentz(x) "scaled.dat" using ($1*s):2 via a,g,c,o
+leg1 = sprintf("LW = %.1f MHz", g)
+set label leg1 at 0,-0.12
+
+fit [180:280] Dlorentz2(x) "scaled.dat" using ($1*s):2 via a2,g2,c2,o2
+leg2 = sprintf("LW = %.1f MHz", g2)
+set label leg2 at 100,-0.1
+
+fit [70:170] Dlorentz3(x) "scaled.dat" using ($1*s):2 via a3,g3,c3,o3
+leg3 = sprintf("LW = %.1f MHz", g3)
+set label leg3 at 145,-0.16
+
+
+set samples 1000
+set title "AOM modulation: 50 kHz, Chopper modulation: 1.5 kHz"
+
+set xlabel "Detuning [MHz]"
+set ylabel "Lock-in signal [V]"
+
+#set label "CROSSOVER" at 68,-0.53
+#set label "TRAP" at 95,0.4 
+#set label "REPUMP" at 215,0.4
+
+set key top left
+
+plot \
+"scaled.dat" using ($1*s):2 title 'Measured',\
+Dlorentz(x) lw 2  title 'Fit trap',\
+Dlorentz2(x) lw 2  title 'Fit repump',\
+Dlorentz3(x) lw 2 title 'Fit cross-over'
+
+#set terminal png truecolor font "/usr/share/fonts/bitstream-vera/Vera.ttf,12"
+#set output "errsig.png"
+#replot
+#set terminal X11
+
+set terminal postscript enhanced eps color solid font "Helvetica,16"
+set output "no_offset_spectrum.eps"
+set size 0.8,0.8
+replot
+

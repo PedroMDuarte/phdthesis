@@ -1,0 +1,63 @@
+reset
+set terminal X11
+
+
+set xlabel "\\sf $\\sf \\lambda$ (nm)" offset 0,-0.7
+set ylabel "\\sf Light shift (MHz)" offset 5,0
+
+
+f1="01.dat"
+f2="02.dat"
+
+
+# \Delta E = 1/2 \alpha E^{2} = \alpha I / (\epsilon_{0}*c)
+#
+# 1 / \epsilon_{0}*c = 376.73 V*s*C^-1
+#
+# \Delta E / h = h^-1 ( \alpha in au * 1.648*10^-41) * 376.73 * ( I in kW/cm^2) * (1000 W/kW) * (100 cm/m)^2
+# h=6.626e-34
+# 1.648e-41 * 376.73 * 1000 * 10000 / h = 93.70
+#
+# LightShift in Hz  =  (\alpha in au) ( I in kW/cm^2) * 93.70
+# LightShift in MHz =  (\alpha in au) ( I in kW/cm^2) * ( 0.0000937) 
+
+# For our trap full-on: 
+
+# I = 2.*(39+35)/(pi*73^2) = 910 kW/cm^2 approximately
+
+# which  gives 
+
+# Lightshift in MHz = (\alpha i au)  0.085
+
+scale = 0.085
+
+set key 1071.9, -63*scale width -20 spacing 1.2 samplen 2.0
+
+set xr [1068:1072]
+set xtics format ""
+set xtics 1067, 1, 1073
+set xtics add ("\\sf 1067" 1067, "\\sf 1068" 1068, "\\sf 1069" 1069, "\\sf 1070" 1070, "\\sf 1071" 1071, "\\sf 1072" 1072, "\\sf 1073" 1073)
+set mxtics 5
+
+set ytics format ""
+set ytics -15, 5, 15
+set ytics add ("\\sf -15" -15, "\\sf -10" -10, "\\sf -5" -5, "\\sf 0" 0, "\\sf 5" 5, "\\sf 10" 10, "\\sf 15" 15)
+set mytics 5
+ 
+set grid xtics ytics mxtics mytics lc rgbcolor "#AAAAAA"
+
+set terminal epslatex size 4.62,3.36 color lw 2 
+set size 1, 0.9
+set output "diffpol.tex"
+
+fx(x)=x+0.37
+
+plot \
+f1 using (fx($1)):(scale*$2) smooth csplines lt 2 lw 3 lc rgbcolor "black"          title "$\\sf 2s\\rightarrow2p\\,|m_{J}|=3/2$",\
+f1 using (fx($1)):(scale*$3) smooth csplines lt 2 lw 3 lc rgbcolor "forest-green"   title "$\\sf 2s\\rightarrow2p\\,|m_{J}|=1/2$",\
+f2 using (fx($1)):(scale*$2) smooth csplines lt 1 lw 3 lc rgbcolor "forest-green"   title "$\\sf 2s\\rightarrow3p\\,|m_{J}|=3/2$",\
+f2 using (fx($1)):(scale*$3) smooth csplines lt 1 lw 3 lc rgbcolor "blue"           title "$\\sf 2s\\rightarrow3p\\,|m_{J}|=1/2$"
+
+
+
+

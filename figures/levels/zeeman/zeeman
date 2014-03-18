@@ -1,9 +1,0 @@
-#!/bin/bash
-
-gnuplot 01.gpl
-latex 01eps.tex; dvips 01eps.dvi -o 01eps.eps
-
-ps2eps -f 01eps.eps
-mv 01eps.eps.eps 01eps.eps
-
-epstopdf 01eps.eps

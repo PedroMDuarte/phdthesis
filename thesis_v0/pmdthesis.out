@@ -1,35 +1,33 @@
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}
-\BOOKMARK [0][-]{chapter.2}{Quantum Magnetism and The Fermi-Hubbard model}{}
-\BOOKMARK [0][-]{chapter.3}{Realizing the Fermi-Hubbard model with ultracold atoms}{}
-\BOOKMARK [0][-]{chapter.4}{Measurement techniques}{}
-\BOOKMARK [0][-]{chapter.5}{Experimental apparatus}{}
-\BOOKMARK [0][-]{chapter.6}{Detection of antiferromagnetic correlations}{}
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}
-\BOOKMARK [0][-]{chapter.8}{Introduction}{}
-\BOOKMARK [1][-]{section.8.1}{All-optical production of degenerate quantum gases}{chapter.8}
-\BOOKMARK [1][-]{section.8.2}{Limit of laser cooling}{chapter.8}
-\BOOKMARK [1][-]{section.8.3}{Outline of the thesis}{chapter.8}
-\BOOKMARK [0][-]{chapter.9}{Description of the apparatus}{}
-\BOOKMARK [1][-]{section.9.1}{Vacuum}{chapter.9}
-\BOOKMARK [1][-]{section.9.2}{671 nm Magneto-optical trap}{chapter.9}
-\BOOKMARK [2][-]{subsection.9.2.1}{Laser system}{section.9.2}
-\BOOKMARK [2][-]{subsection.9.2.2}{Zeeman slower}{section.9.2}
-\BOOKMARK [1][-]{section.9.3}{323 nm Magneto-optical trap}{chapter.9}
-\BOOKMARK [2][-]{subsection.9.3.1}{Laser frequency stabilization}{section.9.3}
-\BOOKMARK [2][-]{subsection.9.3.2}{Vapor cell for saturated absorption spectroscopy}{section.9.3}
-\BOOKMARK [2][-]{subsection.9.3.3}{Beam waist and power balance}{section.9.3}
-\BOOKMARK [1][-]{section.9.4}{Optical dipole trap}{chapter.9}
-\BOOKMARK [1][-]{section.9.5}{Magnetic field}{chapter.9}
-\BOOKMARK [2][-]{subsection.9.5.1}{Field control}{section.9.5}
-\BOOKMARK [1][-]{section.9.6}{Diagnostics}{chapter.9}
-\BOOKMARK [2][-]{subsection.9.6.1}{Fluorescence imaging}{section.9.6}
-\BOOKMARK [2][-]{subsection.9.6.2}{Absorption imaging}{section.9.6}
-\BOOKMARK [1][-]{section.9.7}{Control, automation, and data analysis}{chapter.9}
-\BOOKMARK [0][-]{chapter.10}{Narrow linewidth 6Li magneto-optical trap}{}
-\BOOKMARK [1][-]{section.10.1}{671 nm MOT}{chapter.10}
-\BOOKMARK [1][-]{section.10.2}{323 nm MOT}{chapter.10}
-\BOOKMARK [0][-]{chapter.11}{All-optical production of a degenerate Fermi gas}{}
-\BOOKMARK [1][-]{section.11.1}{Evaporation near a Feshbach resonance}{chapter.11}
-\BOOKMARK [1][-]{section.11.2}{Light shift measurement for our optical trap}{chapter.11}
-\BOOKMARK [0][-]{chapter.12}{Conclusion}{}
-\BOOKMARK [0][-]{section*.9}{BIBLIOGRAPHY}{}
+\BOOKMARK [0][-]{chapter.1}{Many body physics with ultracold atoms }{}% 1
+\BOOKMARK [1][-]{section.1.1}{ Motivation: Strongly correlated materials }{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Quantum simulations with ultracold atoms}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{ Motivation: Quantum magnetism with ultracold atoms }{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{The Fermi-Hubbard model}{}% 5
+\BOOKMARK [1][-]{section.2.1}{ The Hubbard model in ultacold atomic gases }{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.1.1}{ Motion of atoms in an optical lattice potential }{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.2}{ Interactions between the atoms }{section.2.1}% 8
+\BOOKMARK [1][-]{section.2.2}{Simplified treatements}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{ Exact diagonalization }{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{ Limiting cases}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.3}{Modern approaches}{section.2.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Enlarging and cooling towards the Neel state in a compensated optical lattice potential}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Compensated optical lattice}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{Thermodynamic quantitites in the local density approximation}{chapter.3}% 15
+\BOOKMARK [0][-]{chapter.4}{Experimental diagnostic tools}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Absorption imaging}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Polarization phase-contrast imaging}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.3}{Thermometry of a Fermi gas trapped in a harmonic potential}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.4}{Double occupancy measurement in an optical lattice }{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.5}{Bragg Scattering of light}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.5.1}{ Non-spin sensitive: crystal structure factor}{section.4.5}% 22
+\BOOKMARK [2][-]{subsection.4.5.2}{ Spin sensitive: spin-structure factor}{section.4.5}% 23
+\BOOKMARK [0][-]{chapter.5}{Experimental setup and procedures}{}% 24
+\BOOKMARK [1][-]{section.5.1}{Production of a deeply degenerate 6Li spin mixture in a dimple potential }{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.2}{Compensated optical lattice potential}{chapter.5}% 26
+\BOOKMARK [0][-]{chapter.6}{Studies in a three dimensional optical lattice}{}% 27
+\BOOKMARK [1][-]{section.6.1}{Determination of the crystal structure factor using Bragg scattering}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.2}{Insulating states in an uncompensated lattice}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.3}{Evaporative cooling in a compensated optical lattice}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.4}{Detection of antiferromagnetic correlations in a compensated optical lattice}{chapter.6}% 31
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 32
+\BOOKMARK [0][-]{section*.7}{BIBLIOGRAPHY}{}% 33

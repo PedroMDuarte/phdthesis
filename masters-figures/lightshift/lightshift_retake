@@ -1,0 +1,13 @@
+#!/bin/bash
+
+gpl=lightshift_retake.gpl
+
+gnuplot $gpl 
+#sed -i 's/lightshift/lightshift\/lightshift/g' lightshift.tex
+#sed -i 's/put(0,0)/put(500,0)/g' evap.tex
+latex lightshifteps_retake.tex; dvips lightshifteps_retake.dvi -o lightshifteps_retake.eps
+
+ps2eps -f lightshifteps_retake.eps
+mv lightshifteps_retake.eps.eps lightshifteps.eps
+
+epstopdf lightshifteps.eps

@@ -1,4 +1,0 @@
-mktexpk --mfmode ljfour --bdpi 600 --mag 1+0/600 --dpi 600 ecrm1095
-mktexpk --mfmode ljfour --bdpi 600 --mag 1+57/600 --dpi 657 fxbr-t1
-mktexpk --mfmode ljfour --bdpi 600 --mag 1+57/600 --dpi 657 fxbr-t1
-mktexpk --mfmode ljfour --bdpi 600 --mag 1+57/600 --dpi 657 fxbr-t1

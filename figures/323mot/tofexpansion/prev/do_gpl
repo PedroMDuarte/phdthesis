@@ -1,3 +1,0 @@
-#!/bin/bash
-
-gnuplot tofgpl.gpl ; sed -i 's/tofgpl/tofexpansion\/tofgpl/g' tofgpl.tex

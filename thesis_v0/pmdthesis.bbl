@@ -1,201 +1,81 @@
 \begin{thebibliography}{10}
 
-\bibitem{DeMarco1999}
-B. DeMarco and D.~S. Jin, ``Onset of Fermi Degeneracy in a Trapped Atomic
-  Gas,'' Science {\bfseries 285,} 1703--1706 (1999).
+\bibitem{wen2004quantum}
+X. Wen, {\em Quantum Field Theory of Many-Body Systems: From the Origin of
+  Sound to an Origin of Light and Electrons}, {\em Oxford Graduate Texts} (OUP
+  Oxford, 2004).
 
-\bibitem{Cornell1995}
-M.~H. Anderson, J.~R. Ensher, M.~R. Matthews, C.~E. Wieman, and E.~A. Cornell,
-  ``Observation of Bose-Einstein Condensation in a Dilute Atomic Vapor,''
-  Science {\bfseries 269,} 198--201 (1995).
+\bibitem{altland2010condensed}
+A. Altland and B. Simons, {\em Condensed Matter Field Theory} (Cambridge
+  University Press, 2010).
 
-\bibitem{Hulet1995}
-C.~C. Bradley, C.~A. Sackett, J.~J. Tollett, and R.~G. Hulet, ``Evidence of
-  Bose-Einstein Condensation in an Atomic Gas with Attractive Interactions,''
-  Phys. Rev. Lett. {\bfseries 75,} 1687--1690 (1995).
+\bibitem{ashcroft1976solid}
+N. Ashcroft and N. Mermin, {\em Solid state physics}, {\em Science: Physics}
+  (Saunders College, 1976).
 
-\bibitem{Ketterle1995}
-K.~B. Davis, M.~O. Mewes, M.~R. Andrews, N.~J. van Druten, D.~S. Durfee, D.~M.
-  Kurn, and W. Ketterle, ``Bose-Einstein Condensation in a Gas of Sodium
-  Atoms,'' Phys. Rev. Lett. {\bfseries 75,} 3969--3973 (1995).
+\bibitem{landau1965collected}
+L. Landau, {\em Collected papers of L. D. Landau} (Gordon and Breach, 1965).
 
-\bibitem{Dalgarno1996}
-Z.-C. Yan, J.~F. Babb, A. Dalgarno, and G.~W.~F. Drake, ``Variational
-  calculations of dispersion coefficients for interactions among H, He, and Li
-  atoms,'' Phys. Rev. A {\bfseries 54,} 2824--2833 (1996).
+\bibitem{PhysRevLett.35.1779}
+K. Andres, J.~E. Graebner, and H.~R. Ott, ``<span
+  class="aps-inline-formula"><math><mn>4</mn><mi>f</mi></math></span>-Virtual-Bound-State
+  Formation in Ce<span class="aps-inline-formula"><math><mrow><msub><mrow><mi
+  mathvariant="normal">Al</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></math></span>
+  at Low Temperatures,'' Phys. Rev. Lett. {\bfseries 35,} 1779--1782 (1975).
 
-\bibitem{Truscott2001}
-A.~G. Truscott, K.~E. Strecker, W.~I. McAlexander, G.~B. Partridge, and R.~G.
-  Hulet, ``Observation of Fermi Pressure in a Gas of Trapped Atoms,'' Science
-  {\bfseries 291,} 2570--2572 (2001).
+\bibitem{PhysRevLett.43.1892}
+F. Steglich, J. Aarts, C.~D. Bredl, W. Lieke, D. Meschede, W. Franz, and H.
+  Sch\"afer, ``Superconductivity in the Presence of Strong Pauli Paramagnetism:
+  Ce<span class="aps-inline-formula"><math><mrow><msub><mrow><mi
+  mathvariant="normal">Cu</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></math></span><span
+  class="aps-inline-formula"><math><mrow><msub><mrow><mi
+  mathvariant="normal">Si</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></math></span>,''
+  Phys. Rev. Lett. {\bfseries 43,} 1892--1896 (1979).
 
-\bibitem{Shreck2001}
-F. Schreck, L. Khaykovich, K.~L. Corwin, G. Ferrari, T. Bourdel, J. Cubizolles,
-  and C. Salomon, ``Quasipure Bose-Einstein Condensate Immersed in a Fermi
-  Sea,'' Phys. Rev. Lett. {\bfseries 87,} 080403 (2001).
+\bibitem{PhysRevLett.48.1559}
+D.~C. Tsui, H.~L. Stormer, and A.~C. Gossard, ``Two-Dimensional
+  Magnetotransport in the Extreme Quantum Limit,'' Phys. Rev. Lett. {\bfseries
+  48,} 1559--1562 (1982).
 
-\bibitem{Hadzibabic2002}
-Z. Hadzibabic, C.~A. Stan, K. Dieckmann, S. Gupta, M.~W. Zwierlein, A.
-  G\"orlitz, and W. Ketterle, ``Two-Species Mixture of Quantum Degenerate Bose
-  and Fermi Gases,'' Phys. Rev. Lett. {\bfseries 88,} 160401 (2002).
+\bibitem{PhysRevLett.50.1395}
+R.~B. Laughlin, ``Anomalous Quantum Hall Effect: An Incompressible Quantum
+  Fluid with Fractionally Charged Excitations,'' Phys. Rev. Lett. {\bfseries
+  50,} 1395--1398 (1983).
 
-\bibitem{Zimmermann2005}
-C. Silber, S. G\"unther, C. Marzok, B. Deh, P.~W. Courteille, and C.
-  Zimmermann, ``Quantum-Degenerate Mixture of Fermionic Lithium and Bosonic
-  Rubidium Gases,'' Phys. Rev. Lett. {\bfseries 95,} 170408 (2005).
+\bibitem{Zeitschrift.64.189}
+J. Bednorz and K. Müller, ``Possible highT c superconductivity in the
+  Ba−La−Cu−O system,'' Zeitschrift für Physik B Condensed Matter
+  {\bfseries 64,} 189--193 (1986).
 
-\bibitem{Chapman2001}
-M.~D. Barrett, J.~A. Sauer, and M.~S. Chapman, ``All-Optical Formation of an
-  Atomic Bose-Einstein Condensate,'' Phys. Rev. Lett. {\bfseries 87,} 010404
-  (2001).
+\bibitem{coleman2004revolution}
+P. Coleman, ``Many Body Physics: Unfinished Revolution,''  in {\em
+  International Conference on Theoretical Physics}, D. Iagolnitzer, V.
+  Rivasseau, and J. Zinn-Justin, eds., (Birkhäuser Basel, 2004), \ pp.\
+  559--580.
 
-\bibitem{Granade2002}
-S.~R. Granade, M.~E. Gehm, K.~M. O'Hara, and J.~E. Thomas, ``All-Optical
-  Production of a Degenerate Fermi Gas,'' Phys. Rev. Lett. {\bfseries 88,}
-  120405 (2002).
+\bibitem{Anderson1972}
+P.~W. Anderson, ``More Is Different,'' Science {\bfseries 177,} 393--396
+  (1972).
 
-\bibitem{O'Hara2002}
-K.~M. O'Hara, S.~L. Hemmer, M.~E. Gehm, S.~R. Granade, and J.~E. Thomas,
-  ``Observation of a Strongly Interacting Degenerate Fermi Gas of Atoms,''
-  Science {\bfseries 298,} 2179--2182 (2002).
+\bibitem{wen1990topological}
+X.~G. WEN, ``TOPOLOGICAL ORDERS IN RIGID STATES,'' International Journal of
+  Modern Physics B {\bfseries 04,} 239--271 (1990).
 
-\bibitem{Weber2003}
-T. Weber, J. Herbig, M. Mark, H.-C. N\"agerl, and R. Grimm, ``Bose-Einstein
-  Condensation of Cesium,'' Science {\bfseries 299,} 232--235 (2003).
+\bibitem{PhysRevB.14.1165}
+J.~A. Hertz, ``Quantum critical phenomena,'' Phys. Rev. B {\bfseries 14,}
+  1165--1184 (1976).
 
-\bibitem{Jochim2003}
-S. Jochim, M. Bartenstein, A. Altmeyer, G. Hendl, S. Riedl, C. Chin, J.
-  Hecker~Denschlag, and R. Grimm, ``Bose-Einstein Condensation of Molecules,''
-  Science {\bfseries 302,} 2101--2103 (2003).
+\bibitem{sachdev2011quantum}
+S. Sachdev, {\em Quantum Phase Transitions}, {\em Quantum Phase Transitions}
+  (Cambridge University Press, 2011).
 
-\bibitem{Chin2008}
-C.-L. Hung, X. Zhang, N. Gemelke, and C. Chin, ``Accelerating evaporative
-  cooling of atoms into Bose-Einstein condensation in optical traps,'' Phys.
-  Rev. A {\bfseries 78,} 011604 (2008).
+\bibitem{PhysRevLett.81.3108}
+D. Jaksch, C. Bruder, J.~I. Cirac, C.~W. Gardiner, and P. Zoller, ``Cold
+  Bosonic Atoms in Optical Lattices,'' Phys. Rev. Lett. {\bfseries 81,}
+  3108--3111 (1998).
 
-\bibitem{Bouyer2009}
-J.-F. Cl\'ement, J.-P. Brantut, M. Robert-de Saint-Vincent, R.~A. Nyman, A.
-  Aspect, T. Bourdel, and P. Bouyer, ``All-optical runaway evaporation to
-  Bose-Einstein condensation,'' Phys. Rev. A {\bfseries 79,} 061406 (2009).
-
-\bibitem{Du2009}
-X. Du, Y. Zhang, and J.~E. Thomas, ``Inelastic Collisions of a Fermi Gas in the
-  BEC-BCS Crossover,'' Phys. Rev. Lett. {\bfseries 102,} 250402 (2009).
-
-\bibitem{Hansch1975}
-T. H\"ansch and A. Schawlow, ``Cooling of gases by laser radiation,'' Opt.
-  Commun. {\bfseries 13,} 68 -- 69 (1975).
-
-\bibitem{Wineland1975}
-D. Wineland and H. Dehmelt,  Bull. Am. Phys. Soc. {\bfseries 20,} 637 (1975).
-
-\bibitem{Dalibard1989}
-J. Dalibard and C. Cohen-Tannoudji, ``Laser cooling below the Doppler limit by
-  polarization gradients: simple theoretical models,'' J. Opt. Soc. Am. B
-  {\bfseries 6,} 2023--2045 (1989).
-
-\bibitem{Ungar1989}
-P.~J. Ungar, D.~S. Weiss, E. Riis, and S. Chu, ``Optical molasses and
-  multilevel atoms: theory,'' J. Opt. Soc. Am. B {\bfseries 6,} 2058--2071
-  (1989).
-
-\bibitem{Weiss1989}
-D.~S. Weiss, E. Riis, Y. Shevy, P.~J. Ungar, and S. Chu, ``Optical molasses and
-  multilevel atoms: experiment,'' J. Opt. Soc. Am. B {\bfseries 6,} 2072--2083
-  (1989).
-
-\bibitem{Lett1989}
-P.~D. Lett, W.~D. Phillips, S.~L. Rolston, C.~E. Tanner, R.~N. Watts, and C.~I.
-  Westbrook, ``Optical molasses,'' J. Opt. Soc. Am. B {\bfseries 6,} 2084--2107
-  (1989).
-
-\bibitem{SoftLock2004}
-G. Ritt, G. Cennini, C. Geckeler, and M. Weitz, ``Laser frequency offset
-  locking using a side of filter technique,'' Applied Physics B: Lasers and
-  Optics {\bfseries 79,} 363--365 (2004), 10.1007/s00340-004-1559-6.
-
-\bibitem{Ferrari1999}
-G. Ferrari, M.-O. Mewes, F. Schreck, and C. Salomon, ``High-power
-  multiple-frequency narrow-linewidth laser source based on a semiconductor
-  tapered amplifier,'' Opt. Lett. {\bfseries 24,} 151--153 (1999).
-
-\bibitem{ModTransfer2005}
-K. Sowka, M. Weel, S. Cauchi, L. Cockins, and A. Kumarakrishnan, ``A home-built
-  lock-in amplifier for laser frequency stabilization,'' Canadian Journal of
-  Physics {\bfseries 83,} 907--918 (2005).
-
-\bibitem{HeatPipe1969}
-C.~R. Vidal and J. Cooper, ``Heat Pipe Oven: A New, Well Defined Metal Vapor
-  Device for Spectroscopic Measurements,'' J. Appl. Phys {\bfseries 40,}
-  3370--3374 (1969).
-
-\bibitem{HeatPipe1971}
-C.~R. Vidal and F.~B. Haller, ``Heat Pipe Oven Applications. I. Isothermal
-  Heater of Well Defined Temperature. II. Production of Metal Vapor-Gas
-  Mixtures,'' Rev. Sci. Instrum. {\bfseries 42,} 1779--1784 (1971).
-
-\bibitem{Olivares1998}
-I.~E. Olivares, A.~E. Duarte, T. Lokajczyk, A. Dinklage, and F.~J. Duarte,
-  ``Doppler-free spectroscopy and collisional studies with tunable diode lasers
-  of lithium isotopes in a heat-pipe oven,'' J. Opt. Soc. Am. B {\bfseries 15,}
-  1932--1939 (1998).
-
-\bibitem{Junker2007}
-M. Junker, Ph.D. thesis, Rice University, 2007.
-
-\bibitem{McAlexander1996}
-W.~I. McAlexander, E.~R.~I. Abraham, and R.~G. Hulet, ``Radiative lifetime of
-  the $2P$ state of lithium,'' Phys. Rev. A {\bfseries 54,} R5--R8 (1996).
-
-\bibitem{Ramsey2006}
-R. Kamar, Master's thesis, Rice University, 2006.
-
-\bibitem{HardDriveShutter2007}
-R.~E. Scholten, ``Enhanced laser shutter using a hard disk drive rotary
-  voice-coil actuator,'' Rev. Sci. Instrum. {\bfseries 78,} 026101 (2007).
-
-\bibitem{Nadeem2011}
-A. Nadeem and S.~U. Haq, ``Photoionization from the $5p\,^{2}P_{3/2}$ state of
-  rubidium,'' Phys. Rev. A {\bfseries 83,} 063404 (2011).
-
-\bibitem{Gehm2003}
-M.~E. Gehm, S.~L. Hemmer, K.~M. O'Hara, and J.~E. Thomas, ``Unitarity-limited
-  elastic collision rate in a harmonically trapped Fermi gas,'' Phys. Rev. A
-  {\bfseries 68,} 011603 (2003).
-
-\bibitem{Butts1997}
-D.~A. Butts and D.~S. Rokhsar, ``Trapped Fermi gases,'' Phys. Rev. A {\bfseries
-  55,} 4346--4350 (1997).
-
-\bibitem{DeMarco2001}
-B. DeMarco, Ph.D. thesis, University of Colorado, 2001.
-
-\bibitem{Making2007}
-W. Ketterle and M.~W. Zwierlein, ``Making, probing and understanding ultracold
-  Fermi Gases,'' Rivista del Nuovo Cimento {\bfseries 31,} 247--422 (2008).
-
-\bibitem{Katori2003}
-H. Katori, M. Takamoto, V.~G. Pal'chikov, and V.~D. Ovsiannikov, ``Ultrastable
-  Optical Clock with Neutral Atoms in an Engineered Light Shift Trap,'' Phys.
-  Rev. Lett. {\bfseries 91,} 173005 (2003).
-
-\bibitem{Safronova2006}
-M.~S. Safronova, B. Arora, and C.~W. Clark, ``Frequency-dependent
-  polarizabilities of alkali-metal atoms from ultraviolet through infrared
-  spectral regions,'' Phys. Rev. A {\bfseries 73,} 022505 (2006).
-
-\bibitem{Safronova2010}
-J. Mitroy, M.~S. Safronova, and C.~W. Clark, ``Theory and applications of
-  atomic and ionic polarizabilities,'' Journal of Physics B: Atomic, Molecular
-  and Optical Physics {\bfseries 43,} 202001 (2010).
-
-\bibitem{Anderson2002}
-P.~W. Anderson, ``Superconductivity in High $T_{c}$ Cuprates: The Cause is No
-  Longer A Mystery,'' Physica Scripta {\bfseries 2002,} 10 (2002).
-
-\bibitem{Ted2010}
-T.~A. Corcovilos, S.~K. Baur, J.~M. Hitchcock, E.~J. Mueller, and R.~G. Hulet,
-  ``Detecting antiferromagnetism of atoms in an optical lattice via optical
-  Bragg scattering,'' Phys. Rev. A {\bfseries 81,} 013415 (2010).
+\bibitem{feynman1982simulating}
+R.~P. Feynman, ``Simulating physics with computers,'' International journal of
+  theoretical physics {\bfseries 21,} 467--488 (1982).
 
 \end{thebibliography}

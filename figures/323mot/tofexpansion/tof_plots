@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#UVMOT
-cd /lab/data/app3/2011/1107/110719/
-avgTbasler -s 7505:7522 > tmp
-awk ' NR>=
-

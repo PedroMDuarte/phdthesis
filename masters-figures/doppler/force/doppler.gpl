@@ -1,0 +1,30 @@
+reset
+set terminal X11
+
+
+set xlabel "\\sf velocity" offset 0,0
+set ylabel "\\sf force  $Ma(v)$" offset 0,0
+
+s=1.;
+d=0.5;
+f(x)= s/(1+s+4*(d-x)**2);
+
+set xr [-3:3] 
+
+set ytics format ""
+set ytics 0,10,20
+
+set xtics format ""
+set xtics 0,10,20
+
+set grid ytics 
+
+set terminal epslatex size 2.3,1.6 lw 2 
+set size 1, 0.9
+set output "doppler.tex"
+
+plot -f(x)+f(-x) notit lw 1.5 
+
+
+
+

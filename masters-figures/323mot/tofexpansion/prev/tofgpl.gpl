@@ -1,0 +1,94 @@
+reset 
+set terminal X11
+
+uvmot  = "/lab/data/app3/2010/1010/101028/Tofdata_0138_0145_2010_1029_0057.dat"
+cmot = "/lab/data/app3/2010/1010/101028/Tofdata_0146_0153_2010_1029_0102.dat"
+
+r0=0.180; T=86.276; fit radius(x) uvmot using 1:2 via r0,T; h0fitUV=r0; hTfitUV=T;
+r0=0.171; T=68.170; fit radius(x) uvmot using 1:3 via r0,T; v0fitUV=r0; vTfitUV=T;
+r0=0.171; T=68.170; fit radius(x) uvmot using 1:(sqrt($3*$2)) via r0,T; rfitUV=r0; TfitUV=T;
+
+r0=0.279; T=407.235; fit radius(x) cmot using 1:2 via r0,T; h0fit=r0; hTfit=T;
+r0=0.166; T=432.688; fit radius(x) cmot using 1:3 via r0,T; v0fit=r0; vTfit=T;
+r0=0.171; T=68.170; fit radius(x)  cmot using 1:(sqrt($3*$2)) via r0,T; rfit=r0; Tfit=T;
+
+rhfitUV(x)=x>0?sqrt(h0fitUV**2+2*kbm*hTfitUV*x**2):h0fitUV
+rvfitUV(x)=x>0?sqrt(v0fitUV**2+2*kbm*vTfitUV*x**2):v0fitUV
+fitUV(x)=x>0?sqrt(rfitUV**2+2*kbm*TfitUV*x**2):rfitUV
+
+rhfit(x)=x>0?sqrt(h0fit**2+2*kbm*hTfit*x**2):h0fit
+rvfit(x)=x>0?sqrt(v0fit**2+2*kbm*vTfit*x**2):v0fit
+fitCMOT(x)=x>0?sqrt(rfit**2+2*kbm*Tfit*x**2):rfit
+
+set xl "\\sf  time of flight (ms)" offset 0,0.5;
+set yl "\\sf  1/e cloud size (cm)" offset 1.5,0; 
+set key 8.05, 0.19;
+set yr [0.1:0.5]
+
+set terminal postscript enhanced color font "Helvetica,28" lw 4.0
+set label 1 "hUV  = %.2f {/Symbol m}K",hTfitUV at 0.5,0.48
+set label 2 "vUV  = %.2f {/Symbol m}K",vTfitUV at 0.5,0.46
+set label 3 "hCMOT= %.2f {/Symbol m}K",hTfit at 0.5,0.44
+set label 4 "vCMOT= %.2f {/Symbol m}K",vTfit at 0.5,0.42
+set output "tofgpl_prelim.eps"
+
+plot \
+uvmot using 1:2 ps 2 pt 5 title 'horUV' ,\
+uvmot      using 1:3 ps 2 pt 7 title 'verUV' ,\
+uvmot      using 1:(sqrt($2*$3)) ps 2 pt 12 title 'UV' ,\
+cmot using 1:2 ps 2 pt 4 title 'horCMOT' ,\
+cmot      using 1:3 ps 2 pt 6 title 'verCMOT' ,\
+cmot      using 1:(sqrt($2*$3)) ps 2 pt 13 title 'CMOT' ,\
+rhfitUV(x) title 'hfitUV' ,\
+rvfitUV(x) title 'vfitUV' ,\
+rhfit(x) title 'hfitCMOT' ,\
+rvfit(x) title 'vfitCMOT' ,\
+fitUV(x) title 'fitUV' ,\
+fitCMOT(x) title 'fitCMOT' 
+
+unset label 1
+unset label 2
+unset label 3
+unset label 4
+
+set xl "\\sf  time of flight (ms)" offset 0,0.5;
+set yl "\\sf  1/e cloud size (cm)" offset 1.5,0; 
+
+ls=0.03
+#set label 1 "T = 448 {/Symbol m}K" at 3.3,0.38 
+#set label 2 "{/Symbol r}_{ps} = 4.5e-07" at 3.3,0.38-ls 
+#set label 3 "T = 70 {/Symbol m}K" at 5.8,0.3
+#set label 4 "{/Symbol r}_{ps} = 3e-06" at 5.8,0.3-ls
+
+#New numbers for APS MARCH meeting
+#set label 1 "T = 300 {/Symbol m}K" at 0.5,0.44 
+#set label 2 "{/Symbol r}_{ps} = 7e-07" at 0.5,0.44-ls 
+#set label 3 "T = 60 {/Symbol m}K" at 4.1,0.41
+#set label 4 "{/Symbol r}_{ps} = 3e-06" at 4.1,0.41-ls
+
+set label 1 "$\\mathsf{T} = 300\\ \\mu\\mathsf{K}$" at 0.5,0.44 
+set label 2 "$\\rho_{\\mathsf{ps}} = 7\\times 10^{-7}$" at 0.5,0.44-ls 
+set label 3 "$\\mathsf{T} = 60\\ \\mu\\mathsf{K}$" at 4.1,0.41
+set label 4 "$\\rho_{\\mathsf{ps}} = 3\\times 10^{-6}$" at 4.1,0.41-ls
+
+
+#set terminal postscript enhanced eps color font "Helvetica,28" lw 4.0
+#set output "tofgpl_averaged.eps"
+
+	
+
+set terminal epslatex size 3.5,2.54 color lw 4.0
+set output "tofgpl.tex"
+
+
+plot \
+cmot  using 1:(sqrt($2*$3)) lc rgbcolor "red" ps 2 pt 5 title "\\sf CMOT (671 nm)" ,\
+uvmot using 1:(sqrt($2*$3)) lc rgbcolor "#7030A0" ps 2 pt 7  title  "\\sf UVMOT (323 nm)" ,\
+fitCMOT(x) lw 2 lc rgbcolor "red" notitle ,\
+fitUV(x) lw 2 lc rgbcolor "#7030A0" notitle 
+
+ 
+replot
+
+set terminal X11
+replot 

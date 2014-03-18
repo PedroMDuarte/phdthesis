@@ -1,50 +1,50 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: pmdthesis.aux
 The style file: osa.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: pmd.bib
-Warning--Warning: title missing in entry Wineland1975.
-Warning--We don't use thesis titles in Phys. Rev, see \cite{Junker2007}
-Warning--We don't use thesis titles in Phys. Rev, see \cite{Ramsey2006}
-Warning--We don't use thesis titles in Phys. Rev, see \cite{DeMarco2001}
-You've used 43 entries,
+You've used 16 entries,
             2048 wiz_defined-function locations,
-            814 strings with 10878 characters,
-and the built_in function-call counts, 10194 in all, are:
-= -- 409
-> -- 653
+            627 strings with 6384 characters,
+and the built_in function-call counts, 4133 in all, are:
+= -- 215
+> -- 167
 < -- 0
-+ -- 205
-- -- 162
-* -- 1229
-:= -- 1341
-add.period$ -- 43
-call.type$ -- 43
-change.case$ -- 1
++ -- 52
+- -- 36
+* -- 384
+:= -- 455
+add.period$ -- 16
+call.type$ -- 16
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 47
-duplicate$ -- 415
-empty$ -- 998
-format.name$ -- 205
-if$ -- 2106
+cite$ -- 16
+duplicate$ -- 169
+empty$ -- 510
+format.name$ -- 53
+if$ -- 992
 int.to.chr$ -- 0
-int.to.str$ -- 43
+int.to.str$ -- 16
 missing$ -- 0
-newline$ -- 132
-num.names$ -- 43
-pop$ -- 177
+newline$ -- 51
+num.names$ -- 18
+pop$ -- 99
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 457
+skip$ -- 286
 stack$ -- 0
-substring$ -- 882
-swap$ -- 249
+substring$ -- 306
+swap$ -- 84
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 4
-while$ -- 90
-width$ -- 45
-write$ -- 214
-(There were 4 warnings)
+type$ -- 54
+warning$ -- 0
+while$ -- 37
+width$ -- 18
+write$ -- 82

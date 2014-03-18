@@ -1,36 +1,32 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.8.5)  11 JUL 2013 22:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.2.1)  20 FEB 2014 07:37
 entering extended mode
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **pmdthesis.tex
 (./pmdthesis.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
-ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
-9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
-skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
-orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
-, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
-rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
-(/usr/share/texmf-texlive/tex/latex/memoir/memoir.cls
-Document Class: memoir 2009/09/21 v1.61803398b configurable book, report, artic
-le document class
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2013/05/30 v3.7b configurable book, report, article docu
+ment class
 \onelineskip=\skip41
 \lxvchars=\skip42
 \xlvchars=\skip43
 \@memcnta=\count79
 \c@@memmarkcntra=\count80
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode detected.
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-Class memoir Info: An `ifetex' package is being emulated on input line 251.
+(/usr/share/texlive/texmf-dist/tex/latex/ifetex/ifetex.sty
+Package: ifetex 2011/12/15 v1.2 ifetex
 
-(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+(/usr/share/texlive/texmf-dist/tex/plain/ifetex/ifetex.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
 \stockheight=\skip44
@@ -38,12 +34,12 @@ Package ifluatex Info: LuaTeX not detected.
 \trimtop=\skip46
 \trimedge=\skip47
 
-(/usr/share/texmf-texlive/tex/latex/etex-pkg/etex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count81
 )
-(/usr/share/texmf-texlive/tex/latex/memoir/mem12.clo
-File: mem12.clo 2008/01/30 v0.4 memoir class 12pt size option
+(/usr/share/texlive/texmf-dist/tex/latex/memoir/mem11.clo
+File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 )
 \binding=\skip48
 \spinemargin=\skip49
@@ -52,13 +48,15 @@ File: mem12.clo 2008/01/30 v0.4 memoir class 12pt size option
 \lowermargin=\skip52
 \headdrop=\skip53
 \normalrulethickness=\skip54
-\headwidth=\skip55
+\mem@maxheadheight=\skip55
+\mem@maxfootheight=\skip56
+\headwidth=\skip57
 \c@storedpagenumber=\count82
 \memPD=\dimen102
-\m@mabparskip=\skip56
-\thanksmarkwidth=\skip57
-\thanksmarksep=\skip58
-\droptitle=\skip59
+\m@mabparskip=\skip58
+\thanksmarkwidth=\skip59
+\thanksmarksep=\skip60
+\droptitle=\skip61
 \c@book=\count83
 \c@part=\count84
 \c@chapter=\count85
@@ -67,74 +65,74 @@ File: mem12.clo 2008/01/30 v0.4 memoir class 12pt size option
 \c@subsubsection=\count88
 \c@paragraph=\count89
 \c@subparagraph=\count90
-\beforechapskip=\skip60
-\midchapskip=\skip61
-\afterchapskip=\skip62
-\chapindent=\skip63
-\bottomsectionskip=\skip64
-\secindent=\skip65
-\beforesecskip=\skip66
-\aftersecskip=\skip67
-\subsecindent=\skip68
-\beforesubsecskip=\skip69
-\aftersubsecskip=\skip70
-\subsubsecindent=\skip71
-\beforesubsubsecskip=\skip72
-\aftersubsubsecskip=\skip73
-\paraindent=\skip74
-\beforeparaskip=\skip75
-\afterparaskip=\skip76
-\subparaindent=\skip77
-\beforesubparaskip=\skip78
-\aftersubparaskip=\skip79
-\pfbreakskip=\skip80
+\beforechapskip=\skip62
+\midchapskip=\skip63
+\afterchapskip=\skip64
+\chapindent=\skip65
+\bottomsectionskip=\skip66
+\secindent=\skip67
+\beforesecskip=\skip68
+\aftersecskip=\skip69
+\subsecindent=\skip70
+\beforesubsecskip=\skip71
+\aftersubsecskip=\skip72
+\subsubsecindent=\skip73
+\beforesubsubsecskip=\skip74
+\aftersubsubsecskip=\skip75
+\paraindent=\skip76
+\beforeparaskip=\skip77
+\afterparaskip=\skip78
+\subparaindent=\skip79
+\beforesubparaskip=\skip80
+\aftersubparaskip=\skip81
+\pfbreakskip=\skip82
 \c@@ppsavesec=\count91
 \c@@ppsaveapp=\count92
 \ragrparindent=\dimen103
 \everylistparindent=\dimen104
-\parsepi=\skip81
-\topsepi=\skip82
-\itemsepi=\skip83
-\parsepii=\skip84
-\topsepii=\skip85
-\topsepiii=\skip86
-\itemsepii=\skip87
-\itemsepiii=\skip88
-\partopsepii=\skip89
-\partopsepiii=\skip90
-\m@msavetopsep=\skip91
-\m@msavepartopsep=\skip92
+\parsepi=\skip83
+\topsepi=\skip84
+\itemsepi=\skip85
+\parsepii=\skip86
+\topsepii=\skip87
+\topsepiii=\skip88
+\itemsepii=\skip89
+\itemsepiii=\skip90
+\partopsepii=\skip91
+\partopsepiii=\skip92
+\m@msavetopsep=\skip93
+\m@msavepartopsep=\skip94
 \@enLab=\toks14
-\abstitleskip=\skip93
-\absleftindent=\skip94
+\abstitleskip=\skip95
+\absleftindent=\skip96
 \abs@leftindent=\dimen105
-\absrightindent=\skip95
-\absparindent=\skip96
-\absparsep=\skip97
+\absrightindent=\skip97
+\absparindent=\skip98
+\absparsep=\skip99
 \c@vslineno=\count93
 \c@poemline=\count94
 \c@modulo@vs=\count95
 \c@memfvsline=\count96
-\vleftskip=\skip98
-\vrightskip=\skip99
-\stanzaskip=\skip100
-\versewidth=\skip101
-\vgap=\skip102
-\vindent=\skip103
+\vleftskip=\skip100
+\vrightskip=\skip101
+\stanzaskip=\skip102
+\versewidth=\skip103
+\vgap=\skip104
+\vindent=\skip105
 \vleftmargin=\dimen106
 \c@verse=\count97
 \c@chrsinstr=\count98
-\beforepoemtitleskip=\skip104
-\afterpoemtitleskip=\skip105
+\beforepoemtitleskip=\skip106
+\afterpoemtitleskip=\skip107
 \c@poem=\count99
-\beforePoemTitleskip=\skip106
-\midPoemTitleskip=\skip107
-\afterPoemTitleskip=\skip108
+\beforePoemTitleskip=\skip108
+\midPoemTitleskip=\skip109
+\afterPoemTitleskip=\skip110
 \col@sep=\dimen107
 \extrarowheight=\dimen108
 \NC@list=\toks15
-\extratabsurround=\skip109
-\backup@length=\skip110
+\extratabsurround=\skip111
+\backup@length=\skip112
 \TX@col@width=\dimen109
 \TX@old@table=\dimen110
 \TX@old@col=\dimen111
@@ -159,8 +157,8 @@ File: mem12.clo 2008/01/30 v0.4 memoir class 12pt size option
 \@thisruleclass=\count103
 \@lastruleclass=\count104
 \@thisrulewidth=\dimen126
-\ctableftskip=\skip111
-\ctabrightskip=\skip112
+\ctableftskip=\skip113
+\ctabrightskip=\skip114
 \abovecolumnspenalty=\count105
 \@linestogo=\count106
 \@cellstogo=\count107
@@ -168,19 +166,20 @@ File: mem12.clo 2008/01/30 v0.4 memoir class 12pt size option
 \crtok=\toks17
 \@mincolumnwidth=\dimen127
 \c@newflo@tctr=\count109
-\@contcwidth=\skip113
-\@contindw=\skip114
-\abovecaptionskip=\skip115
-\belowcaptionskip=\skip116
-\subfloattopskip=\skip117
-\subfloatcapskip=\skip118
-\subfloatcaptopadj=\skip119
-\subfloatbottomskip=\skip120
-\subfloatlabelskip=\skip121
+\mem@margin@floatbox=\box26
+\@contcwidth=\skip115
+\@contindw=\skip116
+\abovecaptionskip=\skip117
+\belowcaptionskip=\skip118
+\subfloattopskip=\skip119
+\subfloatcapskip=\skip120
+\subfloatcaptopadj=\skip121
+\subfloatbottomskip=\skip122
+\subfloatlabelskip=\skip123
 \subfloatcapmargin=\dimen128
 \c@@contsubnum=\count110
-\m@mscap@capbox=\box26
-\m@mscap@fbox=\box27
+\m@mscap@capbox=\box27
+\m@mscap@fbox=\box28
 \sidecapsep=\dimen129
 \sidecapwidth=\dimen130
 \m@m@tempdima=\dimen131
@@ -188,110 +187,123 @@ File: mem12.clo 2008/01/30 v0.4 memoir class 12pt size option
 \sidecapraise=\dimen133
 \m@mscapmainwidth=\dimen134
 \m@mscaplkern=\dimen135
-\beforeepigraphskip=\skip122
-\afterepigraphskip=\skip123
-\epigraphwidth=\skip124
-\epigraphrule=\skip125
-LaTeX Info: Redefining \em on input line 7000.
-LaTeX Info: Redefining \emph on input line 7008.
-\tocentryskip=\skip126
-\tocbaseline=\skip127
-\cftparskip=\skip128
-\cftbeforebookskip=\skip129
+\beforeepigraphskip=\skip124
+\afterepigraphskip=\skip125
+\epigraphwidth=\skip126
+\epigraphrule=\skip127
+LaTeX Info: Redefining \em on input line 7492.
+LaTeX Info: Redefining \emph on input line 7500.
+\tocentryskip=\skip128
+\tocbaseline=\skip129
+\cftparskip=\skip130
+\cftbeforebookskip=\skip131
 \cftbookindent=\dimen136
 \cftbooknumwidth=\dimen137
-\cftbeforepartskip=\skip130
-\cftpartindent=\skip131
-\cftpartnumwidth=\skip132
-\cftbeforechapterskip=\skip133
-\cftchapterindent=\skip134
-\cftchapternumwidth=\skip135
-\cftbeforesectionskip=\skip136
-\cftsectionindent=\skip137
-\cftsectionnumwidth=\skip138
-\cftbeforesubsectionskip=\skip139
-\cftsubsectionindent=\skip140
-\cftsubsectionnumwidth=\skip141
-\cftbeforesubsubsectionskip=\skip142
-\cftsubsubsectionindent=\skip143
-\cftsubsubsectionnumwidth=\skip144
-\cftbeforeparagraphskip=\skip145
-\cftparagraphindent=\skip146
-\cftparagraphnumwidth=\skip147
-\cftbeforesubparagraphskip=\skip148
-\cftsubparagraphindent=\skip149
-\cftsubparagraphnumwidth=\skip150
+\cftbeforepartskip=\skip132
+\cftpartindent=\skip133
+\cftpartnumwidth=\skip134
+\cftbeforechapterskip=\skip135
+\cftchapterindent=\skip136
+\cftchapternumwidth=\skip137
+\cftbeforesectionskip=\skip138
+\cftsectionindent=\skip139
+\cftsectionnumwidth=\skip140
+\cftbeforesubsectionskip=\skip141
+\cftsubsectionindent=\skip142
+\cftsubsectionnumwidth=\skip143
+\cftbeforesubsubsectionskip=\skip144
+\cftsubsubsectionindent=\skip145
+\cftsubsubsectionnumwidth=\skip146
+\cftbeforeparagraphskip=\skip147
+\cftparagraphindent=\skip148
+\cftparagraphnumwidth=\skip149
+\cftbeforesubparagraphskip=\skip150
+\cftsubparagraphindent=\skip151
+\cftsubparagraphnumwidth=\skip152
 \prechapterprecisshift=\dimen138
 \c@maxsecnumdepth=\count111
 \bibindent=\dimen139
-\bibitemsep=\skip151
-\indexcolsep=\skip152
-\indexrule=\skip153
+\bibitemsep=\skip153
+\indexcolsep=\skip154
+\indexrule=\skip155
 \indexmarkstyle=\toks18
 \@indexbox=\insert233
 \glossarycolsep=\dimen140
 \glossaryrule=\dimen141
-\sideparvshift=\skip154
+\sideparvshift=\skip156
 \sideins=\insert232
-\sidebartopsep=\skip155
-\sidebarhsep=\skip156
-\sidebarvsep=\skip157
-\sidebarwidth=\skip158
-\footmarkwidth=\skip159
-\footmarksep=\skip160
-\footparindent=\skip161
-\footinsdim=\skip162
+\sidebartopsep=\skip157
+\sidebarhsep=\skip158
+\sidebarvsep=\skip159
+\sidebarwidth=\skip160
+\footmarkwidth=\skip161
+\footmarksep=\skip162
+\footparindent=\skip163
+\footinsdim=\skip164
 \footinsv@r=\insert231
 \@mpfootinsv@r=\insert230
 \m@m@k=\count112
 \m@m@h=\dimen142
-\m@mipn@skip=\skip163
-\c@pagenote=\count113
+\m@mipn@skip=\skip165
+\sidefootins=\insert229
+\sidefootadjust=\skip166
+\sidefootheight=\skip167
+\sidefoothsep=\skip168
+\sidefootvsep=\skip169
+\sidefootwidth=\skip170
+\m@mdownsf=\skip171
+\c@sidefootnote=\count113
+\sidefootmarkwidth=\skip172
+\sidefootmarksep=\skip173
+\sidefootparindent=\skip174
+\c@pagenote=\count114
+\c@pagenoteshadow=\count115
+\mem@pn@lastkern=\skip175
 \every@verbatim=\toks19
 \afterevery@verbatim=\toks20
 \verbatim@line=\toks21
-\tab@position=\count114
+\tab@position=\count116
 \verbatim@in@stream=\read1
-\verbatimindent=\skip164
+\verbatimindent=\skip176
 \verbatim@out=\write3
-\bvboxsep=\skip165
-\c@memfbvline=\count115
-\c@bvlinectr=\count116
-\bvnumlength=\skip166
+\bvboxsep=\skip177
+\c@memfbvline=\count117
+\c@bvlinectr=\count118
+\bvnumlength=\skip178
 \fb@frw=\dimen143
 \fb@frh=\dimen144
 \FrameRule=\dimen145
 \FrameSep=\dimen146
-\c@cp@cntr=\count117
-LaTeX Info: Redefining \: on input line 10864.
-LaTeX Info: Redefining \! on input line 10866.
-\c@ism@mctr=\count118
-\c@xsm@mctr=\count119
-\c@csm@mctr=\count120
-\c@ksm@mctr=\count121
-\c@xksm@mctr=\count122
-\c@cksm@mctr=\count123
-\c@msm@mctr=\count124
-\c@xmsm@mctr=\count125
-\c@cmsm@mctr=\count126
-\c@bsm@mctr=\count127
-\c@workm@mctr=\count128
-\c@sheetsequence=\count129
-\c@lastsheet=\count130
-\c@lastpage=\count131
-\c@figure=\count132
-\c@lofdepth=\count133
-\cftbeforefigureskip=\skip167
-\cftfigureindent=\skip168
-\cftfigurenumwidth=\skip169
-\c@table=\count134
-\c@lotdepth=\count135
-\cftbeforetableskip=\skip170
-\cfttableindent=\skip171
-\cfttablenumwidth=\skip172
+\c@cp@cntr=\count119
+LaTeX Info: Redefining \: on input line 11958.
+LaTeX Info: Redefining \! on input line 11960.
+\c@ism@mctr=\count120
+\c@xsm@mctr=\count121
+\c@csm@mctr=\count122
+\c@ksm@mctr=\count123
+\c@xksm@mctr=\count124
+\c@cksm@mctr=\count125
+\c@msm@mctr=\count126
+\c@xmsm@mctr=\count127
+\c@cmsm@mctr=\count128
+\c@bsm@mctr=\count129
+\c@workm@mctr=\count130
+\c@sheetsequence=\count131
+\c@lastsheet=\count132
+\c@lastpage=\count133
+\c@figure=\count134
+\c@lofdepth=\count135
+\cftbeforefigureskip=\skip179
+\cftfigureindent=\skip180
+\cftfigurenumwidth=\skip181
+\c@table=\count136
+\c@lotdepth=\count137
+\cftbeforetableskip=\skip182
+\cfttableindent=\skip183
+\cfttablenumwidth=\skip184
 Package abstract [2008/07/23] emulated by memoir.
 Package appendix [2008/07/23] emulated by memoir.
-Package array [2008/07/23] emulated by memoir.
+Package array [2008/09/09] emulated by memoir.
 Package booktabs [2008/07/23] emulated by memoir.
 Package ccaption [2008/07/23] emulated by memoir.
 Package changepage [2008/07/23] emulated by memoir.
@@ -303,7 +315,6 @@ Package delarray [2008/07/23] emulated by memoir.
 Package enumerate [2008/07/23] emulated by memoir.
 Package epigraph [2008/07/23] emulated by memoir.
 Package ifmtarg [2008/07/23] emulated by memoir.
-Package ifetex [2008/07/23] emulated by memoir.
 Package index [2008/07/23] emulated by memoir.
 Package makeidx [2008/07/23] emulated by memoir.
 Package moreverb [2008/07/23] emulated by memoir.
@@ -322,87 +333,97 @@ Package titleref [2008/07/23] emulated by memoir.
 Package titling [2008/07/23] emulated by memoir.
 Package tocbibind [2008/07/23] emulated by memoir.
 Package tocloft [2008/07/23] emulated by memoir.
+Package tocvsec2 [2008/07/23] emulated by memoir.
 Package verbatim [2008/07/23] emulated by memoir.
 Package verse [2008/07/23] emulated by memoir.
 
-(/usr/share/texmf-texlive/tex/latex/memoir/mempatch.sty
+(/usr/share/texlive/texmf-dist/tex/latex/memoir/mempatch.sty
 Package: mempatch 2009/07/24 v6.0f Patches for memoir class v1.6180339
 )) (./rice.sty
 Package: rice 2009/04/18 v0.3 ASU thesis
-\toptafiddle=\skip173
-\bottafiddle=\skip174
-\topfiddle=\skip175
-\botfiddle=\skip176
-\linespace=\skip177
-\headspace=\skip178
+\toptafiddle=\skip185
+\bottafiddle=\skip186
+\topfiddle=\skip187
+\botfiddle=\skip188
+\linespace=\skip189
+\headspace=\skip190
 
 
 ******************************************************
 Stock height and width: 794.96999pt by 614.295pt
-Top and edge trims: 0.0pt and 0.0pt
+Top and edge trims: 0pt and 0pt
 Page height and width: 794.96999pt by 614.295pt
-Text height and width: 635.93454pt by 433.0pt
+Text height and width: 627.13287pt by 433pt
 Spine and edge margins: 108.405pt and 72.26999pt
-Upper and lower margins: 86.72377pt and 72.31168pt
-Headheight and headsep: 14.5pt and 19.19804pt
-Footskip: 14.5pt
-Columnsep and columnseprule: 10.0pt and 0.0pt
-Marginparsep and marginparwidth: 7.0pt and 50.0pt
-Sidecapsep and sidecapwidth: 7.0pt and 50.0pt
-Sidebarhsep and sidebarwidth: 7.0pt and 50.0pt
-Sidebarvsep and sidebartopsep: 14.5pt and 0.0pt
-Sidebarheight: 546.64995pt
+Upper and lower margins: 86.72377pt and 81.11334pt
+Headheight and headsep: 13.6pt and 17.60385pt
+Footskip: 13.6pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7pt and 58.26999pt
+Sidecapsep and sidecapwidth: 7pt and 57pt
+Sidebarhsep and sidebarwidth: 7pt and 57pt
+Sidebarvsep and sidebartopsep: 13.6pt and 0pt
+Sidebarheight: 539.9202pt
+Sidefoothsep and sidefootwidth: 7pt and 57pt
+Sidefootvsep and sidefootheight: 13.6pt and 539.9202pt
 ******************************************************
 
-) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks22
 )
-(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
-\Gread@gobject=\count136
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count138
 ))
 \Gin@req@height=\dimen147
 \Gin@req@width=\dimen148
 )
-(/usr/share/texmf-texlive/tex/latex/rotating/rotating.sty
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count137
-\rotFPtop=\skip179
-\rotFPbot=\skip180
-\rot@float@box=\box28
+\c@r@tfl@t=\count139
+\rotFPtop=\skip191
+\rotFPbot=\skip192
+\rot@float@box=\box29
 \rot@mess@toks=\toks23
 )
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2009/06/22 v3.00
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks24
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texmf-texlive/tex/latex/txfonts/txfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -522,125 +543,136 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/txtt/b/n --> OT1/lmtt/m/n on input line 38.
 )
-(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
-Package: natbib 2009/07/16 8.31 (PWD, AO)
-\bibhang=\skip181
-\bibsep=\skip182
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip193
+\bibsep=\skip194
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count138
+\c@NAT@ctr=\count140
 )
-(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-)
-(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
-Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
-O)
-
-(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
-Package: xcolor-patch 2009/10/02 xcolor patch
-))
-\@linkdim=\dimen149
-\Hy@linkcounter=\count139
-\Hy@pagecounter=\count140
-
-(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
-)
-(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
-
-(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
-)
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-)
-(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
-)
-(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
-
-(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
-t (HO)
-))
-Package hyperref Info: Hyper figures OFF on input line 2975.
-Package hyperref Info: Link nesting OFF on input line 2980.
-Package hyperref Info: Hyper index ON on input line 2983.
-Package hyperref Info: Plain pages OFF on input line 2990.
-Package hyperref Info: Backreferencing OFF on input line 2995.
-
-Implicit mode ON; LaTeX internals redefined
-Package hyperref Info: Bookmarks ON on input line 3191.
-(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
-\Urlmuskip=\muskip10
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 3428.
-
-(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
-Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
-
-(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
-Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
-)
-(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
-Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
-
-(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
- (HO)
-
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
-)
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-)))
-\Fld@menulength=\count141
-\Field@Width=\dimen150
-\Fld@charsize=\dimen151
-\Field@toks=\toks25
-Package hyperref Info: Hyper figures OFF on input line 4377.
-Package hyperref Info: Link nesting OFF on input line 4382.
-Package hyperref Info: Hyper index ON on input line 4385.
-Package hyperref Info: backreferencing OFF on input line 4392.
-Package hyperref Info: Link coloring OFF on input line 4397.
-Package hyperref Info: Link coloring with OCG OFF on input line 4402.
-Package hyperref Info: PDF/A mode OFF on input line 4407.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen149
+\Hy@linkcounter=\count141
+\Hy@pagecounter=\count142
 
-(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
-Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@abspage=\count142
-\c@Item=\count143
+\Hy@SavedSpaceFactor=\count143
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-(/usr/share/texmf-texlive/tex/latex/memoir/memhfixc.sty
-Package: memhfixc 2009/02/06 v1.12 nameref/hyperref package fixes for memoir cl
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count144
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen150
+\Fld@menulength=\count145
+\Field@Width=\dimen151
+\Fld@charsize=\dimen152
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count146
+\c@Item=\count147
+\c@Hfootnote=\count148
+)
+(/usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
+Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count144
+\c@memhycontfloat=\count149
+\c@Hpagenote=\count150
 )
-*hyperref using default driver hpdftex*
-(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
-\Fld@listcount=\count145
-) (./pmdthesis.aux)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count151
+\c@bookmark@seq@number=\count152
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip195
+)
+(./pmdthesis.aux)
 \openout1 = `pmdthesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 55.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 55.
 
-
-(/usr/share/texmf-texlive/tex/latex/txfonts/omltxmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 55.
@@ -652,7 +684,7 @@ LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 55.
 LaTeX Font Info:    Try loading font information for OMS+txsy on input line 55.
 
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/omstxsy.fd
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 55.
@@ -660,14 +692,14 @@ LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 55.
 LaTeX Font Info:    Try loading font information for OMX+txex on input line 55.
 
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/omxtxex.fd
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 55.
 LaTeX Font Info:    Try loading font information for U+txexa on input line 55.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/utxexa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 55.
@@ -678,41 +710,57 @@ LaTeX Font Info:    Try loading font information for OT1+lmr on input line 55.
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count146
-\scratchdimen=\dimen152
-\scratchbox=\box29
-\nofMPsegments=\count147
-\nofMParguments=\count148
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count149
-\MPscratchDim=\dimen153
-\MPnumerator=\count150
-\everyMPtoPDFconversion=\toks27
-)
-Package hyperref Info: Link coloring OFF on input line 55.
- (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
-Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+\scratchcounter=\count153
+\scratchdimen=\dimen153
+\scratchbox=\box30
+\nofMPsegments=\count154
+\nofMParguments=\count155
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count156
+\MPscratchDim=\dimen154
+\MPnumerator=\count157
+\makeMPintoPDFobject=\count158
+\everyMPtoPDFconversion=\toks26
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
-Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
-\c@section@level=\count151
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring OFF on input line 55.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
+\c@section@level=\count159
+)
+Redoing nameref's sectioning
+Redoing nameref's label
+LaTeX Info: Redefining \nameref on input line 55.
 LaTeX Info: Redefining \ref on input line 55.
 LaTeX Info: Redefining \pageref on input line 55.
- (./pmdthesis.out)
-(./pmdthesis.out)
+LaTeX Info: Redefining \nameref on input line 55.
+(./pmdthesis.out) (./pmdthesis.out)
 \@outlinefile=\write4
 \openout4 = `pmdthesis.out'.
 
-\AtBeginShipoutBox=\box30
-
-Redoing nameref's sectioning
-Redoing nameref's label
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 61.
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
+ (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 61.
@@ -728,34 +776,34 @@ LaTeX Font Info:    Try loading font information for OMX+lmex on input line 61.
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 61.
+(Font)              <10.95> on input line 61.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 61.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 61.
 LaTeX Font Info:    Try loading font information for U+txsya on input line 61.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/utxsya.fd
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txsyb on input line 61.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/utxsyb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for OT1+txr on input line 61.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/ot1txr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txmia on input line 61.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/utxmia.fd
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txsyc on input line 61.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/utxsyc.fd
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 ) [1
 
@@ -771,300 +819,131 @@ File: utxsyc.fd 2000/12/15 v3.1
 ]) [5] [1
 
 
-] [2
+]
+[2] <../figures/hubbard/little-hubbard.png, id=235, 350.73534pt x 139.79729pt>
+File: ../figures/hubbard/little-hubbard.png Graphic file (type png)
+
+<use ../figures/hubbard/little-hubbard.png>
+Package pdftex.def Info: ../figures/hubbard/little-hubbard.png used on input li
+ne 231.
+(pdftex.def)             Requested size: 173.19736pt x 69.03241pt.
+ [3] [4 <../figures/hubbard/little-hubbard.png>] [5] [6
+
+] [7] [8
+
+] [9
 
 ]
-[3
-
-] [4
-
-] [5
-
-] [6
-
-] [7
-
-]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 161.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 161.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 161.
- [8
-
-] [9] [10] [11] [12]
-<../figures/vacuum/vacuum02.pdf, id=311, 1267.73625pt x 453.695pt>
-File: ../figures/vacuum/vacuum02.pdf Graphic file (type pdf)
-
-<use ../figures/vacuum/vacuum02.pdf> [13
-
-] [14 <../figures/vacuum/vacuum02.pdf>] <../figures/levels/671-levels/lithium.p
-df, id=330, 396.48125pt x 184.69pt>
-File: ../figures/levels/671-levels/lithium.pdf Graphic file (type pdf)
-
-<use ../figures/levels/671-levels/lithium.pdf>
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 397.
-
-<../figures/671setup/671setup(v4).pdf, id=332, 542.025pt x 271.0125pt>
-File: ../figures/671setup/671setup(v4).pdf Graphic file (type pdf)
-
-<use ../figures/671setup/671setup(v4).pdf> [15] [16 <../figures/levels/671-leve
-ls/lithium.pdf>] [17 <../figures/671setup/671setup(v4).pdf>]
-<../figures/671setup/MotMaster.pdf, id=383, 2330.7075pt x 818.05624pt>
-File: ../figures/671setup/MotMaster.pdf Graphic file (type pdf)
-
-<use ../figures/671setup/MotMaster.pdf>
-<../figures/671setup/offsetlock.pdf, id=384, 322.20375pt x 241.90375pt>
-File: ../figures/671setup/offsetlock.pdf Graphic file (type pdf)
-
-<use ../figures/671setup/offsetlock.pdf> [18 <../figures/671setup/MotMaster.pdf
->] <../figures/levels/zeeman/01eps.pdf, id=394, 488.82625pt x 310.15875pt>
-File: ../figures/levels/zeeman/01eps.pdf Graphic file (type pdf)
-
-<use ../figures/levels/zeeman/01eps.pdf> [19 <../figures/671setup/offsetlock.pd
-f>] <../figures/323setup/323setup.pdf, id=407, 376.40625pt x 300.12125pt>
-File: ../figures/323setup/323setup.pdf Graphic file (type pdf)
-
-<use ../figures/323setup/323setup.pdf> [20 <../figures/levels/zeeman/01eps.pdf>
-] <../figures/levels/323-levels/lithium.pdf, id=438, 257.96375pt x 216.81pt>
-File: ../figures/levels/323-levels/lithium.pdf Graphic file (type pdf)
-
-<use ../figures/levels/323-levels/lithium.pdf> [21 <../figures/323setup/323setu
-p.pdf>]
-<../figures/323setup/heatpipe-errsig/errsigeps.pdf, id=460, 271.0125pt x 205.76
-875pt>
-File: ../figures/323setup/heatpipe-errsig/errsigeps.pdf Graphic file (type pdf)
-
- <use ../figures/323setup/heatpipe-errsig/errsigeps.pdf>
-<../figures/323setup/trap-lockfig/lockfigeps.pdf, id=461, 255.95625pt x 205.768
-75pt>
-File: ../figures/323setup/trap-lockfig/lockfigeps.pdf Graphic file (type pdf)
- <use ../figures/323setup/trap-lockfig/lockfigeps.pdf> [22 <../figures/levels/3
-23-levels/lithium.pdf>] [23 <../figures/323setup/heatpipe-errsig/errsigeps.pdf>
- <../figures/323setup/trap-lockfig/lockfigeps.pdf>]
-<../figures/323setup/aomsetup/optical_setup.pdf, id=515, 340.27126pt x 331.2375
-pt>
-File: ../figures/323setup/aomsetup/optical_setup.pdf Graphic file (type pdf)
- <use ../figures/323setup/aomsetup/optical_setup.pdf>
-<../figures/323setup/aomsetup/improved_setup.pdf, id=519, 340.27126pt x 331.237
-5pt>
-File: ../figures/323setup/aomsetup/improved_setup.pdf Graphic file (type pdf)
- <use ../figures/323setup/aomsetup/improved_setup.pdf>
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 651.
-
-
-(/usr/share/texmf/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 651.
- [24] [25 <../figures/323setup/aomsetup/optical_setup.pdf>]
-<../figures/323setup/heatpipe/idealheatpipe.pdf, id=548, 465.74pt x 174.6525pt>
-File: ../figures/323setup/heatpipe/idealheatpipe.pdf Graphic file (type pdf)
-<use ../figures/323setup/heatpipe/idealheatpipe.pdf> [26 <../figures/323setup/a
-omsetup/improved_setup.pdf>]
-<../figures/323setup/heatpipe/323heatpipe.pdf, id=571, 556.0775pt x 149.55875pt
->
-File: ../figures/323setup/heatpipe/323heatpipe.pdf Graphic file (type pdf)
- <use ../figures/323setup/heatpipe/323heatpipe.pdf> [27 <../figures/323setup/he
-atpipe/idealheatpipe.pdf>] [28 <../figures/323setup/heatpipe/323heatpipe.pdf>] 
-<../figures/323setup/losses/losses.pdf, id=590, 1045.9075pt x 828.09375pt>
-File: ../figures/323setup/losses/losses.pdf Graphic file (type pdf)
-
-<use ../figures/323setup/losses/losses.pdf>
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 738--747
-[]$[]$ $[]$ 
- []
-
-[29 <../figures/323setup/losses/losses.pdf>] [30]
-<../figures/odt/opticalsetup/setup.pdf, id=605, 1175.39125pt x 773.89125pt>
-File: ../figures/odt/opticalsetup/setup.pdf Graphic file (type pdf)
-
-<use ../figures/odt/opticalsetup/setup.pdf> [31]
-<../figures/coils/angleview.pdf, id=615, 828.09375pt x 659.46375pt>
-File: ../figures/coils/angleview.pdf Graphic file (type pdf)
-
-<use ../figures/coils/angleview.pdf>
-<../figures/coils/sideview.pdf, id=616, 1362.08875pt x 867.24pt>
-File: ../figures/coils/sideview.pdf Graphic file (type pdf)
-
-<use ../figures/coils/sideview.pdf>
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 844--851
-[][] [] 
- []
-
-[32 <../figures/odt/opticalsetup/setup.pdf>]
-<../figures/coils/circuit-schematic.pdf, id=627, 920.43875pt x 655.44875pt>
-File: ../figures/coils/circuit-schematic.pdf Graphic file (type pdf)
-
-<use ../figures/coils/circuit-schematic.pdf> [33 <../figures/coils/angleview.pd
-f> <../figures/coils/sideview.pdf>] [34 <../figures/coils/circuit-schematic.pdf
->] <../figures/imaging/setup.pdf, id=653, 1279.78125pt x 824.07875pt>
-File: ../figures/imaging/setup.pdf Graphic file (type pdf)
-
-<use ../figures/imaging/setup.pdf> [35] [36 <../figures/imaging/setup.pdf>]
-<../figures/imaging/relay.pdf, id=670, 1588.93625pt x 351.3125pt>
-File: ../figures/imaging/relay.pdf Graphic file (type pdf)
-
-<use ../figures/imaging/relay.pdf> [37]
-Overfull \hbox (3.08693pt too wide) in paragraph at lines 1023--1024
-[]\OT1/lmr/m/n/12 From an ab-sorp-tion im-age and a ref-er-ence im-age the col-
-umn den-sity is ob-tained [[]]
- []
-
-[38 <../figures/imaging/relay.pdf>] [39] [40]
-<../figures/control/daq-schematic.pdf, id=699, 803.0pt x 365.365pt>
-File: ../figures/control/daq-schematic.pdf Graphic file (type pdf)
-
-<use ../figures/control/daq-schematic.pdf>
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 111
-5.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [41 <../figures/control/daq-schematic.pdf>] [42]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 1152.
+(Font)              <12> on input line 364.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1152.
+(hyperref)                removing `math shift' on input line 364.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 1152.
+(hyperref)                removing `superscript' on input line 364.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1152.
+(hyperref)                removing `math shift' on input line 364.
 
+[10
 
-<../figures/323mot/tofexpansion-00/tofeps-SS.pdf, id=732, 231.86626pt x 171.641
-25pt>
-File: ../figures/323mot/tofexpansion-00/tofeps-SS.pdf Graphic file (type pdf)
- <use ../figures/323mot/tofexpansion-00/tofeps-SS.pdf> [43
+] [11
 
-] [44 <../figures/323mot/tofexpansion-00/tofeps-SS.pdf>]
-<../figures/323mot/timingdiagram-00/timing.pdf, id=765, 239.89626pt x 136.51pt>
-File: ../figures/323mot/timingdiagram-00/timing.pdf Graphic file (type pdf)
-<use ../figures/323mot/timingdiagram-00/timing.pdf>
-<../figures/323mot/tofexpansion-00/tofeps.pdf, id=769, 231.86626pt x 170.6375pt
->
-File: ../figures/323mot/tofexpansion-00/tofeps.pdf Graphic file (type pdf)
- <use ../figures/323mot/tofexpansion-00/tofeps.pdf> [45 <../figures/323mot/timi
-ngdiagram-00/timing.pdf>]
-<../figures/323mot/uvreppow/uvreppoweps.pdf, id=795, 255.95625pt x 169.63374pt>
-File: ../figures/323mot/uvreppow/uvreppoweps.pdf Graphic file (type pdf)
-<use ../figures/323mot/uvreppow/uvreppoweps.pdf> [46 <../figures/323mot/tofexpa
-nsion-00/tofeps.pdf>]
-<../figures/323mot/timingdiagram/timing.pdf, id=821, 239.89626pt x 136.51pt>
-File: ../figures/323mot/timingdiagram/timing.pdf Graphic file (type pdf)
-
-<use ../figures/323mot/timingdiagram/timing.pdf>
-<../figures/323mot/tofexpansion/tofeps.pdf, id=822, 230.8625pt x 171.64125pt>
-File: ../figures/323mot/tofexpansion/tofeps.pdf Graphic file (type pdf)
-
-<use ../figures/323mot/tofexpansion/tofeps.pdf>
-<../figures/323mot/uvpower/uvpoweps.pdf, id=824, 251.94125pt x 170.6375pt>
-File: ../figures/323mot/uvpower/uvpoweps.pdf Graphic file (type pdf)
-
-<use ../figures/323mot/uvpower/uvpoweps.pdf> [47 <../figures/323mot/uvreppow/uv
-reppoweps.pdf>] [48 <../figures/323mot/timingdiagram/timing.pdf> <../figures/32
-3mot/tofexpansion/tofeps.pdf>]
-<../figures/323mot/uvdet/uvdeteps.pdf, id=874, 252.945pt x 169.63374pt>
-File: ../figures/323mot/uvdet/uvdeteps.pdf Graphic file (type pdf)
-
-<use ../figures/323mot/uvdet/uvdeteps.pdf>
-<../figures/323mot/photoionization/phioneps.pdf, id=877, 237.88875pt x 151.5662
-5pt>
-File: ../figures/323mot/photoionization/phioneps.pdf Graphic file (type pdf)
- <use ../figures/323mot/photoionization/phioneps.pdf> [49 <../figures/323mot/uv
-power/uvpoweps.pdf> <../figures/323mot/uvdet/uvdeteps.pdf>] [50 <../figures/323
-mot/photoionization/phioneps.pdf>] [51
+] (./pmdthesis.bbl [12
 
 ]
-<../figures/evaporation-simple-01/evapeps.pdf, id=930, 237.88875pt x 152.57pt>
-File: ../figures/evaporation-simple-01/evapeps.pdf Graphic file (type pdf)
-
-<use ../figures/evaporation-simple-01/evapeps.pdf> [52 <../figures/evaporation-
-simple-01/evapeps.pdf>]
-<../figures/safronova/2s2p.pdf, id=960, 973.6375pt x 699.61375pt>
-File: ../figures/safronova/2s2p.pdf Graphic file (type pdf)
-
-<use ../figures/safronova/2s2p.pdf>
-<../figures/safronova/2s3p.pdf, id=961, 1016.79875pt x 805.0075pt>
-File: ../figures/safronova/2s3p.pdf Graphic file (type pdf)
-
-<use ../figures/safronova/2s3p.pdf>
-<../figures/safronova/diffpoleps.pdf, id=967, 291.0875pt x 203.76125pt>
-File: ../figures/safronova/diffpoleps.pdf Graphic file (type pdf)
-
-<use ../figures/safronova/diffpoleps.pdf>
-<../figures/lightshift/lightshifteps.pdf, id=968, 249.93375pt x 175.65625pt>
-File: ../figures/lightshift/lightshifteps.pdf Graphic file (type pdf)
-
-<use ../figures/lightshift/lightshifteps.pdf>
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 1487--1505
-[]$ $[]$ 
+Underfull \hbox (badness 7704) in paragraph at lines 20--25
+[]\OT1/lmr/m/n/10.95 K. An-dres, J. E. Graeb-ner, and H. R. Ott, ``<span class=
+"aps-inline-
  []
 
-[53] [54 <../figures/safronova/2s2p.pdf> <../figures/safronova/2s3p.pdf>]
-[55 <../figures/safronova/diffpoleps.pdf> <../figures/lightshift/lightshifteps.
-pdf>] [56
 
-] (./pmdthesis.bbl [57] [58
+Underfull \hbox (badness 10000) in paragraph at lines 20--25
+\OT1/lmr/m/n/10.95 formula"><math><mn>4</mn><mi>f</mi></math></span>-Virtual-Bo
+und-State For-ma-
+ []
 
-] [59] [60] [61]) [62]
+
+Overfull \hbox (26.24788pt too wide) in paragraph at lines 20--25
+\OT1/lmr/m/n/10.95 ant="normal">Al</mi></mrow><mrow><mn>3</mn></mrow></msub></m
+row></math></span>
+ []
+
+
+Underfull \hbox (badness 2318) in paragraph at lines 27--34
+\OT1/lmr/m/n/10.95 Sch^^?afer, ``Su-per-con-duc-tiv-ity in the Pres-ence of Str
+ong Pauli Para-m-ag-netism:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--34
+\OT1/lmr/m/n/10.95 Ce<span class="aps-inline-formula"><math><mrow><msub><mrow><
+mi math-vari-
+ []
+
+
+Overfull \hbox (53.98743pt too wide) in paragraph at lines 27--34
+\OT1/lmr/m/n/10.95 ant="normal">Cu</mi></mrow><mrow><mn>2</mn></mrow></msub></m
+row></math></span><span
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--34
+\OT1/lmr/m/n/10.95 class="aps-inline-formula"><math><mrow><msub><mrow><mi math-
+vari-
+ []
+
+
+Overfull \hbox (32.32867pt too wide) in paragraph at lines 27--34
+\OT1/lmr/m/n/10.95 ant="normal">Si</mi></mrow><mrow><mn>2</mn></mrow></msub></m
+row></math></span>,''
+ []
+
+[13
+
+]
+Underfull \hbox (badness 4713) in paragraph at lines 46--49
+[]\OT1/lmr/m/n/10.95 J. Bed-norz and K. Müller, ``Pos-si-ble highT c su-per-co
+n-duc-tiv-ity in the
+ []
+
+) [14]
 \tf@toc=\write5
 \openout5 = `pmdthesis.toc'.
 
- (./pmdthesis.aux) ) 
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 430.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 430.
+ (./pmdthesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 430.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 430.
+Package rerunfilecheck Info: File `pmdthesis.out' has not changed.
+(rerunfilecheck)             Checksum: 190605A34464FCFE19390851EA383A78;2828.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 430.
+ ) 
 Here is how much of TeX's memory you used:
- 9407 strings out of 493848
- 133052 string characters out of 1152824
- 233800 words of memory out of 3000000
- 12296 multiletter control sequences out of 15000+50000
- 86577 words of font info for 103 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
- 43i,13n,38p,321b,544s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sh
-are/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
-m-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/f
-onts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmsc.en
-c}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/cm/cmss12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-ss8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi10.pfb></
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmtt12.pfb></usr/share/texmf-texlive/fonts/type1/public/txfonts/txsyb
-.pfb></usr/share/texmf-texlive/fonts/type1/public/txfonts/txsyc.pfb>
-Output written on pmdthesis.pdf (67 pages, 2991677 bytes).
+ 10154 strings out of 493307
+ 143698 string characters out of 6139906
+ 249863 words of memory out of 5000000
+ 13411 multiletter control sequences out of 15000+600000
+ 47286 words of font info for 60 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 32i,12n,32p,282b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/sha
+re/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb
+>
+Output written on pmdthesis.pdf (19 pages, 313027 bytes).
 PDF statistics:
- 1193 PDF objects out of 1200 (max. 8388607)
- 189 named destinations out of 1000 (max. 500000)
- 461 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 354 PDF objects out of 1000 (max. 8388607)
+ 319 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+gpl=uvpow.gpl
+
+gnuplot $gpl 
+#sed -i 's/tof/tofexpansion\/tof/g' tof.tex
+#sed -i 's/put(0,0)/put(500,0)/g' tof.tex
+
+latex uvpoweps.tex; dvips uvpoweps.dvi -o uvpoweps.eps
+
+ps2eps -f uvpoweps.eps
+mv uvpoweps.eps.eps uvpoweps.eps
+epstopdf uvpoweps.eps
+

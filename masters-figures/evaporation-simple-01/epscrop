@@ -1,0 +1,92 @@
+#!/bin/bash
+
+# epscrop -- crop EPS files using ghostscript
+# Copyright (C) 2002,  Maarten Ditzel
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+
+# process arguments
+infile=$1
+if [ "$1" == "-h" ]; then
+    echo "synopsis:     epscrop <file>"
+    echo "author:       Maarten Ditzel (February 2002)"
+    echo "description:  adjusts the bounding box of <file> to fit"
+    exit 1
+fi
+
+if (( $# < 1 )); then
+    echo "no input file specified"
+    exit 2
+fi
+
+# create a temporary directory
+tmpdir=/tmp/epscrop-$$
+mkdir $tmpdir
+
+# check ghostscript version (both GNU and Aladdin should work)
+gstype=`gs -v | awk '/^GNU|AFPL/ { print $1; }'`
+version=`gs -v | awk '/^GNU|AFPL/ { print $3; }'`
+major=`echo $version | awk -F "." '{ print $1; }'`
+minor=`echo $version | awk -F "." '{ print $2; }'`
+
+if [[ (( $major > 5 )) &&  (( $minor > 50 )) ]]; then
+    # retrieve the bounding box
+    gs -dNOPAUSE -sDEVICE=bbox -q $infile quit.ps 2> $tmpdir/bbox 
+else
+    # bbox device doesn't seem to work for previous versions
+    # thus we use epswrite to find the bounding box
+    # Q: why don't we use epswrite all the time ? 
+    # A: it returns a poor quality eps
+    # Q: why don't we use the psbb program ?
+    # A: only returns the boundingbox already specified in the file
+    #    and the whole point is to replace it with a cropped version
+
+    gs -dNOPAUSE -sDEVICE=epswrite -sOutputFile=$tmpdir/bbox.eps -q $infile quit.ps
+    grep BoundingBox $tmpdir/bbox.eps > $tmpdir/bbox
+    
+fi
+
+# get the cropped bounding box
+bbox=`awk '/^%%BoundingBox:/ { print  $2,$3,$4,$5; }' $tmpdir/bbox`
+
+# create awk script
+cat <<EOF > $tmpdir/epscrop.awk
+
+# created by epscrop
+
+BEGIN {
+    bbdone = 0;
+}
+
+/^%%BoundingBox/ { 
+    if (!bbdone) {
+	print \$1, bbox;
+	bbdone = 1;
+    }
+    else
+	print;
+}
+
+!/^%%BoundingBox/ {
+    print;
+}
+
+EOF
+
+# adjust bounding box
+awk -v bbox="$bbox" -f $tmpdir/epscrop.awk $infile
+
+# remove the temporary directory
+rm -r $tmpdir

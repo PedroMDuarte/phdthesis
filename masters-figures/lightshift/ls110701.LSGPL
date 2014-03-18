@@ -1,0 +1,61 @@
+reset
+set fit errorvariables
+
+f="/lab/data/app3/2011/1107/110701/ls110701_01.LSDAT"
+
+xs=10.942 #x-scale is 10.942 MHz/Amp
+i0=654. #Full trap intensity in kW/cm^2
+
+# This gives a fit where the points are weighed by their errors
+y(x)=m*x+b
+m=0.01
+b=200.5
+fit y(x) f u 1:($2*xs):($3*xs) via m,b
+
+# This gives a fit where all points are weighed equally
+y_1(x)=m_1*x+b_1
+m_1=0.01
+b_1=200.5
+fit y_1(x) f u 1:($2*xs) via m_1,b_1
+
+set xl "Peak dipole trap intensity (kW/cm^{2})"
+set yl "Differential AC stark shift (MHz)"
+
+set sample 101
+set parametric
+set trange[0:700]
+set table 'filled.tab'
+set iso 2
+splot [t=0:700] t,(m_1-m_1_err)*t,(m_1+m_1_err)*t
+unset table
+unset parametric 
+
+set xrange[0:700]
+
+set style fill solid 0.1 noborder
+shadecolor = "#000000"
+
+l1=sprintf("%.2f {/Symbol \261} %.2f kHz kW^{-1}cm^{2}", m_1*1000., m_1_err*1000.)
+print l1
+set label l1 at 80,0.95
+
+plot \
+"filled.tab" u 1:2:3 w filledcurve  notitle,\
+f u 1:($2*xs-b):($3*xs) w yerrorbars ps 2 pt 7 lt 1 notitle ,\
+m_1*x lt 1 lc rgb "#555555" notitle 
+#(m_1+m_1_err)*x notitle ,\
+#(m_1-m_1_err)*x notitle 
+
+
+set terminal postscript enhanced eps font "Helvetica,28" lw 4.0
+set output "ls110701.eps"
+replot
+
+set xl "Peak dipole trap intensity (kW/cm^{2})"
+set yl "Width of resonance curve (MHz)"
+set output "widthls110701.eps"
+
+plot \
+f u 1:($4*xs):($5*xs) w yerrorbars ps 2 pt 7 notitle
+
+
