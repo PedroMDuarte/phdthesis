@@ -9,45 +9,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: pmd.bib
 Warning--We don't use thesis titles in Phys. Rev, see \cite{Jordens2010}
 Warning--We don't use thesis titles in Phys. Rev, see \cite{Mark2012}
-You've used 28 entries,
+You've used 29 entries,
             2048 wiz_defined-function locations,
-            708 strings with 8118 characters,
-and the built_in function-call counts, 6904 in all, are:
-= -- 350
-> -- 294
+            716 strings with 8233 characters,
+and the built_in function-call counts, 7116 in all, are:
+= -- 361
+> -- 304
 < -- 0
-+ -- 92
-- -- 64
-* -- 642
-:= -- 767
-add.period$ -- 28
-call.type$ -- 28
++ -- 95
+- -- 66
+* -- 666
+:= -- 792
+add.period$ -- 29
+call.type$ -- 29
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 289
-empty$ -- 838
-format.name$ -- 93
-if$ -- 1645
+cite$ -- 31
+duplicate$ -- 299
+empty$ -- 860
+format.name$ -- 96
+if$ -- 1689
 int.to.chr$ -- 0
-int.to.str$ -- 28
+int.to.str$ -- 29
 missing$ -- 0
-newline$ -- 87
-num.names$ -- 30
-pop$ -- 169
+newline$ -- 90
+num.names$ -- 31
+pop$ -- 173
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 475
+skip$ -- 487
 stack$ -- 0
-substring$ -- 487
-swap$ -- 148
+substring$ -- 506
+swap$ -- 154
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 84
 warning$ -- 2
-while$ -- 63
-width$ -- 30
-write$ -- 140
+while$ -- 66
+width$ -- 31
+write$ -- 145
 (There were 2 warnings)
