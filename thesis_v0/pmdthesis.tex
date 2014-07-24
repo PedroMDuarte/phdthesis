@@ -149,15 +149,15 @@ Acknowledgements go here.
 \section{ Motivation:  Strongly correlated materials }
 
 Our experiences in the physical world can, for the most part, be explained by
-considering the description of the collections of positively charged nuclei and
+considering the description of collections of positively charged nuclei and
 negatively charged electrons that make up ordinary matter.    From high to low
-energy this includes: neutral plasmas,  the formation of free atoms and
-molecules, the condensation of these atoms and molecules into liquid or glassy
-phases and their subsequent crystallization to form solids.   At lower energies
-more exotic phenomena take place, starting with magnetism and going further to
-superfluidity, superconductivity and the novel examples of modern condensed
-matter physics such as the fractional quantum Hall effect, heavy electrons,
-high-temperature superconductors and topological insulators.
+energy this includes: neutral plasmas,  free atoms and molecules, atoms and
+molecules that have condensed into liquid or glassy phases or crystalized to
+form solids.   At lower energies more exotic phenomena take place, starting
+with magnetism and going further to superfluidity, superconductivity and the
+novel examples of modern condensed matter physics such as the fractional
+quantum Hall effect, heavy electrons, high-temperature superconductors and
+topological insulators.
 
 In principle,  the correct description of all the above phenomena is contained
 in the Schr\"{o}dinger equation for the interacting system of electrons and
@@ -180,58 +180,70 @@ continuity~\cite{altland2010condensed}. This principle  states that  the
 low-energy excitations of an interacting system  are  \textbf{non-interacting
 quasi-particles} which can be closely related to the actual particles that form
 the interacting system.   This last sentence may sound confusing, but think
-about how a hole in the valence band of a semiconductor, is almost like a
-positively charged electron.  
+about a hole in the valence band of a semiconductor.  We don't typically think
+of the properties of the hole as collective properties of the system of
+electrons because it is a low energy excitation, i.e. a
+\textbf{quasi-particle}, and it's properties are remarkably similar to those of
+a free electron albeit with a postive rather than a negative charge.  The fact
+that an electron and a hole behave so similarly is not at all intuitive,
+especially if one considers the Coulomb interaction. However, adiabatic
+continuity guarantees that for pratical purposes we can think of the hole
+simply as a postively charged electron.  
 
-The practical consequence of adiabatic continuity
-is that interactions seemingly do not play an important role in the low-energy
-description of the system.  For this reason, the free electron model of Drude
-and Sommerfeld~\cite{ashcroft1976solid} is relatively succesful in explaining
+The practical consequence of adiabatic continuity is that interactions
+seemingly do not play an important role in the low-energy description of the
+system.  For this reason, the free electron model of Drude and
+Sommerfeld~\cite{ashcroft1976solid} is relatively succesful in explaining
 electrical and thermal conductivity in metals,  and also in explaining the Hall
 effect.   In 1957, Landau formulated the theory of the
 Fermi-Liquid~\cite{landau1965collected} and gave a solid basis to the notion of
 adiabatically connected quasiparticles.  To this day, the Fermi-Liquid theory
-is the starting point for the study of Fermi systems such as conventional
-metals, helium-3, and ultracold atomic Fermi gases.   
+is the \textit{de facato} starting point for the study of Fermi systems such as
+conventional metals, helium-3, and ultracold atomic Fermi gases.   
 
 But, just as Fermi-Liquid theory is celebrated for its success it is also known
-for the phenomena that it fails to explain.   Starting in the mid 70s and going
-through the 80s, the discoveries of heavy electron
+for the phenomena that it fails to explain.   Starting in the mid 70's and
+going through the 80's, the discoveries of heavy electron
 superconductivity~\cite{PhysRevLett.35.1779,PhysRevLett.43.1892},  the
-fractional quantum hall effect~\cite{PhysRevLett.48.1559,PhysRevLett.50.1395},
+fractional quantum Hall effect~\cite{PhysRevLett.48.1559,PhysRevLett.50.1395},
 and high-temperature superconductors~\cite{Zeitschrift.64.189} sparked a
 revolution in condensed matter physics~\cite{coleman2004revolution}.   These
-class of materials, in which the electron behavior cannot be described
-effectively in terms of non-interacting electron-like quasiparticles came to be
-known as \textbf{strongly correlated materials}.   Strongly correlated
-materials, and the concept of emergence, introduced by P.W.~Anderson in his
-famous essay ``More is Different''~\cite{Anderson1972}, are at the center of
-modern condensed matter physics. 
+materials, in which the electron behavior cannot be described effectively in
+terms of non-interacting electron-like quasiparticles came to be known as
+\textbf{strongly correlated materials}.   Strongly correlated materials, and
+the concept of emergence, introduced by P.W.~Anderson in his famous essay
+``More is Different''~\cite{Anderson1972}, are at the center of modern
+condensed matter physics. 
 
 The behavior of strongly correlated materials is emergent because the
 low-energy excitations of the system bear no resemblance to its constituent
-particles.  This disconnect should not be so surprising, after all we are familiar
-with this definition of emergence whenever a system undergoes a phase
+particles.  This disconnect should not be so surprising, after all we are
+familiar with this definition of emergence whenever a system undergoes a phase
 transition.  For example when a liquid cools down to form a crystalline solid,
-translational symmetry is broken.    The low-energy excitations of the crystal
-are the quasiparticles known as phonons, which bear no resemblance to the
-constituent ions and electrons that form the solid.   
+continuous translational symmetry is broken.    The low-energy excitations of
+the crystal are the quasiparticles known as phonons, which bear no resemblance
+to the constituent ions and electrons that form the solid.  By going across the
+liquid-to-solid phase-transition adiabatic continuity is violated; nevertheless,
+it is easy to mathematically identify the low energy excitations of the system
+and adscribe them the character of quasi-particles.  In the case of the
+crystalline solid this is involves finding the normal modes of a set of coupled
+oscillators.  
 
-Strongly correlated materials are are examples of emergent phenomena in which
+Strongly correlated materials are examples of emergent phenomena in which
 the origin and properties of the low-energy excitations are not as
 straightforward as those of phonons in a crystalline solid.  The fractional
 quantum Hall state, in which the quasiparticles carry a rational fraction of
-the charge of an electron serves to illustrate this point.  The strong
+the electron charge serves to illustrate this point.  The strong
 interactions between the electrons in the quantum Hall system (electrons
 confined in a plane under a very high magnetic field) make the problem
 intractable from the perturbative point of view and thus \textbf{the connection
 between the microscopic degrees of freedom and the collective low-energy
 excitations is very difficult to establish}; certainly not as easy as the
-connection between the small motion of ions about their equillibrium positions
-in a crystal and their collective phonon modes. It was Laughlin's insight that
-led him to postulate the correct wavefunction  for the quantum Hall
-state~\cite{PhysRevLett.50.1395}, but the microscopic origin of the state is
-still under debate.   
+connection between small displacements of ions about their equillibrium points in
+a crystal lattice and the collective phonon modes. It was Laughlin's
+insight that led him to postulate the correct wavefunction  for the quantum
+Hall state~\cite{PhysRevLett.50.1395}, but the microscopic origin of the state
+is still under debate.   
 
 The challenge posed by strongly correlated materials has led to great
 discoveries in condensed matter physiccs, such as the concepts of topological
@@ -239,10 +251,10 @@ order~\cite{wen1990topological} and quantum
 criticality~\cite{PhysRevB.14.1165,sachdev2011quantum}, but also many questions
 remain unanswered.  Furthermore, the problem of strongly correlated materials
 is only scratching the surface of what is possible and what remains to be
-discovered.  New materials are being synthesized constantly, and among the
-myriad of possible materials and compunds that are yet to be explored by
+discovered.  New materials are being synthesized constantly.  Among the
+myriad of possible materials and compunds yet to be explored by
 materials scientists, one can only expect that there will be new states of
-matter to be found and ones with technological implications that will
+matter to be found; states with technological implications that will
 revolutionize life on earth.  
 
 
@@ -250,25 +262,25 @@ revolutionize life on earth.
 
 We have seen that, even though the Schr\"{o}dinger equation in principle
 contains a full description of a solid,  the solution is practically impossible
-to compute using a classical computer due to large memory required to represent
-many-body quantum state.   
-%Beyond this issue of scalability there is also the
-%issue of interpretation of the results:  suppose that we were able to access
-%the exact quantum state of the system and its time dependence,  what would we
-%even do with such information?   It would be practically impossible to come up
-%with experiments that could test the full validity of the state, thus making
-%such knowledge superfluous since, after all, physics is an empirical endeavor.
+to compute using a classical computer due to the large memory required to
+represent a many-body quantum state.   
+%Beyond this issue of scalability there is also the issue of interpretation of
+%the results:  suppose that we were able to access the exact quantum state of
+%the system and its time dependence,  what would we even do with such
+%information?   It would be practically impossible to come up with experiments
+%that could test the full validity of the state, thus making such knowledge
+%superfluous since, after all, physics is an empirical endeavor.
 The approach in condensed matter theory, rather than directly aim to solve the
 Schr\"{o}dinger equation, is to introduce simplified effective models, which
 should capture the essential features of the system under study.  The solution
 of the effective model leads to an understanding of the low-energy excitations
 of the system and gives clues to their microscopic origin.   
 
-The Hubbard model is a model that contains only the essential ingredients
-to describe the  behavior of strongly interacting electrons in a crystalline
-solid.    The model describes electrons that can hop between sites in a
-lattice, and which acquire an interaction energy when two electrons are on the
-same site, see Figure~\ref{fig:chap01hubbard}.  
+The Hubbard model is a model that contains only the essential ingredients to
+describe the  behavior of strongly interacting electrons in a crystalline
+solid.    The model describes electrons that can hop between sites in a lattice
+(with amplitude $t$) , and which acquire an interaction energy ($U$) when two
+electrons are on the same site, see Figure~\ref{fig:chap01hubbard}.  
 \begin{figure} \centering
 \includegraphics[width=0.4\textwidth]{../figures/hubbard/little-hubbard.png}
 \caption[Hubbard model]{\small Illustration of the Hubbard model }
@@ -276,62 +288,182 @@ same site, see Figure~\ref{fig:chap01hubbard}.
 \end{figure}
 In the next chapter I will explain why this is a plausible model to
 describe some strongly correlated materials;  for now I will point out that
-even though this model is the simplest possible model for strong correlations
+even though this model is the simplest possible model for strong correlations,
 its solution in more than one dimension has evaded theorists for more than four
 decades~\cite{quintanilla2009strong}.
 
 It is at this point that ultracold atoms enter the picture.   It turns out that
 a system of ultracold atoms in an optical lattice is a faithful realization of
-the Hubbard model~\cite{PhysRevLett.81.3108}, and so the properties exhibited
-by the atoms are in fact the solutions of the model.   The idea of studying the
-solutions of a quantum mechanical model using an analogous quantum mechanical
-system was first proposed by Richard Feynman in
-1982~\cite{feynman1982simulating} and has been made possible in the last decade
-due to the advances in production and control of ultracold atomic gases.
-Besides the ability to cool atoms to temperatures that are as low as 5\% of the
-Fermi temperature,   this field owes it succes to two important experimental
-develpments of the last two decades:
-\begin{enumerate}
-\item The ability to create periodic potentials for the atoms by interefering
-laser beams.  \item The ability to resonantly control the contact interactions
-between the atoms using a magnetically tunable Feshbach resonance.
-\end{enumerate} 
+the Hubbard model~\cite{PhysRevLett.81.3108}, thus the properties exhibited
+by the atoms are in fact the solutions of the model.    In this way, the system
+of atoms in the optical lattice can be used to map the phases and phase
+boundaries of the Hubbard model in what is known as \textbf{quantum
+simulation}, an idea that was first proposed by  Richard Feynman in
+1982~\cite{feynman1982simulating}. 
 
-Interactions are contact.   
+In a seminal paper~\cite{PhysRevLett.81.3108}, Jaksch and collaborators  showed
+that Bose-Einstein condensates of atoms loaded into optical lattices could be
+used as simulators of the Bose-Hubbard model.  A few years later the superfluid
+(SF) to Mott insulator (MI) phase transition, the hallmark of the Bose-Hubbard
+model, was realized experimentally~\cite{Greiner2002} and several detailed
+studies of this system have followed since then~\cite{Gemelke2009,
+Jimenez-Garcia2010, Trotzky2010, Mark2011, Zhang2012}.  For bosonic systems the
+properties of the ground state are well understood
+theoretically~\cite{freericks1994bosehubbard, trivedi1991mott,
+PhysRevB.40.546};  however experiments of atoms in lattices are starting to
+shed light into the dynamics of these systems~\cite{Fukuhara2013}, which are
+more difficult to address theoretically.  
 
-Lattice depth can tune U/t  (bosons) 
+Despite the remarkable advances with bosonic systems, the ultimate goal of
+quantum simulation with ultracold atoms is to find the ground states of
+theoretically intractable models, to see if these models can reproduce the
+measured properties of strongly correlated electron systems.  In this
+prescription for quantum simulation, the subject of most interest is the
+Hubbard model and whether it can exhibit a $d$-wave superfluid state which
+would validate it as the prime model for high temperature superconductors.  In
+pursuit of this goal, experiments have realized the Hubbard model with spin
+mixtures of fermionic atoms, where two hyperfine levels of the atomic ground
+state play the role of spin-up and spin-down states of the spin-$\frac{1}{2}$
+electrons in real compounds. 
+
+In these experiments, a quantum degenerate spin-mixture of fermionic atoms is
+prepared in a harmonic potential and then transferred adiabatically into a
+periodic optical lattice potential.  The lattice depth and the contact
+interactions between the atoms, which together set the values for the Hubbard
+parameters $t$ and $U$, can be controlled almost at will by the experimenter.
+The lattice depth is adjusted via the lattice laser intensity.  The
+interactions are controlled using a magnetically tunable Feshbach resonance,
+offering the possiblity of realizing non-interacting samples, or samples with
+attractive or repulsive interactions.  These unprecedented control over the
+system parameters has allowed the realization of band insulating
+states~\cite{Kohl2005} and Mott insulating
+states~\cite{Jordens2008,Schneider2008}.  However, the possibility of exploring
+the strongly correlated phases of the Hubbard model has not yet been realized
+because the required temperatures are out of reach for current experiments.    
+
+
  
-Feshbach resonances, can tune interacions (cesium, fermions)  
+\section{Quantum magnetism with ultracold atoms }
 
-Challenges, temperature:  both cooling and thermometry
+Even though temperatures as low as $T=0.04T_{F}$ can be reached with ultracold
+Fermi gases, these temperatures are not low enough to allow exploration of the
+strongly correlated phases of the Hubbard model.  To get an idea of the energy
+scales required we will examine a qualitative temperature-doping ($T$-$x$)
+phase diagram, which can be obtained experimentally for the cuprate
+high-temperature superconductors (HTS)\footnote{See \cite{Damascelli2003} for a
+review of HTSs, \cite{He2011} for a study of the onset of superconductivity at
+optimal hole-doping, \cite{Jin2011} for the phase diagram of hole-doped
+superconductors and \cite{Grant2011} for a more accessible report on the
+subject.}, see Fig.~\ref{fig:cartoon-phasediag}.
+\begin{figure} \centering
+\includegraphics[width=0.4\textwidth]{../figures/hubbard/highTc.png}
+\caption[Cartoon phase diagram for cuprate high-$T_{\text{C}}$
+superconductors.]{\small Cartoon phase diagram for cuprate high-$T_{\text{C}}$
+superconductors. The anitiferromagnetic insulator (AFM) and the Fermi liquid
+with quadratic resistivity are well understood by theory, however the strange
+Fermi liquid with linear resistivity and the interplay between the pseudogap
+regime and the superconducting dome are issues still under
+debate~\cite{Grant2011}. }
+\label{fig:cartoon-phasediag}
+\end{figure}
 
-Approaches:  compensation,  spin sensitive (this thesis)  
+The cartoon phase diagram shown in Fig.~\ref{fig:cartoon-phasediag} shows that
+HTSs exhibit various interesting phases besides the superconducting (SC) dome
+at intermediate doping.   Most importantly, the undoped parent compund is an
+antiferromagnet with a N\'{e}el ordering temperature that is higher than 
+any value of the critical temperature $T_{\text{c}}$ along the SC dome.  
+
+The most common HTS is YBa$_{2}$Cu$_{3}$O$_{6+x}$~\cite{Milton2010}, usually
+referred to as YBCO.  The critical temperature for YBCO can be as large as
+93~K, obtained for optimal hole-doping~\cite{Wu1987}. In the absence of doping,
+the YBCO parent compound is antiferromagnetic with a N\'{e}el temperature
+$T_{N} \approx 500 K$~\cite{Tranquada1988}.  The Fermi energy for YBCO is on
+the order of $\sim 4$~eV~\cite{liang2008ybco}, which corresponds to $\sim
+40000$~K.  The critical temperature for superconductivity is then $T_{\text{C}}
+\simeq 0.002~T_{F}$;  however the N\'{e}el temperature of the parent compund is
+higher at $T_{\text{N}} \simeq 0.012~T_{F}$ 
+
+State of the art temperatures for ultracold atoms trapped in a harmonic
+potential are $\simeq 0.04\,T_{F}$.   The system of ultracold atoms is isolated
+from the environment and not in contact with a thermal reservoir,  so when
+loaded into the optical lattice  its temperature can change adiabatically.  For
+resonable values of $t$ and $U$ in the lattice, the adiabatic change of the
+temperature is typically less than an order of magnitude~\cite{Kohl2006}.   By
+comparison with $T_{c}$ for a HTS we see the temperatures reached with
+ultracold atoms are around an order of magnitude above those required to
+realize strongly correlated phase. 
+
+Even though ultracold atoms cannot reach the temperatures required to realize a
+full quantum simulation of the Hubbard model,  looking at the phase diagram
+reveals that at temperatures higher than $T_{c}$ there are other interesting
+features that can be studied.  Most interestingly, the N\'{e}el
+antiferromagnetically (AFM) orderered state which is pressent in an undoped
+sample occurs at a temperature that can be several times larger than $T_{c}$.
+Immmediately after a Mott insulating state of fermionic atoms in a simple cubic
+lattice was first produced back in 2008~\cite{Jordens2008,Schneider2008}, the
+race started to see which group could be the first to observe the AFM state and
+take the next step in the roadmap of quantum simulation.   
+
+At the origin of the AFM state is the exchange interaction
+energy~\cite{Koch2012} that arises from the combination of the Pauli exclusion
+principle, the hopping of atoms from site to site, and their interactions.  In
+Ising type models, the magnetic coupling (anti or ferromagnetic) is put in by
+hand in the Hamiltonian,  but in the Hubbard model it arises naturally, like it
+does in real magnets, from the exchange interaction.  Since the exchange
+interaction is a purely quantum mechanical effect, any phenomena that is a
+consequence of it forms part of the general concept of \textbf{quantum
+magnetism}.   
+
+Recently in 2013, the Esslinger group, at ETH Z\"{u}rich, has demonstrated a
+way of using a dimerized optical lattice to measure the nearest neighbor spin
+correlations that start to develop as a consequence of the exchange interaction
+at temperatures a few times larger than the N\'{e}el temperature for AFM
+ordering~\cite{Greif2013}.  They observe significant spin-spin correlations in
+arrays of 1D chains and they can detect the spin-spin correlations that form on
+the approach to AFM order in a simple cubic lattice.   Prior to the work of the
+Esslinger group, the Bloch group used  a similar  optical super-lattice to
+study exchange interactions with bosons in isolated
+double-wells~\cite{Trotzky2008} and isolated four-site
+plaquettes~\cite{Nascimbene2012}. 
 
 
+The AFM state,  besides being the natural stepping stone in the quest to
+simulating strongly correlated systems, offers the added benefit that is a
+state that is well understood by theory~\cite{Paiva2011, Fuchs2011}.   The
+absence of doping in the condensed matter system is equivalent to having a
+density of one atom per site in the ultracold atom system.   The energy band
+has a total capacity of two atoms per site, so this $x=0$ point in the
+phase-diagram is also referred to as half-filling.   At half-filling, numerical
+approaches to the Hubbard model, such as determinantal quantum Monte Carlo
+(DQMC)~\cite{Paiva2011},  and dynamical mean field theory
+(DMFT)~\cite{Fuchs2011} do not suffer from the Fermion sign
+problem~\cite{Jr1990}, and calculations can be performed down to temperatures
+below the N\'{e}el temperature for AFM ordering. The ability to compare
+experimental results with theory offers a testbed for quantum simulation.  The
+AFM state at half-filling ($x=0$) will thus become the basis of a thermometer
+for measurements of the strongly correlated phases of the Hubbard model.    
 
-%The Fermi-Hubbard model was formally presented to the world by Hubbard in his
-%1950 paper titled ``whatever''.  Perhaps he could suspect at the time that he
-%was then fathering a model that to this day remains at the center of condensed
-%matter physics.   
+Seven years ago the Hulet lab started an experiment with the goal of studying
+strongly correlated matter using ultracold atoms in optical lattices, our main
+goal being to reach temperatures below the N\'{e}el transition temperature. 
 
-In this section I present the model in its original context, as a
-simplification of the description of valence electrons in crystalline solids.
-I include some historical background to motivate the reader.  
+we started an experiment in the Hulet lab Our experiment started seven years ago with these two
+challenges as main goals:  to reach temperatures as low as the N\'{e}el
+transition temperature, and to use the AFM state and comparison with theory to
+define a universal thermometer for ultracold atoms in optical lattices. 
 
-Models for electrons existed which explained conduction phenomena in a
-succesful manner.  Also, models existed which dealt with magnetic phenomena.
-This section touches on the necessity to formulate a model that could
-incorporate both transport and magnetic properties of a material.   This need
-arises due to the existence of materials that are at neither end of the
-spectrum.  That is, metals or insulators for which magnetic effects played an
-imporant role.   The simple example being MnO, on which antiferromagnetism was
-first observed,  and the big challenge being high-temperature
-superconductors. 
+\section{This thesis}
 
-\section{ Motivation:  Quantum magnetism with ultracold atoms }
+Over the course of this work we have used a compensated lattice potential to
+explore the idea of entropy redistribution and how it may help reach the
+N\'{e}el state at the core of an inhomogeneous gas~\cite{Paiva2011}.  In
+addition to that we have implemented a technique to measure the spin structure
+factor of the inhomogeneous sample using Bragg scattering of light.   These two
+techniques directly address the issues of cooling and thermometry which at the moment are the biggest roadblock for the advancement of quantum simulation~\cite{McKay2011} 
 
-An overview of the literature for observation of quantum magnetism in ultracold
-atoms
+\section{Outline} 
+
+
 
 
 
@@ -343,22 +475,22 @@ atoms
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{The Fermi-Hubbard model}
+\chapter{Ultracold atoms in optical lattices}
 
+In this chapter we consider the description of cold atoms in an optical lattice
+potential.    Second quantization is introduced, and the many-body Hubbard
+hamiltonian is derived.  
+% along the way we give a brief reminder of the treatment of interactions in
+% cold atom gases.   
+We also disuss the requirements necessary for a system to be well described by
+a single band Hubbard model.  
 
-This chapter starts by considering the description of cold atoms in an optical
-lattice potential.  It then introduces second quantization and shows how to
-derive the many-body Hubbard hamiltonian for contact interactions.  Some
-approximate solutions to the Hubbard model are explained,  including the
-high-temperature series expansion (HTSE) which is widely used throughout this
-thesis.   
 
 \section{One-dimensional optical lattice potential}
 
-The contents of this section follow the derivation found in Sec.~IV~A of
-\cite{RevModPhys.78.179}.
-
-The hamiltonian for an atom moving in a 1D lattice potential is 
+The contents of this section follow the derivation found in \S~IV~A of the
+review article by Morsch and Oberthaler.  \cite{RevModPhys.78.179}.  The
+hamiltonian for an atom moving in a 1D lattice potential is 
 \begin{equation}
   H_{\text{single,1D}} = 
   - \frac{\hbar^{2}}{2m} \frac{\partial^{2}}{\partial x^{2}} 
@@ -1291,36 +1423,43 @@ numerically by using linear combinations of Wannier states in only
 the first few bands. 
     
 
+
+
+\subsection{ Interactions between the atoms } 
+
+
  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  CHAPTER 3 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{The Fermi-Hubbard model}
 
+approximate solutions to the Hubbard model are explained,  including the
+high-temperature series expansion (HTSE) which is widely used throughout this
+thesis.   
 
+%The Fermi-Hubbard model was formally presented to the world by Hubbard in his
+%1950 paper titled ``whatever''.  Perhaps he could suspect at the time that he
+%was then fathering a model that to this day remains at the center of condensed
+%matter physics.   
 
+In this section I present the model in its original context, as a
+simplification of the description of valence electrons in crystalline solids.
+I include some historical background to motivate the reader.  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\subsection{ Interactions between the atoms }  
+Models for electrons existed which explained conduction phenomena in a
+succesful manner.  Also, models existed which dealt with magnetic phenomena.
+This section touches on the necessity to formulate a model that could
+incorporate both transport and magnetic properties of a material.   This need
+arises due to the existence of materials that are at neither end of the
+spectrum.  That is, metals or insulators for which magnetic effects played an
+imporant role.   The simple example being MnO, on which antiferromagnetism was
+first observed,  and the big challenge being high-temperature
+superconductors. 
 
 \section{Simplified treatements}
-
 
 This section explains our understanding of the Fermi-Hubbard model.  It starts
 by building some insight by using the results of exactly solvable models.   The
@@ -1482,8 +1621,8 @@ temperatures, which are beyond the scope of the perturbation expansion shown in
 the previous section.   The phase diagram was calculated in~\cite{Fuchs2011} by
 using cluster dynamical mean-field theory, and they have made their results
 available in the supplementary material accompanying their paper.  In
-Figures~\ref{fig:fuchs10, fig:fuchs1, fig:fuchs03} we show the resulting phase
-diagram for $T/t=$ 10, 1, and 0.3 respectively.
+Figures~\ref{fig:fuchs10},\ref{fig:fuchs01},\ref{fig:fuchs03} we show the
+resulting phase diagram for $T/t=$ 10, 1, and 0.3 respectively.
 
 \begin{figure}
 \centering \includegraphics[width=\textwidth]{../figures/HubbardPhaseDiagram_figures/FUCHS_phasesT=100.png}
@@ -1494,13 +1633,13 @@ From~\cite{Fuchs2011}} \label{fig:fuchs10}
 \begin{figure}
 \centering \includegraphics[width=\textwidth]{../figures/HubbardPhaseDiagram_figures/FUCHS_phasesT=10.png}
 \caption[Low temperature phase diagram of the Fermi-Hubbard model]{\small
-From~\cite{Fuchs2011}} \label{fig:fuchs10}
+From~\cite{Fuchs2011}} \label{fig:fuchs01}
 \end{figure}
    
 \begin{figure}
 \centering \includegraphics[width=\textwidth]{../figures/HubbardPhaseDiagram_figures/FUCHS_phasesT=3.png}
 \caption[Low temperature phase diagram of the Fermi-Hubbard model]{\small
-From~\cite{Fuchs2011}} \label{fig:fuchs10}
+From~\cite{Fuchs2011}} \label{fig:fuchs03}
 \end{figure}
 
 
@@ -1634,9 +1773,9 @@ accesible to the experimetnalist.
 
 
 % if Biographical sketch then
-%\begin{biosketch}
-%I was kissed by a donkey when I was 5..... and text and more text and even more text, lots of text, here and there, more and more text, with more and more descriptions of text, blah etc blah et
-%\end{biosketch}
+%\begin{biosketch} I was kissed by a donkey when I was 5..... and text and more
+%text and even more text, lots of text, here and there, more and more text,
+%with more and more descriptions of text, blah etc blah et \end{biosketch}
 
 \bibliographystyle{osa}
 % Other options for the bibliographystyle are listed below

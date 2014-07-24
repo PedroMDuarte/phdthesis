@@ -167,9 +167,9 @@ def latex(state):
     out = r"$|"
     for j,i in enumerate(np.ravel(state)):
         if i == 0 : out+='0'
-        elif i == 1 : out+=r'\uparrow'
-        elif i == 2 : out+=r'\downarrow'
-        elif i == 3 : out+=r'\uparrow\! \downarrow'
+        elif i == 1 : out+=r'\!\uparrow'
+        elif i == 2 : out+=r'\!\downarrow'
+        elif i == 3 : out+=r'\!\uparrow\! \downarrow'
         if  j+1< state.size:
             out+=','
         else:
@@ -243,36 +243,46 @@ if __name__=="__main__":
         
     eva = np.array(eva)
     eve = np.array(eve)
+
+    from matplotlib import rc 
+    rc('font', **{'family':'serif'})
+    rc('text', usetex=True)
     
-    figure = plt.figure(figsize=(8.,7))
-    gs = matplotlib.gridspec.GridSpec( 4,8) 
+    figure = plt.figure(figsize=(8.,4))
+    gs = matplotlib.gridspec.GridSpec( 2,11) 
     figure.suptitle('')
-    ax = plt.subplot( gs[0:4,0:5] )
+    ax = plt.subplot( gs[0:2,0:5] )
     ax0 = plt.subplot( gs[0,5:8] )
     ax1 = plt.subplot( gs[1,5:8] )
-    ax2 = plt.subplot( gs[2,5:8] )
-    ax3 = plt.subplot( gs[3,5:8] )
+    ax2 = plt.subplot( gs[0,8:11] )
+    ax3 = plt.subplot( gs[1,8:11] )
     axvs = [ax0,ax1,ax2,ax3] 
 
     c=['blue','green','red','black']
     for col in range(eva.shape[1]):
-        ax.plot( U, eva[:,col], '-', c=c[col],lw=1.5,\
+        ax.plot( U, eva[:,col], '-', c=c[col],lw=2.,\
             label='%d'%col)
         for i,axv in enumerate(axvs):
              axv.plot( U, eve[:,i,col],\
                        '-',c=c[col],lw=1.5,\
             label='%d'%col)
+    txts = ['a', 'b', 'c', 'd']
     for i,axv in enumerate(axvs):
-        axv.set_ylabel( latex( b.states[0][i]), rotation=0 )
+        axv.set_ylabel( latex( b.states[0][i]), rotation=0 , labelpad=12)
         axv.grid()
         axv.set_ylim(-1,1.)
+        axv.text( 0.05, 0.02, txts[i], ha='left', va='bottom', transform=axv.transAxes)
+
+    statestext = [latex( b.states[0][i] )[1:-1] for i in range(4) ]
+    figure.text( 0.74, 0.94, r'$\psi = a\,%s + b\,%s + c\,%s + d\,%s$'% tuple(statestext ),\
+                 ha='center', fontsize=16)
     ax.grid()
-    ax.set_xlabel('$U/t$')
-    ax.set_ylabel('$E/t$')
+    ax.set_xlabel('$U/t$', fontsize=14)
+    ax.set_ylabel('$E/t$', fontsize=14)
     ax.legend(loc='best',numpoints=1,\
          prop={'size':10}, \
          handlelength=1.1,handletextpad=0.5)
-    gs.tight_layout(figure, rect=[0,0.0,1.0,0.96])
+    gs.tight_layout(figure, rect=[0,0.0,1.0,0.92])
     outfile = 'Ut_eigenvalues_2site.png'
     figure.savefig(outfile, dpi=250)
   
