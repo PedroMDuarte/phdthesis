@@ -104,11 +104,11 @@ Abstract goes here.
 
 \pagestyle{plain} % Restore page numbering.
 
-% put your acknowledgments here 
+% put your acknowledgements here 
  
-\riceacknowledgments
+\riceacknowledgements
 
-Acknowledgments go here. 
+Acknowledgements go here. 
 
 %% \setdedication{ text } % if you want a dedication
 %\ricededication
@@ -153,7 +153,7 @@ Our experiences in the physical world can, for the most part, be explained by
 considering the description of collections of positively charged nuclei and
 negatively charged electrons that make up ordinary matter.    From high to low
 energy this includes: neutral plasmas,  free atoms and molecules, atoms and
-molecules that have condensed into liquid or glassy phases or crystallized to
+molecules that have condensed into liquid or glassy phases or crystalized to
 form solids.   At lower energies more exotic phenomena take place, starting
 with magnetism and going further to superfluidity, superconductivity and the
 novel examples of modern condensed matter physics such as the fractional
@@ -167,39 +167,39 @@ we know that even though stating the equation is easy, there is not sufficient
 computing power available in the world to solve it for systems of more than
 just a few particles.  Xiao-Gang Wen, in the introduction to his
 book~\cite{wen2004quantum}, points out that back in the 80's a computer with 32
-MB of RAM could solve a system of 11 interacting electrons.  In the 2000's,
+MB of RAM could solve a sytem of 11 interacting electrons.  In the 2000's,
 while computing power has increased more than 100 times, this allows for the
 addition of only two more electrons to the system.  
 
 Despite the above,  the use of the Schr\"{o}dinger equation and perturbation
 theory for the description of  systems of electrons and nuclei has been very
-successful over the past century.  The most prominent example of this success is
+succesful over the past century.  The most prominent example of this success is
 our understanding of semiconductors, which are at the root of the electronic
 devices that permeate all aspects of our lives.  The remarkable success of this
 approach can be traced back to the principle of adiabatic
 continuity~\cite{altland2010condensed}. This principle  states that  the
 low-energy excitations of an interacting system  are  \textbf{non-interacting
-quasiparticles} which can be closely related to the actual particles that form
+quasi-particles} which can be closely related to the actual particles that form
 the interacting system.   This last sentence may sound confusing, but think
 about a hole in the valence band of a semiconductor.  We don't typically think
 of the properties of the hole as collective properties of the system of
 electrons because it is a low energy excitation, i.e. a
-\textbf{quasiparticle}, and it's properties are remarkably similar to those of
-a free electron albeit with a positive rather than a negative charge.  The fact
+\textbf{quasi-particle}, and it's properties are remarkably similar to those of
+a free electron albeit with a postive rather than a negative charge.  The fact
 that an electron and a hole behave so similarly is not at all intuitive,
 especially if one considers the Coulomb interaction. However, adiabatic
-continuity guarantees that for practical purposes we can think of the hole
-simply as a positively charged electron.  
+continuity guarantees that for pratical purposes we can think of the hole
+simply as a postively charged electron.  
 
 The practical consequence of adiabatic continuity is that interactions
 seemingly do not play an important role in the low-energy description of the
 system.  For this reason, the free electron model of Drude and
-Sommerfeld~\cite{ashcroft1976solid} is relatively successful in explaining
+Sommerfeld~\cite{ashcroft1976solid} is relatively succesful in explaining
 electrical and thermal conductivity in metals,  and also in explaining the Hall
 effect.   In 1957, Landau formulated the theory of the
 Fermi-Liquid~\cite{landau1965collected} and gave a solid basis to the notion of
 adiabatically connected quasiparticles.  To this day, the Fermi-Liquid theory
-is the \textit{de facto} starting point for the study of Fermi systems such as
+is the \textit{de facato} starting point for the study of Fermi systems such as
 conventional metals, helium-3, and ultracold atomic Fermi gases.   
 
 But, just as Fermi-Liquid theory is celebrated for its success it is also known
@@ -226,7 +226,7 @@ the crystal are the quasiparticles known as phonons, which bear no resemblance
 to the constituent ions and electrons that form the solid.  By going across the
 liquid-to-solid phase-transition adiabatic continuity is violated; nevertheless,
 it is easy to mathematically identify the low energy excitations of the system
-and ascribe them the character of quasiparticles.  In the case of the
+and adscribe them the character of quasi-particles.  In the case of the
 crystalline solid this is involves finding the normal modes of a set of coupled
 oscillators.  
 
@@ -240,20 +240,20 @@ confined in a plane under a very high magnetic field) make the problem
 intractable from the perturbative point of view and thus \textbf{the connection
 between the microscopic degrees of freedom and the collective low-energy
 excitations is very difficult to establish}; certainly not as easy as the
-connection between small displacements of ions about their equilibrium points in
+connection between small displacements of ions about their equillibrium points in
 a crystal lattice and the collective phonon modes. It was Laughlin's
 insight that led him to postulate the correct wavefunction  for the quantum
 Hall state~\cite{PhysRevLett.50.1395}, but the microscopic origin of the state
 is still under debate.   
 
 The challenge posed by strongly correlated materials has led to great
-discoveries in condensed matter physics, such as the concepts of topological
+discoveries in condensed matter physiccs, such as the concepts of topological
 order~\cite{wen1990topological} and quantum
 criticality~\cite{PhysRevB.14.1165,sachdev2011quantum}, but also many questions
 remain unanswered.  Furthermore, the problem of strongly correlated materials
 is only scratching the surface of what is possible and what remains to be
 discovered.  New materials are being synthesized constantly.  Among the
-myriad of possible materials and compounds yet to be explored by
+myriad of possible materials and compunds yet to be explored by
 materials scientists, one can only expect that there will be new states of
 matter to be found; states with technological implications that will
 revolutionize life on earth.  
@@ -340,7 +340,7 @@ and $U$, can be controlled almost at will by the experimenter.  The tunneling
 rate $t$ is controlled  by adjusting the intensity of the lattice lasers.
 The interaction strength $U$ is controlled by setting the external magnetic
 field and making use of a magnetically tunable Feshbach resonance, which offers
-the possibility of realizing non-interacting samples, or samples with
+the possiblity of realizing non-interacting samples, or samples with
 arbitrarily large  attractive or repulsive interactions\footnote{In practice it is observed that, for some values of the interaction strength, significant three-body losses and the associated heating rates prevent studying the equilibrium physics of the quantum gas.}.  These unprecedented
 control over the system parameters has allowed the realization of band
 insulating states~\cite{Kohl2005} and Mott insulating
@@ -379,7 +379,7 @@ debate~\cite{Grant2011}. }
 
 The qualitative phase diagram shows that the cuprates exhibit various
 interesting phases besides the superconducting (SC) dome at intermediate
-doping.   Most importantly, the undoped parent compound is an antiferromagnetic
+doping.   Most importantly, the undoped parent compund is an antiferromagnetic
 (AFM) Mott insulator with a N\'{e}el ordering temperature that is higher than
 any value of the critical temperature $T_{\text{c}}$ along the SC dome.  
 
@@ -391,7 +391,7 @@ possible if neighboring sites have opposing spins, as in the N\'{e}el AFM
 state.  The N\'{e}el temperature $T_{N}$ is then on the order of the exchange
 energy $4t^{2}/U$, which is the second-order correction to the ground state
 energy of a two-site model where the interaction $U$ is treated as a
-perturbation.   The undoped parent compounds, at temperatures greater than and
+perturbation.   The undoped parent compunds, at temperatures greater than and
 up to several times $T_{N}$, will be Mott insulators with exactly one electron
 per lattice site but without any kind of spin ordering. 
 
@@ -403,7 +403,7 @@ optimal hole-doping~\cite{Wu1987}. In the absence of doping, the YBCO parent
 compound is antiferromagnetic with a N\'{e}el temperature $T_{N} \simeq 500
 K$~\cite{Tranquada1988}.  The Fermi energy for YBCO is on the order of $\sim
 4$~eV~\cite{liang2008ybco}, which corresponds to $\sim 40000$~K.  In units
-of the Fermi temperature $T_{F}$, we have $T_{\text{C}}\simeq0.002\,T_{F}$,
+ofthe Fermi temperature $T_{F}$, we have $T_{\text{C}}\simeq0.002\,T_{F}$,
 and  $T_{\text{N}}\simeq0.012\,T_{F}$.
 
 We immediately see that, in units of $T_{F}$,  the relevant temperatures for
@@ -427,7 +427,7 @@ study exchange interactions with bosons in isolated
 double-wells~\cite{Trotzky2008} and isolated four-site
 plaquettes~\cite{Nascimbene2012}. 
 
-Other experiments have realized AFM states by engineering Ising hamiltonians
+Other experiments have realized AFM states by engineering Ising Hamiltonians
 using trapped ions~\cite{Kim2010,Britton2012}, or by mapping motional degrees
 of freedom to effective Ising models~\cite{Simon2011, Struck19082011}.  In
 Ising type models, the magnetic coupling (anti or ferromagnetic) is put in by
@@ -436,11 +436,11 @@ magnetism.  In the Hubbard model, on the other hand,  magnetism arises from the
 exchange interaction, like it does in condensed matter systems such as the
 transition metal oxides or the cuprate parent compounds.  Realizations of
 classical magnetism are excellent systems to study magnetic frustration and the
-dynamics of quenching the system across a
+dynamics of quenching the system accross a
 phase-transition~\cite{PhysRevLett.111.053003}.   Systems of trapped ions can
 help understand models with long range interactions~\cite{Richerme2014}, and
 emerge as good candidates to realize universal quantum
-computers~\cite{Britton2012}.  However, despite their advantages in other
+computers~\cite{Britton2012}.  However, despite their advanteges in other
 areas, these systems do not directly address the long-standing open question of
 superconductivity in the Hubbard model.
 
@@ -452,7 +452,7 @@ N\'{e}el state in the Hubbard model,  besides being the natural stepping stone
 in the quest to simulating strongly correlated systems, offers the added
 benefit that is a state that is well understood by theory~\cite{Paiva2011,
 Fuchs2011}.   The ability to compare experimental results with theory offers a
-test bed for quantum simulation and also a way to establish absolute thermometry
+testbed for quantum simulation and also a way to establish absolute thermometry
 for ultracold atoms in optical lattices,  which is another major challenge in
 this field~\cite{McKay2011}.  
 
@@ -569,7 +569,7 @@ the terms in the infinite sum, we get \begin{equation}
       e^{iqx+il2kx} 
 \end{split}
 \end{equation}
-The quasimomentum is restricted to the first Brillouin zone, which can be taken
+The quasimomentum is restriced to the first Brillouin zone, which can be taken
 to be $[-\frac{\pi}{a}, \frac{\pi}{a})$.  The natural unit for the
 quasimomentum is $2k$.  Defining $q'=q/(2k)$,  we can then write the
 time-independent Schr\"{o}dinger equation as 
@@ -625,7 +625,7 @@ of lattice depth in Fig.~\ref{fig:bands1d_V0}
 \centering \includegraphics[width=\textwidth]{../figures/BandStructure_figures/bands1d.pdf}
 \caption[Band structure in 1D lattice.]{\small Band structure in a 1D optical
 lattice.  The depth of the lattice is indicated by the shaded area, and the
-energy of the harmonic oscillator ground state in a single lattice site is shown
+energy of the hamonic oscillator ground state in a single lattice site is shown
 as a dotted line.  } \label{fig:bands1d}
 \end{figure}
 \begin{figure}
@@ -639,8 +639,8 @@ states in an isolated lattice site are shown as black lines. }
 The time independent Schr\"{o}dinger equation for the hamiltonian in
 Eq.~\ref{eq:Hsingle1D}, can also be solved using Mathieu functions.  One can
 also calculate the band structure by using the known properties of the Mathieu
-functions, which are available on tables or as functions in some software
-packages (e.g. Mathematica), see for instance the treatment
+functions, which are avaiable on tables or as functions in some software
+packages (e.g. Mathematica), see for instance the treatement
 in~\cite{PhysRev.87.807}. 
 
 \subsection{Eigenstates}
@@ -687,7 +687,7 @@ explained in the previous section.}:
 \begin{equation} w^{n}(x-x_{j}) =  \frac{1}{L} \sum_{q}  e^{-i q 2\pi x_{j} }
 \psi_{q}^{n}(x) \label{eq:wannier} \end{equation} Here the sum runs over the
 set of quasimomenta  $q \in \left\lbrace \frac{2\pi u}{a L} \ |\  u \in \lbrace
-0,1,\ldots L-1 \rbrace \right\rbrace$.  Inserting the expansion of
+0,1,\ldots L-1 \rbrace \right\rbrace$.  Inserting the expnansion of
 $\psi_{q}^{n}(x)$ in plane waves into the definition of the Wannier state we
 obtain 
 \begin{equation}
@@ -708,9 +708,9 @@ the $x_{j}=0$ solution.
    c_{ql}^{n} 
    e^{i 2\pi(q+l)x} 
 \end{equation}
-Since the hamiltonian commutes with the parity operator it is required that
+Since the hamiltonian communtes with the parity operator it is required that
 $\psi_{q}^{n}(-x) = \pm \psi_{q}^{n}(x)$ which implies that $c_{ql}^{n} = \pm
-c_{pl'}^{n}$ if  $(q+l) = -(p+l')$.  Using this symmetry, the Wannier state
+c_{pl'}^{n}$ if  $(q+l) = -(p+l')$.  Using this symmettry, the Wannier state
 can be written as 
 \begin{equation}
   w_{0}^{n}(x)= 
@@ -744,7 +744,7 @@ After defining the way to construct the Wannier states starting from the
 $c_{ql}^{n}$, we can now proceed to add up the plane waves to  obtain the
 states, as shown in Fig.~\ref{fig:wannier1d_V0} for various lattice depths.  As
 the lattice depth is increased, the Wannier states become more localized, which
-leads to less overlap between Wannier states in adjacent sites and results in
+leads to less overlap betweeen Wannier states in adjacent sites and results in
 a reduction of the probability amplitude for a particle to tunnel from one site
 to the neighboring one.   More localized states also imply that the on-site
 interaction will be larger, since, on average, two particles in the same site
@@ -842,7 +842,7 @@ non-interacting ($H_{0}$) and interacting ($H_{\text{int}}$) parts. Solving
 this problem is a daunting task primarily for two reasons:
 \begin{enumerate}
     \item The Bose or Fermi statistics of the identical particles under
-consideration require the solutions to be symmetrized or antisymmetrized
+consideration require the solutions to be symmetrized or antysymmetrized
 products of single-particle wavefunctions.     
     \item The interactions between the particles prevent a straightforward
 reformulation of the problem as a collection of easier-to-solve single particle
@@ -892,7 +892,7 @@ which interchanges particles $i$ and $j$.  However, starting from the product
 states we can obtain the completely (anti)symmetrized basis states for bosons
 (fermions). 
 
-For bosons, the normalized completely symmetric states are
+For bosons, the normalized completely symmeteric states are
 \begin{equation} 
   | n_{1},  n_{2}, \ldots \rangle = 
   \frac{1}{\sqrt{N!n_{1}!n_{2}!\ldots}} \sum_{P}  
@@ -906,7 +906,7 @@ occupation number of state $|i\rangle$.  The sum of all occupation numbers
 $n_{i}$ must equal the total number of particles, but otherwise there is no
 restriction in the occupation number for bosons.
 
-For fermions the normalized completely antisymmetric states are written in the
+For fermions the normalized completely antysymmetric states are written in the
 form of Slater determinants: \begin{equation}
 \begin{split}
   | n_{1},  n_{2}, \ldots \rangle = &
@@ -927,7 +927,7 @@ state appears more than once in the product state, the resulting totally
 antisymmetric state is zero,  i.e. the occupation numbers $n_{i}$ can only take
 the values 0 or 1, a consequence of the Pauli exclusion principle. 
 
-For bosons (fermions), we can combine the (anti)symmetric states for
+For bosons (fermions), we can combine the (anti)symmeteric states for
 $N=0,1,2,\ldots$ particles to obtain a complete orthonormal set of states for
 arbitrary particle number.  This ``number states'' are the basis of the Fock
 space. 
@@ -1026,7 +1026,7 @@ the anticommutation rules for fermions:
 So far two great leaps have been taken: 
 \begin{enumerate}
  \item We have swept antisymmetrization under the rug by introducing the number
-states, defined from the vacuum in terms of creation operators which satisfy the
+states, defined from the vacuum in terms of creation operators wich satisfy the
 Fermi anticommutation rules.  
  \item We started from an $N$ particle hamiltonian, but we have now defined
 states that can handle the description of systems with an arbitrary number of
@@ -1051,7 +1051,7 @@ as defined in Eq.~\ref{eq:antisymmetrize}:
 \end{equation}
 For the term in the right not to vanish, the initial number state  must have a
 particle in state $|j\rangle$, i.e. it must have $n_{j}=1$. Also $n_{i}=0$,  or
-else the completely antisymmetric state will vanish.  If the particle initially
+else the completely antisymmteric state will vanish.  If the particle initially
 in state $|j\rangle$ is labeled as  $J$  we can write
 \begin{equation}
 \begin{split}
@@ -1115,7 +1115,7 @@ Consider an operator $T$ that is a sum over single particle operators
   T = \sum_{\alpha} t_{\alpha}
  \label{eq:defsingleparticleop}
 \end{equation}  
-If we insert the completeness relation for the single particle states twice in
+If we insert the completness relation for the single particle states twice in
 this sum we have \begin{equation}
 \begin{split}
   T = & \sum_{\alpha} \left( \sum_{i} |i\rangle_{\alpha}\langle i |_{\alpha} \right)
@@ -1217,8 +1217,8 @@ find
 \end{split} 
 \end{equation}
 We observe that there is no amplitude to go between states that are in two
-different bands, as is indicated by the appearance of $\delta_{nn'}$.   In what
-follows we will consider only the lowest band, $n=0$,  so we will drop the
+different bands, as is indicated by the appereance of $\delta_{nn'}$.   In what
+follows we will consider only the lowesrt band, $n=0$,  so we will drop the
 band index altogether.  This simplification imposes two important requirements
 for our system:
  
@@ -1289,7 +1289,7 @@ obtained directly from the Wannier states'  wavefunctions:
   -t_{ij} = \int \mathrm{d}\bv{r} \, w_{i}(\bv{r}) H_{\text{single,3D}} w_{j}(\bv{r}) 
 \end{equation}
 Calculating the tunneling matrix element by computing the overlap integral of
-the Wannier wavefunctions is computationally more expensive than obtaining it as
+the Wannier wavefuctions is computationally more expensive than obtaining it as
 a sum over the energy eigenvalues. }
 \begin{equation}
   -t_{ij} = \frac{1}{L} \sum_{q} E_{q} e^{iq \Delta_{ij}} 
@@ -1338,14 +1338,14 @@ nearest-neighbor tunneling,  as shown in Fig.~\ref{fig:tightbinding}.  For
 lattice depths $\gtrsim 5 E_{R}$  we can safely ignore beyond nearest-neighbor
 tunneling.  
 \begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{../figures/BandStructure_figures/tightbinding_V0_interp.pdf}
+\centering \includegraphics[width=0.6\textwidth]{../figures/BandStructure_figures/tightbinding_V0_interp.pdf}
 \caption[Tunneling matrix elements in a 3D lattice.]{\small Tunneling matrix
 element in an optical lattice as a function of lattice depth.  Nearest-neighbor
-and beyond nearest-neighbor matrix elements are shown to illustrate the range
+and beyond nearest neighbor matrix elements are shown to illustrate the range
 of lattice depths for which the tight-binding limit is a good approximation.
-$\Delta_{ij}$ corresponds to the distance between initial and final lattice
-sites in the tunneling matrix element.  } \label{fig:tightbinding}
+$X_{ij}$ corresponds to the distance between intial and final site in the
+tunneling matrix element. 
+ } \label{fig:tightbinding}
 \end{figure}
 
 Yet another way of estimating the tunneling matrix element \cite{Bloch2008} is
@@ -1378,7 +1378,7 @@ in kHz for the mass of a $^{6}$Li atom.  } \label{fig:tMathieu}
 %$a_{i}^{\dagger}$ create particles in the Wannier state localized at site $i$.
 
 Notice that up to now we have ignored the spin part of the wavefunction.   We
-can include it easily by noticing that $H_{0}$ does not act on the spin at
+can include it easilly by noticing that $H_{0}$ does not act on the spin at
 all, so the states $|i\rangle$ and $|j\rangle$ that we have used in the
 derivation above need to have the same spin.   If two spin states are
 available, our basis set is twice as large, which can be taken care of by
@@ -1417,7 +1417,7 @@ and here the $\varphi$ correspond to the wavefunctions of the single particle
 basis states chosen. 
 
 The interaction between ultracold atoms can be described in terms of the
-$s$-wave scattering length, $a_{s}$,  and a pseudo-potential given
+$s$-wave scattering length, $a_{s}$,  and a pseudopotential given
 by~\cite{Bloch2008}
 \begin{equation}
     V_{\mathrm{int}}(\bv{r}_{1},\bv{r}_{2}) 
@@ -1443,7 +1443,7 @@ labels in the expression above, we obtain
 \end{equation}
 
 In general $i,j,k,m$ can represent any lattice sites,  however we will restrict
-our treatment to on-site interactions by enforcing $i=j=k=m$.  Furthermore, we
+our treatment to onsite interactions by enforcing $i=j=k=m$.  Furthermore, we
 consider only Wannier states in the lowest band, which is a good approximation
 as long as the $s$-wave scattering lengths is very small compared to the
 single-site harmonic oscillator length~\cite{Busch1998}. 
@@ -1484,51 +1484,59 @@ where $i$ runs over all of the lattice sites.
 \begin{equation}
   U/\er = \frac{ 8}{ \pi}  \frac{ a_{s} }{a}
    \prod_{v=x,y,z}  \int  w(v) ^{4} \mathrm{d}v  
-\end{equation}
+\end{equation} 
 
-To calculate the value of $U$ we use the Wannier states obtained in
-Sec.~\ref{sec:1Dlattice}.  Alternatively, one can approximate the Wannier state
-by the Gaussian ground state in the local oscillator potential of one lattice
-site and carry out the integral analytically to obtain~\cite{Bloch2008} 
+If the Wannier state is approximated by the Gaussian ground state in the local
+oscillator potential of one lattice site, the integral can be carried out
+analitically to obtain ~\cite{Bloch2008} 
 \begin{equation} 
   U  = \sqrt{ 8\pi } \frac{a_{s}}{a} \vvo^{3/4} 
 \end{equation} 
-Figure~\ref{fig:wfactor} shows a comparison of the exact result and the
-Gaussian approximation to the Wannier state for a lattice with
-$\lambda=1064$\,nm. 
+
+Alternatively we can use the Wannier states as obtained in
+Sec.~\ref{sec:1Dlattice} and obtain a more accurate result.
+Figure~\ref{fig:wfactor} shows a comparison of the two methods for a lattice
+with $\lambda=1064$\,nm. 
 \begin{figure}
-\centering
-\includegraphics[width=\textwidth]{../figures/BandStructure_figures/wFactor_V0_a0.pdf}
+\centering \includegraphics[width=\textwidth]{../figures/BandStructure_figures/wFactor_V0_a0.pdf}
 \caption[On-site interactions in a 3D lattice]{\small On-site interactions in a
-3D lattice ($\lambda=1064\,\text{nm}$) as a function of lattice depth.
-Numerical calculation using Wannier functions compared to the approximation
-using harmonic oscillator states.  The lattice depth is the same in all three
-directions of the lattice.   The left panel shows $U$ in units of \er\ and the
-right panel shows it in kHz (for the mass of a $^{6}$Li atom).}
-\label{fig:wfactor}
+3D lattice as a function of lattice depth.  Numerical calculation using Wannier
+functions compeared to the approximation using harmonic oscillator states.  The
+lattice depth is the same in all three directions of the lattice.   The lattice
+wavelength is 1064~nm, and it is used to express the interactions in units of
+recoils divided by Bohr radius.  The right panel shows it in kHz over Bohr
+radius for the mas of a $^{6}$Li atom.} \label{fig:wfactor}
 \end{figure}
 
-If the on-site interaction term is comparable to the energy spacing between the
-lowest and first excited bands, the single band approximation presented here
-breaks down.  Corrections to the tunneling rate and the on-site interactions
-are necessary, which may depend on the occupation of the lattice site in
-question~\cite{Jordens2010,Mark2012}.
+If the scattering length is too large, the onsite interaction term calculated
+here starts being comparable to the interband spacing, and the single band
+approximation is no longer valid.   
 
-\section{Parameter regimes for a valid description using the single band
-Hubbard model}
+SO FAR IS DONE
 
-Throughout this chapter we have mentioned the possible scenarios for which the
-single band Hubbard model is not an accurate description of ultracold atoms in
-an optical lattice.  These conditions are collected on the list below:
+One can treat the problem of two atoms
+intearcting in the local harmonic oscillator around a lattice
+site~\cite{Busch1998}.   Another approach consists of redefining the single
+particle basis states (using linear combinations of Wannier states in different
+bands) such that the interaction matrix element is diagonal in the new basis,
+see for instance~\cite{Jordens2010,Mark2012}. In more formal terms one would
+find states
+\begin{equation}
+ \varphi_{i }^{nm}  =  \sum_{st} c_{st}^{nm} w_{i}^{s}(\bv{r} ) w_{i}^{t}(\bv{r})
+\end{equation}  
+such that 
+\begin{equation}
+  \langle nm | V_{\mathrm{int}} | op \rangle =  \delta_{n,o}\delta_{m,p}
+\end{equation}
+The problem of finding the coefficients $c_{st}^{nm}$ can be tackled
+numerically by using linear combinations of Wannier states in only
+the first few bands. 
+    
 
-\begin{itemize} 
-\item A 
-\end{itemize}
- 
 
 
+\section{ Validity of the single band Hubbard model } 
 
- 
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1552,20 +1560,20 @@ simplification of the description of valence electrons in crystalline solids.
 I include some historical background to motivate the reader.  
 
 Models for electrons existed which explained conduction phenomena in a
-successful manner.  Also, models existed which dealt with magnetic phenomena.
+succesful manner.  Also, models existed which dealt with magnetic phenomena.
 This section touches on the necessity to formulate a model that could
 incorporate both transport and magnetic properties of a material.   This need
 arises due to the existence of materials that are at neither end of the
 spectrum.  That is, metals or insulators for which magnetic effects played an
-important role.   The simple example being MnO, on which antiferromagnetism was
+imporant role.   The simple example being MnO, on which antiferromagnetism was
 first observed,  and the big challenge being high-temperature
 superconductors. 
 
-\section{Simplified treatments}
+\section{Simplified treatements}
 
 This section explains our understanding of the Fermi-Hubbard model.  It starts
 by building some insight by using the results of exactly solvable models.   The
-results of exact diagonalization in systems of 2-sites and 4-sites are shown.
+results of exct diagonalization in systems of 2-sites and 4-sites are shown.
 This are going to motivate the antiferromagnetic character of the ground state,
 while showing that there is always a bit of an admixture of double occupancy in
 the exact ground state.  
@@ -1577,14 +1585,14 @@ insight to the exact ground states of the system.
 
 \subsection{ Exact diagonalization } 
 \subsubsection { 2 site exact diagonalization } 
-\subsubsection { 4 site plaquette an relevance to high-Tc superconductors}
+\subsubsection { 4 site plaquete an relevance to high-Tc superconductors}
 
 \subsection{ Limiting cases} 
 
 This section deals with the limiting cases of the Fermi-Hubbard parameters.
 The solutions that are obtained give insights to the workings of the model.
 The high temperature series expansion is introduced, which is very relevant for
-calculating thermodynamic quantities in the temperature regime of a few times
+calculating thermodynamic quantitites in the temperature regime of a few times
 $T_{\mathrm{Neel}}$.  
 
 
@@ -1613,7 +1621,7 @@ in the hamiltonian
    = &  H_{0} + H_{1} 
 \end{split}
 \end{equation}
-For the unperturbed part, $H_{0}$, the grand canonical partition function is 
+For the unberturbed part, $H_{0}$, the grand canonical partition function is 
 \begin{equation}
  Z_{0} = \text{Tr} e^{-\beta H_{0}} 
 \end{equation}
@@ -1643,7 +1651,7 @@ from the first derivatives of the grand canonical potential, $\Omega$
 %  S = -\frac{\partial \Omega}{ \partial T}  = -\beta^{2}  \frac{\partial}{\partial \beta} \ln Z
 %\end{gather}
 Also, from the second derivatives of the grand potential one can obtain the
-fluctuations in any of these quantities. 
+fluctuations in any of these quantitites. 
 
 For the full hamiltonian the grand canonical partition function $Z$ can be
 expanded in a perturbation series~\cite{Henderson1992} 
@@ -1716,7 +1724,7 @@ High temperature phase diagram of the Fermi-Hubbard model calculated using only 
 } \label{fig:highTphases}
 \end{figure}
 
-\subsubsection{Thermodynamics at colder temperatures, approach to the N\'{e}el transition}
+\subsubsection{Thermodynamics at colder temperatures, apparoach to the N\'{e}el transition}
 
 In this section we show the phase diagram for the Fermi-Hubbard model at lower
 temperatures, which are beyond the scope of the perturbation expansion shown in
@@ -1765,7 +1773,7 @@ The methods used to calculate the phase diagrams are related to the validity of
 the local density approximation.   We recall that in the high temperature
 series expansion, the $n^{\text{th}}$  term corresponds to a particle staring
 at a certain site, tunneling $n$ times and then coming back to its original
-site.  If $\sqrt{n}$ becomes comparable to the length scale of variations in
+site.  If $\sqrt{n}$ becomes comparable to the lenght scale of variations in
 the confining potential, then the local density would not be a suitable
 description of the system, because in those $n$ steps the particle can sample a
 very different confining potential.  
@@ -1787,7 +1795,7 @@ cluster then the local density approximation will break down.
 
 \subsection{Modern approaches}  
 
-This small section aims to explain the most recent advances in our
+This small section aims to explain the most recente advances in our
 understanding the Fermi-Hubbard model.  This includes QMC, DMFT, etc.  The aim
 of this section is not to provide an introduction to these techniques but
 mainly to point out the main results and serve as a bibliographic reference.  
@@ -1797,13 +1805,13 @@ mainly to point out the main results and serve as a bibliographic reference.
 lattice potential}
 
 \section{Compensated optical lattice} 
-\section{Thermodynamic quantities in the local density approximation} 
+\section{Thermodynamic quantitites in the local density approximation} 
 
 
 \chapter{Experimental diagnostic tools} 
 
 This chapter aims to describe in detail the different observables that are
-accessible to the experimetnalist.  
+accesible to the experimetnalist.  
 
 \section{Absorption imaging} 
 
