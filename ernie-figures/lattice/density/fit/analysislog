@@ -1,9 +1,0 @@
- Wed 19 Mar 2014 19:08:08 PM CDT   |   analyze 2043 -f --fermi2d --fermi-azimuth --start-azimuth 0 -R 100,50,300,350 -e 
- Wed 19 Mar 2014 19:09:19 PM CDT   |   analyze 2044 -f --fermi2d --fermi-azimuth --start-azimuth 0 -R 100,50,300,350 -e 
- Wed 19 Mar 2014 19:11:06 PM CDT   |   analyze 2044 -f --fermi2d --fermi-azimuth --start-azimuth 0 -R 185,185,285,285 -e 
- Wed 19 Mar 2014 19:11:57 PM CDT   |   analyze 2044 -f --fermi2d --fermi-azimuth --start-azimuth 0 -R 185,185,100,100 -e 
- Wed 19 Mar 2014 19:13:06 PM CDT   |   analyze 2044 -f --fermi2d --fermi-azimuth --start-azimuth 0 -R 175,175,120,120 -e 
- Wed 19 Mar 2014 19:14:31 PM CDT   |   analyze 2044 -f --fermi2d --fermi-azimuth --start-azimuth 0 -R 178,175,120,120 -e 
- Wed 19 Mar 2014 19:15:18 PM CDT   |   analyze 2045 -f --fermi2d --fermi-azimuth --start-azimuth 0 -R 178,175,120,120 -e 
- Wed 19 Mar 2014 19:15:56 PM CDT   |   analyze 2043 -f --fermi2d --fermi-azimuth --start-azimuth 0 -R 178,175,120,120 -e 
- Wed 19 Mar 2014 19:16:31 PM CDT   |   analyze 2046 -f --fermi2d --fermi-azimuth --start-azimuth 0 -R 178,175,120,120 -e 
