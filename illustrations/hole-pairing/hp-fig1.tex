@@ -1,0 +1,28 @@
+\documentclass{article}
+\input tmp.inputs
+\pagestyle{empty}
+\begin{document}
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=0.5}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\rput(\nx, 1.5){$\uparrow$}\rput(\nx, 3.5){$\uparrow$}}
+    \multido{\nx=2.5+2.0}{4}{\rput(\nx, 1.5){$\downarrow$}\rput(\nx, 3.5){$\downarrow$}}
+
+    \rput(1.5,2.5){$\downarrow$}
+    \rput(2.5,2.5){$\uparrow$}
+    \hole{2.5}{2.5}
+    \psdot[linecolor=black,dotstyle=o,dotsize=0.6](3.5,2.5)
+    \rput(4.5,2.5){$\uparrow$}
+    \psdot[linecolor=black,dotstyle=o,dotsize=0.6](5.5,2.5)
+    \rput(6.5,2.5){$\uparrow$}
+    \rput(7.5,2.5){$\downarrow$}
+    \rput(8.5,2.5){$\uparrow$}
+
+    \uput[270](10,8){$\alpha_2$}
+    \uput[0](9,9){$\lambda_1$}
+    \uput[45](8,10){$\lambda_2$}
+    \uput[45](6,10){$\alpha_2$}
+\end{pspicture}
+\end{document}

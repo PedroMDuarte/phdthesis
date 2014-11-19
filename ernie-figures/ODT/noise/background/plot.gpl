@@ -1,0 +1,10 @@
+set terminal png
+set output "SERVO_8V.png"
+set log xy 
+filename1="Servo_Background.dat"
+filename2="Spectrum_Analyzer.dat"
+set xrange [10:100000]
+set xlabel "Frequency(Hz)"
+set ylabel "Background Signal(V/(Hz)^0.5)"
+
+plot filename1 with lines ti "Servo"  ,filename2 with lines ti "Spectrum Analyzer" 

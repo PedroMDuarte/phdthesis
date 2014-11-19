@@ -1,0 +1,159 @@
+\documentclass{standalone}
+\usepackage{pst-optexp}
+\begin{document}
+\begin{pspicture}(-0.2,0)(24,16)
+\pnode(22,14){Verdi}
+\pnode([Xnodesep=-1]Verdi){M1}
+\pnode([offset=-0.7]M1){L1}
+\pnode([offset=-0.7]L1){L2}
+\pnode([offset=-1]L2){WP1}
+\pnode([offset=-0.5]WP1){Cube1}
+\pnode([offset=-0.5]Cube1){WP2}
+\pnode([offset=-1.8]WP2){BS1}
+
+%%GR1%%
+\pnode([offset=-1.5]BS1){G1M1}
+\pnode([Xnodesep=-2]G1M1){AO1}
+\pnode([Xnodesep=-2]AO1){G1L1}
+\pnode([Xnodesep=-4]G1L1){G1L2}
+\pnode([Xnodesep=-4]G1L2){G1Mp}
+\pnode([Xnodesep=-2,offset=-0.2]G1Mp){G1M2}
+\pnode([offset=-4.5,Xnodesep=-1]AO1){G1F}
+\pnode([offset=2.5]G1F){G1M4}
+\pnode([offset=-1.5,Xnodesep=2]G1M4){G1M3}
+
+\pnode([Xnodesep=-5]G1M2){G1Md}
+\pnode([offset=-2]G1Md){G1Ld}
+\pnode([offset=-1]G1Ld){G1PD}
+
+%%GR2%%
+\pnode([offset=1.5,Xnodesep=-1]BS1){G2M1}
+\pnode([offset=-1]G2M1){G2M2}
+\pnode([Xnodesep=-2]G2M2){AO2}
+\pnode([Xnodesep=-2]AO2){G2L1}
+\pnode([Xnodesep=-4]G2L1){G2L2}
+\pnode([Xnodesep=-4]G2L2){G2Mp}
+\pnode([Xnodesep=-2,offset=-0.2]G2Mp){G2M3}
+\pnode([Xnodesep=-3]G1F){G2F}
+\pnode([offset=2.5]G2F){G2M5}
+\pnode([offset=-1.5,Xnodesep=-2]G2M5){G2M4}
+
+\pnode([Xnodesep=-2.5]G2M3){G2Md}
+\pnode([offset=-4]G2Md){G2Ld}
+\pnode([offset=-1]G2Ld){G2PD}
+
+
+%%GR3%%
+\pnode([Xnodesep=-2]Cube1){AO3}
+\pnode([Xnodesep=-2]AO3){G3L1}
+\pnode([Xnodesep=-4]G3L1){G3L2}
+\pnode([Xnodesep=-4]G3L2){G3Mp}
+\pnode([Xnodesep=-2,offset=-0.2]G3Mp){G3M1}
+\pnode([Xnodesep=-3]G2F){G3F}
+\pnode([offset=2.5]G3F){G3M3}
+\pnode([offset=-1.5,Xnodesep=-2]G3M3){G3M2}
+
+\pnode([Xnodesep=-2]G3M1){G3Md}
+\pnode([offset=-5]G3Md){G3Ld}
+\pnode([offset=-1]G3Ld){G3PD}
+
+
+%%MISC%%
+
+\pnode([offset=-5]G2Mp){DUMP}
+
+\newpsobject{laser}{optbox}{position=start, innerlabel}
+\newpsobject{ao}{optbox}{fillstyle=solid,fillcolor=cyan,extnode=c,innerlabel,optboxwidth=0.5}
+\newpsobject{dump}{optbox}{fillstyle=solid,fillcolor=lightgray,innerlabel,optboxwidth=0.8,optboxheight=0.4,position=end}
+\newpsobject{smirror}{beamsplitter}{bssize=0.5,bsstyle=plate}
+%\psset[optexp]{lens=2, phwidth=0.07, outerheight=0.6}
+
+
+\begin{optexp}
+	\addtopsstyle{Beam}{ArrowInside=->,fillstyle=solid,fillcolor=green,opacity=1.0, linecolor=green,linewidth=0.05,ArrowInsideMinLength=10,ArrowInsideMaxLength=20}
+	%%%IR1%%%
+	\laser[optboxsize=1.8 0.6](Verdi)(M1){Verdi}
+	\mirror[labeloffset=0.5](Verdi)(M1)(L1){M1}
+	\lens[labeloffset=1.1,lens=1,abspos=0](L1)(M1){125mm}
+	\lens[labeloffset=1.1,lens=1,abspos=0](L2)(L1){125mm}
+	\optretplate[abspos=0](WP1)(Cube1){$\frac{\lambda}{2}$}
+	\beamsplitter[bssize=0.5, labelangle=0](L1)(Cube1)(AO3){Cube}
+	\optretplate[abspos=0](WP2)(Cube1){$\frac{\lambda}{2}$}
+	\beamsplitter[bssize=0.5,bsstyle=plate](WP2)(BS1)(G2M1){BS}
+	\mirror[labeloffset=0.5](BS1)(G1M1)(AO1){G1M1}
+	\ao[labeloffset=0.6,abspos=0](AO1)(G1M1){AO1}
+	\lens[labeloffset=1.1,lens=1,abspos=0](G1L1)(AO1){125mm}		
+	\lens[labeloffset=1.1,lens=1,abspos=0](G1L2)(AO1){125mm}	
+	\mirror[labeloffset=0.5](AO1)(G1M2)(G1M3){G1M2}
+	\mirror[labeloffset=0.5](G1M2)(G1M3)(G1M4){G1M3}
+	\mirror[labeloffset=0.5](G1M3)(G1M4)(G1F){G1M4}
+	\optfiber[position=end,labelangle=90]([offset=-1.2]G1M4)(G1F){G1F}
+	
+	\mirror[strokeopacity=0](AO1)(G1Mp)(DUMP){}
+	\smirror[compshift=-0.3](AO1)(G1Mp)(DUMP){}
+	
+	\mirror[labeloffset=0.5](G1M2)(G1Md)(G1Ld){G1Md}
+	\lens[labeloffset=1.1,lens=1,abspos=0](G1Ld)(G1Md){}
+	\optdetector[labelangle=0](G1Ld)(G1PD){}
+	
+	%%GR2%%
+	\mirror[labeloffset=0.5](BS1)(G2M1)(G2M2){G2M1}
+	\mirror[labeloffset=0.5](G2M1)(G2M2)(AO2){G2M2}
+	\ao[labeloffset=0.6,abspos=0](AO2)(G2M2){AO2}
+	\lens[labeloffset=1.1,lens=1,abspos=0](G2L1)(AO2){125mm}		
+	\lens[labeloffset=1.1,lens=1,abspos=0](G2L2)(AO2){125mm}	
+	\mirror[labeloffset=0.5](AO2)(G2M3)(G2M4){G2M3}
+	\mirror[labeloffset=0.5](G2M3)(G2M4)(G2M5){G2M4}
+	\mirror[labeloffset=0.5](G2M4)(G2M5)(G2F){G2M5}
+	\optfiber[position=end,labelangle=90]([offset=-1.2]G2M5)(G2F){G2F}	
+	
+	\mirror[strokeopacity=0](AO2)(G2Mp)(DUMP){}
+	\smirror[compshift=-0.3](AO2)(G2Mp)(DUMP){}	
+	
+	\mirror[labeloffset=0.5](G2M3)(G2Md)(G2Ld){G2Md}
+	\lens[labeloffset=1.1,lens=1,abspos=0](G2Ld)(G2Md){}
+	\optdetector[labelangle=0](G2Ld)(G2PD){}
+	
+	%%GR3%%
+	\ao[labeloffset=0.6,abspos=0](AO3)(Cube1){AO3}
+	\lens[labeloffset=1.1,lens=1,abspos=0](G3L1)(AO3){125mm}		
+	\lens[labeloffset=1.1,lens=1,abspos=0](G3L2)(AO3){125mm}	
+	\mirror[labeloffset=0.5](AO3)(G3M1)(G3M2){G3M1}
+	\mirror[labeloffset=0.5](G3M1)(G3M2)(G3M3){G3M2}
+	\mirror[labeloffset=0.5](G3M2)(G3M3)(G3F){G3M3}
+	\optfiber[position=end,labelangle=90]([offset=-1.2]G3M3)(G3F){G3F}	
+
+	\mirror[strokeopacity=0](AO3)(G3Mp)(DUMP){}
+	\smirror[compshift=-0.3](AO3)(G3Mp)(DUMP){}	
+	
+	\mirror[labeloffset=0.5](G3M1)(G3Md)(G3Ld){G3Md}
+	\lens[labeloffset=1.1,lens=1,abspos=0](G3Ld)(G3Md){}
+	\optdetector[labelangle=0](G3Ld)(G3PD){}	
+	
+	%%MISC%%
+	\dump[optboxsize=1.8 0.6](G2Mp)(DUMP){DUMP}
+	\optplane[angle=90]([offset=-1.2]G1M4)%Place holder for fiber
+	\optplane[angle=90]([offset=-1.2]G2M5)%Place holder for fiber
+	\optplane[angle=90]([offset=-1.2]G3M3)%Place holder for fiber
+	
+	%%Beam for GR1%%
+	\drawbeam[arrows=->]{1-10}
+	\drawbeam[arrows=->,strokeopacity=0.3]{10}{17}{48}
+	\drawbeam[arrows=->]{10}{13-15}{49}
+	\drawbeam[arrows=->,linestyle=dashed]{13}{19-21}
+	
+	%%Beam for GR2%%
+	\drawbeam[arrows=->]{8}{22-24}
+	\drawbeam[arrows=->,strokeopacity=0.3]{24-26}{31}{48}
+	\drawbeam[arrows=->]{24}{27-29}{50}
+	\drawbeam[arrows=->,linestyle=dashed]{27}{33-35}
+	
+	%%Beam for GR3%%
+	\drawbeam[arrows=->]{6}{36}
+	\drawbeam[arrows=->,strokeopacity=0.3]{36-38}{43}{48}
+	\drawbeam[arrows=->]{36}{39-41}{51}
+	\drawbeam[arrows=->,linestyle=dashed]{39}{45-47}
+
+	\end{optexp}
+\end{pspicture}
+\end{document}

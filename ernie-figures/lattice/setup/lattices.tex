@@ -1,0 +1,199 @@
+\documentclass{standalone}
+\usepackage{pst-optexp}
+\begin{document}
+\begin{pspicture}(-0.2,0)(20,15)
+\pnode(3,1){IPG}
+\pnode([Xnodesep=-1.5,offset=11]IPG){L1M1}
+\pnode([Xnodesep=2]L1M1){AO1}
+\pnode([Xnodesep=10.5,offset=-0.3]L1M1){L1M2}
+\pnode([offset=-0.9,Xnodesep=-6]L1M2){L1D}
+\pnode([Xnodesep=6]AO1){L1Mp}
+\pnode([offset=-6]L1M2){L1M3}
+\pnode([Xnodesep=-2]L1M3){L1M4}
+\pnode([offset=-4]L1M4){L1F}
+
+\def\picffset{1}
+\def\pic{6}
+\pnode([offset=-2]L1M1){BS}
+\pnode([Xnodesep=3]BS){AO2}
+\pnode([Xnodesep=14,offset=-2.3]L1M1){L2M1}
+\pnode([offset=-1,Xnodesep=-8]L2M1){L2D}
+\pnode([Xnodesep=7.2]AO2){L2Mp}
+\pnode([offset=-3]L2M1){L2M2}
+\pnode([Xnodesep=-2]L2M2){L2M3}
+\pnode([offset=-5]L2M3){L2F}
+
+\pnode([offset=-4]L1M1){Cube2}
+\pnode([Xnodesep=4]Cube2){AO3}
+\pnode([Xnodesep=12.5,offset=-0.3]AO3){L3M1}
+\pnode([Xnodesep=10.2]AO3){L3Mp}
+\pnode([offset=-1,Xnodesep=3]AO3){L3D}
+\pnode([offset=-2]L3M1){L3M2}
+\pnode([Xnodesep=-1]L3M2){L3M3}
+\pnode([offset=-4]L3M3){L3F}
+
+\newpsobject{laser}{optbox}{position=start, innerlabel}
+\newpsobject{ao}{optbox}{fillstyle=solid,fillcolor=cyan,extnode=c,innerlabel,optboxwidth=0.5}
+\newpsobject{dump}{optbox}{fillstyle=solid,fillcolor=lightgray,innerlabel,optboxwidth=0.8,optboxheight=0.4,position=end}
+\newpsobject{smirror}{beamsplitter}{bssize=0.5,bsstyle=plate}
+%\psset[optexp]{lens=2, phwidth=0.07, outerheight=0.6}
+%\pnode(1,7){L}1
+%\pnode([offset=-6]L){PSLM}
+%\pnode([Xnodesep=2,offset=1]L){ASLM}
+%\pnode([offset=-0.5,Xnodesep=9]L){MRef}
+%\pnode([offset=-7]ASLM){ML}
+%\pnode([Xnodesep=8.5]ML){Cam}
+\begin{optexp}
+	\addtopsstyle{Beam}{ArrowInside=->,fillstyle=solid,fillcolor=red,opacity=1.0, linecolor=red,linewidth=0.05,ArrowInsideMinLength=10,ArrowInsideMaxLength=20}
+	%%%IR1%%%
+	\laser[optboxsize=1.8 0.6](IPG)(L1M1|IPG){IPG 30W}
+	\optretplate[labeloffset=0.9,abspos=0.5](IPG)(L1M1|IPG){$\lambda/2$}
+	\beamsplitter[bssize=0.5,labeloffset=0.5, labelangle=0](IPG)(L1M1|IPG)(L1M1){PBS}
+	\lens[labeloffset=1.1,lens=1,abspos=1.5](L1M1|IPG)(L1M1|L3M1){125mm}
+	\lens[labeloffset=1.1,lens=1,abspos=3.75](L1M1|IPG)(L1M1|L3M1){50mm}
+	\lens[labeloffset=1.1,lens=1,abspos=4.5](L1M1|IPG)(L1M1|L3M1){400mm}
+	\optretplate[labeloffset=0.9,abspos=6](L1M1|IPG)(L1M1|L3M1){$\lambda/2$}
+	\mirror[labeloffset=0.5](L1M1|IPG)(L1M1)(L1M2){}%{L1M1}
+	\ao[labeloffset=0.6,abspos=0](AO1)(L1M1){AO1}
+	\lens[labeloffset=0.7,lens=1,abspos=4,labelangle=180](L1Mp)(AO1){50mm}
+	\lens[strokeopacity=0,labeloffset=0.6,lens=1,abspos=-1](L1Mp)(AO1){}
+	\mirror[labeloffset=0.5](AO1)(L1M2)(L1M3){}
+	\mirror[labeloffset=0.5](L1M2)(L1M3)(L1M4){}%{L1M3}
+	\mirror[labeloffset=0.5](L1M3)(L1M4)(L1F){}%{L1M4}
+	\optretplate[labeloffset=0.9,abspos=1.5](L1F)(L1M4){$\lambda/2$}
+	\optplane[angle=90]([offset=-3]L1M4)%Place holder for fiber
+	\mirror[strokeopacity=0](AO1)(L1Mp)(L1D){}
+	\smirror[compshift=0.3](AO1)(L1Mp)(L1D){}
+	\dump(L1Mp)(L1D){BD}%{L1D}
+	\lens[strokeopacity=0,labeloffset=0.6,lens=1,abspos=2,labelangle=180](AO1)(L1M2){}
+	\lens[strokeopacity=1,labeloffset=0.8,lens=1,abspos=7](AO1)(L1M2){200mm}
+	\drawbeam[arrows=->,ArrowInside=none]{1-3}{5-9}
+	\drawbeam[arrows=->,strokeopacity=0.3]{9-10}{17}{19}
+	\drawbeam[arrows=->]{9}{20-21}{12}
+	\drawbeam[arrows=->,ArrowInside=none]{12-16}
+%	\drawwidebeam[beamwidth=0.08]{1-3}{5-9}
+%	\drawwidebeam[beamwidth=0.1,opacity=0.5]{9-10}{17}{19}
+%	\drawwidebeam[beamwidth=0.1]{9}{20-21}{12}
+%	\drawwidebeam[beamwidth=0.05]{12-16}
+
+	%%%IR2%%%
+	\beamsplitter[bssize=0.5,bsstyle=plate](L1M1|IPG)(BS)(L2M1){BS}
+	\optretplate[labeloffset=0.9,labelangle=180,abspos=1](BS)(AO2){$\lambda/2$}
+    \ao[labeloffset=0.6,abspos=0](AO2)(BS){AO2}
+	\lens[labeloffset=0.7,lens=1,abspos=4,labelangle=180](L2Mp)(AO2){50mm}
+	\lens[strokeopacity=0,labeloffset=0.6,lens=1,abspos=-1](L2Mp)(AO2){}
+	\mirror[labeloffset=0.5](A02)(L2M1)(L2M2){}%{L2M1}
+	\mirror[labeloffset=0.5](L2M1)(L2M2)(L2M3){}%{L2M2}
+	\mirror[labeloffset=0.5](L2M2)(L2M3)(L2F){}%{L2M3}
+	\optretplate[labeloffset=0.9,abspos=1.5](L2F)(L2M3){$\lambda/2$}
+	\optplane[angle=90]([offset=1.0]L2F)%Place holder for fiber
+	\mirror[strokeopacity=0](AO2)(L2Mp)(L2D){}
+	\smirror[compshift=0.3](AO2)(L2Mp)(L2D){}
+	\dump(L2Mp)(L2D){BD}%{L2D}
+	\lens[strokeopacity=0,labeloffset=0.6,lens=1,abspos=3.2,labelangle=180](AO2)(L2M1){}
+	\lens[strokeopacity=1,labelangle=20,labeloffset=0.8,lens=1,abspos=8.2](AO2)(L2M1){200mm}
+	\drawbeam[arrows=->]{22-24}
+	\drawbeam[arrows=->]{24}{27-32}
+	\drawbeam[arrows=->]{27-32}
+	\drawbeam[arrows=->,strokeopacity=0.3]{24-25}{32}{34}
+%	\drawwidebeam[beamwidth=0.1]{22-24}
+%	\drawwidebeam[beamwidth=0.1]{24}{35}{36}{27}
+%	\drawwidebeam[beamwidth=0.05]{27-32}
+%	\drawwidebeam[beamwidth=0.07,opacity=0.5]{24-25}{32}{34}
+
+	%%%IR3%%%
+	\optretplate[labeloffset=0.9,abspos=1](L1M1|L3M1)(L1M1|L2M1){$\lambda/2$}
+	\beamsplitter[bssize=0.5](L1M1|IPG)(Cube2)(AO3){PBS}
+	\ao[labeloffset=0.6,abspos=0](AO3)(Cube2){AO3}	
+	\lens[labeloffset=0.9,lens=1,abspos=4,labelangle=45](L3Mp)(AO3){50mm}
+	\lens[strokeopacity=0,labeloffset=0.6,lens=1,abspos=-1](L3Mp)(AO3){}	
+	\mirror[labeloffset=0.5](AO3)(L3M1)(L3M2){}%{L3M1}
+	\mirror[labeloffset=0.5](L3M1)(L3M2)(L3M3){}%{L3M2}
+	\mirror[labeloffset=0.5](L3M2)(L3M3)(L3F){}%{L2M3}
+	\optretplate[labeloffset=0.9,abspos=2.5](L3M3)(L3F){$\lambda/2$}
+	\optplane[angle=90]([offset=1.0]L3F)%Place holder for fiber
+	\mirror[strokeopacity=0](AO3)(L3Mp)(L3D){}
+	\smirror[compshift=0.3](AO3)(L3Mp)(L3D){}
+	\dump(L3Mp)(L3D){BD}%{L3D}
+	\lens[strokeopacity=0,labeloffset=0.6,lens=1,abspos=6.2,labelangle=180](AO3)(L3M1){}
+	\lens[strokeopacity=1,labelangle=20,labeloffset=0.8,lens=1,abspos=11.2](AO3)(L3M1){200mm}
+	\drawbeam[arrows=->]{6}{38-39}
+	\drawbeam[arrows=->]{39}{50-51}{42}
+	\drawbeam[arrows=->]{42-46}
+	\drawbeam[strokeopacity=0.3,arrows=->]{39-40}{47}{49}
+%	\drawwidebeam[beamwidth=0.1]{6}{38-39}
+%	\drawwidebeam[beamwidth=0.1]{39}{50-51}{42}
+%	\drawwidebeam[beamwidth=0.05]{42-45}
+%	\drawwidebeam[beamwidth=0.1,opacity=0.5]{39-40}{47}{49}
+
+
+	%%%%%%%%%%%% Start Drawing Pickoffs %%%%%%%%%%%%
+	%%%IR1pickoff%%%
+	\pnode([offset=-0.6]L1M4){BS1}
+	\pnode([Xnodesep=-6]BS1){M1}
+	\pnode([Xnodesep=1.3]BS1){M1r}
+	\pnode([offset=1]M1){PD1}
+	\pnode(12,13){PD1r}
+	\pnode([Xnodesep=1]PD1r){M1r2}
+	\beamsplitter[bssize=0.5,bsstyle=plate,labelangle=200,labeloffset=0.8](L1M4)(BS1)(M1){WG1}
+	\lens[lens=1,abspos=0.8,lensheight=0.7,labeloffset=0.7](M1)(BS1){125mm}	
+	\smirror(BS1)(M1)(PD1){}
+	\optdetector[labelangle=90,labeloffset=0.6](M1)(PD1){PD1}%{PD1}
+	\smirror(BS1)(M1r)(M1r2){}
+	\lens[lens=1,abspos=1,lensheight=0.7,labeloffset=1.0,labelangle=180](M1r2)(M1r){100mm}
+	\smirror(M1r)(M1r2)(PD1r){}
+	\optdetector[labelangle=0](M1r2)(PD1r){Retro PD1}
+	%\drawwidebeam[beamwidth=0.1,opacity=0.3,linestyle=none]{52-55}
+	\drawbeam[arrows=->,strokeopacity=1,linestyle=dashed]{52-55}
+	%\drawwidebeam[beamwidth=0.1,opacity=0.1,linestyle=none]{52}{56-59}
+	\drawbeam[arrows=->,strokeopacity=1,linestyle=dotted]{52}{56-59}
+	
+	%%%IR2pickoff%%%	
+	\pnode([offset=-2.2]L2M3){BS2}
+	\pnode([Xnodesep=-8]BS2){M2}
+	\pnode([offset=1.5]M2){PD2}
+	\pnode([Xnodesep=2.5]BS2){M2r}
+	\pnode(15.5,12){PD2r}
+	\pnode([Xnodesep=1]PD2r){M2r2}
+	\beamsplitter[bssize=0.5,bsstyle=plate,labelangle=45](L2M3)(BS2)(M2){WG2}
+	\lens[lens=1,abspos=1.2,lensheight=0.7,labeloffset=0.6,labelangle=00](M2)(BS2){250mm}
+	\smirror(BS2)(M2)(PD2){}
+	\optdetector[labelangle=90,labeloffset=0.6](M2)(PD2){PD2}
+	\smirror(BS2)(M2r)(M2r2){}
+	\lens[lens=1,abspos=1.2,lensheight=0.7,labeloffset=1.0,labelangle=180](M2r2)(M2r){125mm}
+	\smirror(M2r)(M2r2)(PD2r){}
+	\optdetector[labelangle=0](M2r2)(PD2r){Retro PD2}
+	%\drawwidebeam[beamwidth=0.1,opacity=0.3,linestyle=none]{60-63}
+	\drawbeam[arrows=->,strokeopacity=1,linestyle=dashed]{60-63}
+	%\drawwidebeam[beamwidth=0.1,opacity=0.1,linestyle=none]{60}{64-67}
+	\drawbeam[arrows=->,strokeopacity=1,linestyle=dotted]{60}{64-67}
+	
+	%%%IR3pickoff%%%
+	\pnode([offset=-2.0]L3M3){BS3}
+	\pnode([Xnodesep=-9.]BS3){M3}
+	\pnode([Xnodesep=1.7]BS3){M3r}
+	\pnode([offset=2]M3){PD3}
+	\pnode([offset=5.5,Xnodesep=-1]M3r){PD3r}
+	\pnode([Xnodesep=1]PD3r){M3r2}
+	\beamsplitter[bssize=0.5,bsstyle=plate,labelangle=45](L3M3)(BS3)(M3){WG3}
+	\smirror(BS3)(M3)(PD3){}
+	\lens[lens=1,abspos=0.5,lensheight=0.7,labeloffset=1.0](M3)(PD3){100mm}
+	\optdetector[labelangle=90,labelangle=90,labeloffset=0.5](M3)(PD3){PD3}
+	\smirror(BS3)(M3r)(M3r2){}
+	\lens[lens=1 ,abspos=0.6,lensheight=0.7,labeloffset=0.6,labelangle=30](M3r2)(M3r){50mm}
+	\smirror(M3r)(M3r2)(PD3r){}
+	\optdetector[labelangle=0](M3r2)(PD3r){Retro PD3}
+	%\drawwidebeam[beamwidth=0.1,opacity=0.3,linestyle=none]{68-71}
+	\drawbeam[arrows=->,strokeopacity=1,linestyle=dashed]{68-71}
+	%\drawwidebeam[beamwidth=0.1,opacity=0.1,linestyle=none]{68}{72-75}
+	\drawbeam[arrows=->,strokeopacity=1,linestyle=dotted]{68}{72-75}
+%	\beamsplitter[bssize=0.5](L\iM1|IPG)(Cube2)(AO3){BS2}
+%	\beamsplitter[bssize=0.5](L\iM1|IPG)(Cube2)(AO3){BS3}
+
+	%%Move fibers to the end since I insert a optplace at the spot of the fiber to make the beam go there
+	\optfiber[position=end,labelangle=90,labeloffset=1.0]([offset=-3]L1M4)(L1F){IR1Fiber}	
+	\optfiber[position=end,labelangle=90,labeloffset=1.0]([offset=-4]L2M3)(L2F){IR2Fiber}
+	\optfiber[position=end,labelangle=90,labeloffset=1.0]([offset=-3]L3M3)(L3F){IR3Fiber}
+	\end{optexp}
+\end{pspicture}
+\end{document}

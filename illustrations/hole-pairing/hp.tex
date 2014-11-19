@@ -1,0 +1,389 @@
+\documentclass{article}
+
+\usepackage[paperwidth=8.5in,paperheight=8.5in,margin=1.2in]{geometry}
+\usepackage{pstricks}
+\usepackage{multido}
+
+
+\newcommand*\hl[2]{
+    \psdot[linecolor=black,dotstyle=o,dotsize=0.4](#1,#2)}
+\newcommand*\up[2]{
+    %\rput(#1,#2){$\uparrow$} 
+    \psdot[linecolor=black,fillcolor=green,dotstyle=o,dotsize=0.4](#1,#2)}
+\newcommand*\dn[2]{
+    %\rput(#1,#2){$\downarrow$} 
+    \psdot[linecolor=black,fillcolor=blue,dotstyle=o,dotsize=0.4](#1,#2)}
+\newcommand*\broken[2]{
+    \rput(#1,#2){\textcolor{red}{\tiny$\times$}}} 
+
+\begin{document}
+\def\Size{0.45}
+\def\Wd{4cm}
+
+\vspace{-5cm}
+
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \hl{1.5}{2.5}
+    \up{2.5}{2.5}
+    \dn{3.5}{2.5}
+    \hl{4.5}{2.5} 
+    \dn{5.5}{2.5}
+    \up{6.5}{2.5} 
+    \dn{7.5}{2.5} 
+    \up{8.5}{2.5} 
+    \rput(5., 4.6){$t_{0}$} 
+\end{pspicture}}
+~~~~
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \hl{1.5}{2.5}
+    \up{2.5}{2.5}
+    \dn{3.5}{2.5}
+    \dn{4.5}{2.5}
+    \hl{5.5}{2.5} 
+    \up{6.5}{2.5} 
+    \dn{7.5}{2.5} 
+    \up{8.5}{2.5} 
+    \broken{4}{2.5} 
+    \broken{4.5}{3.} 
+    \broken{4.5}{2.} 
+    \rput(5., 4.6){$t_{1}$} 
+\end{pspicture}}
+~~~~
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \hl{1.5}{2.5}
+    \up{2.5}{2.5}
+    \dn{3.5}{2.5}
+    \dn{4.5}{2.5}
+    \up{5.5}{2.5} 
+    \hl{6.5}{2.5} 
+    \dn{7.5}{2.5} 
+    \up{8.5}{2.5} 
+    \broken{4}{2.5} 
+    \broken{4.5}{3.} 
+    \broken{4.5}{2.} 
+    \broken{5.5}{3.} 
+    \broken{5.5}{2.} 
+    \rput(5., 4.6){$t_{2}$} 
+\end{pspicture}}
+
+\vspace{-3.0cm}
+
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \hl{1.5}{2.5}
+    \up{2.5}{2.5}
+    \dn{3.5}{2.5}
+    \dn{4.5}{2.5}
+    \up{5.5}{2.5} 
+    \dn{6.5}{2.5} 
+    \hl{7.5}{2.5} 
+    \up{8.5}{2.5} 
+    \broken{4}{2.5} 
+    \broken{4.5}{3.} 
+    \broken{4.5}{2.} 
+    \broken{5.5}{3.} 
+    \broken{5.5}{2.} 
+    \broken{6.5}{3.} 
+    \broken{6.5}{2.} 
+    \rput(5., 4.6){$t_{3}$} 
+\end{pspicture}}
+~~~~
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \hl{1.5}{2.5}
+    \up{2.5}{2.5}
+    \dn{3.5}{2.5}
+    \dn{4.5}{2.5}
+    \up{5.5}{2.5} 
+    \dn{6.5}{2.5} 
+    \up{7.5}{2.5} 
+    \hl{8.5}{2.5} 
+    \broken{4}{2.5} 
+    \broken{4.5}{3.} 
+    \broken{4.5}{2.} 
+    \broken{5.5}{3.} 
+    \broken{5.5}{2.} 
+    \broken{6.5}{3.} 
+    \broken{6.5}{2.} 
+    \broken{7.5}{3.} 
+    \broken{7.5}{2.} 
+    \rput(5., 4.6){$t_{4}$} 
+\end{pspicture}}
+
+\vspace{-2cm} 
+
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \hl{1.5}{2.5}
+    \up{2.5}{2.5}
+    \dn{3.5}{2.5}
+    \hl{4.5}{2.5} 
+    \dn{5.5}{2.5}
+    \up{6.5}{2.5} 
+    \dn{7.5}{2.5} 
+    \up{8.5}{2.5} 
+    \rput(5., 4.6){$t_{0}$} 
+\end{pspicture}}
+~~~~
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \up{1.5}{2.5}
+    \hl{2.5}{2.5}
+    \dn{3.5}{2.5}
+    \dn{4.5}{2.5}
+    \hl{5.5}{2.5} 
+    \up{6.5}{2.5} 
+    \dn{7.5}{2.5} 
+    \up{8.5}{2.5} 
+    \broken{1}{2.5} 
+    \broken{1.5}{3.} 
+    \broken{1.5}{2.} 
+    \broken{4}{2.5} 
+    \broken{4.5}{3.} 
+    \broken{4.5}{2.} 
+    \rput(5., 4.6){$t_{1}$} 
+\end{pspicture}}
+~~~~
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \up{1.5}{2.5}
+    \dn{2.5}{2.5}
+    \hl{3.5}{2.5}
+    \dn{4.5}{2.5}
+    \up{5.5}{2.5} 
+    \hl{6.5}{2.5} 
+    \dn{7.5}{2.5} 
+    \up{8.5}{2.5} 
+    \broken{1}{2.5} 
+    \broken{1.5}{3.} 
+    \broken{1.5}{2.} 
+    \broken{2.5}{3.} 
+    \broken{2.5}{2.} 
+    \broken{4.5}{3.} 
+    \broken{4.5}{2.} 
+    \broken{5.5}{3.} 
+    \broken{5.5}{2.} 
+    \rput(5., 4.6){$t_{2}$} 
+\end{pspicture}}
+
+\vspace{-3.0cm}
+
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \up{1.5}{2.5}
+    \dn{2.5}{2.5}
+    \dn{3.5}{2.5}
+    \hl{4.5}{2.5}
+    \up{5.5}{2.5} 
+    \dn{6.5}{2.5} 
+    \hl{7.5}{2.5} 
+    \up{8.5}{2.5} 
+    \broken{1}{2.5} 
+    \broken{1.5}{3.} 
+    \broken{1.5}{2.} 
+    \broken{2.5}{3.} 
+    \broken{2.5}{2.} 
+    \broken{5.5}{3.} 
+    \broken{5.5}{2.} 
+    \broken{6.5}{3.} 
+    \broken{6.5}{2.} 
+    \rput(5., 4.6){$t_{3}$} 
+\end{pspicture}}
+~~~~
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \up{1.5}{2.5}
+    \dn{2.5}{2.5}
+    \dn{3.5}{2.5}
+    \up{4.5}{2.5} 
+    \hl{5.5}{2.5}
+    \dn{6.5}{2.5} 
+    \up{7.5}{2.5} 
+    \hl{8.5}{2.5} 
+    \broken{1}{2.5} 
+    \broken{1.5}{3.} 
+    \broken{1.5}{2.} 
+    \broken{2.5}{3.} 
+    \broken{2.5}{2.} 
+    \broken{6.5}{3.} 
+    \broken{6.5}{2.} 
+    \broken{7.5}{3.} 
+    \broken{7.5}{2.} 
+    \rput(5., 4.6){$t_{4}$} 
+\end{pspicture}}
+
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \dn{1.5}{2.5}
+    \dn{2.5}{2.5}
+    \up{3.5}{2.5}
+    \hl{4.5}{2.5}
+    \up{5.5}{2.5} 
+    \dn{6.5}{2.5} 
+    \up{7.5}{2.5} 
+    \hl{8.5}{2.5} 
+    \broken{2}{2.5} 
+    \broken{2.5}{3.} 
+    \broken{2.5}{2.} 
+    \broken{3.5}{3.} 
+    \broken{3.5}{2.} 
+    \broken{5}{2.5} 
+    \broken{5.5}{3.} 
+    \broken{5.5}{2.} 
+    \broken{6.5}{3.} 
+    \broken{6.5}{2.} 
+    \broken{7.5}{3.} 
+    \broken{7.5}{2.} 
+    \rput(5., 4.6){$t_{5}$} 
+\end{pspicture}}
+~
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \dn{1.5}{2.5}
+    \up{3.5}{2.5}
+    \dn{2.5}{2.5}
+    \up{4.5}{2.5} 
+    \hl{5.5}{2.5}
+    \dn{6.5}{2.5} 
+    \up{7.5}{2.5} 
+    \hl{8.5}{2.5} 
+    \broken{2}{2.5} 
+    \broken{2.5}{3.} 
+    \broken{2.5}{2.} 
+    \broken{3.5}{3.} 
+    \broken{3.5}{2.} 
+    \broken{6.5}{3.} 
+    \broken{6.5}{2.} 
+    \broken{7.5}{3.} 
+    \broken{7.5}{2.} 
+    \rput(5., 4.6){$t_{6}$} 
+\end{pspicture}}
+~
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \dn{1.5}{2.5}
+    \up{3.5}{2.5}
+    \dn{2.5}{2.5}
+    \up{4.5}{2.5} 
+    \dn{5.5}{2.5} 
+    \hl{6.5}{2.5}
+    \up{7.5}{2.5} 
+    \hl{8.5}{2.5} 
+    \broken{2}{2.5} 
+    \broken{2.5}{3.} 
+    \broken{2.5}{2.} 
+    \broken{3.5}{3.} 
+    \broken{3.5}{2.} 
+    \broken{7.5}{3.} 
+    \broken{7.5}{2.} 
+    \rput(5., 4.6){$t_{7}$} 
+\end{pspicture}}
+
+\vspace{-2cm}
+
+\makebox[\Wd][c]{
+\begin{pspicture}(0,0)(10,5)
+\psset{unit=\Size}
+%\psgrid % very useful when constructing!
+    \multido{\ny=2+1}{2}{\psline[linecolor=black](1,\ny)(9,\ny)}
+    \multido{\nx=2+1}{7}{\psline[linecolor=black](\nx,1)(\nx,4)}
+    \multido{\nx=1.5+2.0}{4}{\up{\nx}{1.5}\up{\nx}{3.5}} 
+    \multido{\nx=2.5+2.0}{4}{\dn{\nx}{1.5}\dn{\nx}{3.5}} 
+    \dn{1.5}{2.5}
+    \up{3.5}{2.5}
+    \dn{2.5}{2.5}
+    \up{4.5}{2.5} 
+    \dn{5.5}{2.5} 
+    \up{6.5}{2.5} 
+    \hl{7.5}{2.5}
+    \hl{8.5}{2.5} 
+    \broken{2}{2.5} 
+    \broken{2.5}{3.} 
+    \broken{2.5}{2.} 
+    \broken{3.5}{3.} 
+    \broken{3.5}{2.} 
+    \rput(5., 4.6){$t_{8}$} 
+\end{pspicture}}
+
+\end{document}

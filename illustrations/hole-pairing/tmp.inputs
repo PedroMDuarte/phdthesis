@@ -1,0 +1,2 @@
+    \usepackage{pstricks}
+    \newcommand*{\hole}[2]{\psdot[linecolor=red,dotstyle=o,dotsize=0.6](#1,#2)}

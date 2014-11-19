@@ -1,0 +1,912 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  APPENDIX A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Compensated optical lattice potential}
+\label{app:lattice}
+
+Experiments with ultracold atoms rely on the forces that can be applied on an
+atom using light.   When the light is near resonant with an atomic transition
+the force is dissipative, and can be used to dramatically slow down the motion
+of atoms and bring their temperatures into the $\mu$K regime.  If the light is
+far detuned, a conservative force refered to as the dipole force arises.  An
+electric field induces an electric dipole moment on an atom, which then can
+have a spatially dependent potential energy if the electric field is itself
+inhomoegneous.  The dipole potential is an important part of nearly all
+expriments with ultracold atoms at the present time.  The ability to shape the
+transverse profile of a laser beam and to create interference patterns between
+multiple beams, gives the experimenter a wide range of
+possibilities~\cite{Grimm2000b}.  
+
+As part of this work we have used a potential that we referred to as a
+compensated lattice.  In this appendix we go into more detail
+regarding the technical aspects of the compensated lattice potential.  
+
+
+\section{Dipole potential and scattering rate}
+
+The dipole potential\,\cite{Grimm2000b} produced by far-detuned light of
+frequency $\omega_{L}$ on a two-level atom is given by
+\begin{equation}
+  U_{\text{dip}}(\bv{r}) = - 
+  \frac{3\pi c^{2}}{ 2 \omega_{0}^{3} } \Gamma
+%  \frac{I(\bv{r})}{\isat}
+%  \frac{ \hbar \Gamma^{2}}{4} 
+  \left( \frac{1}{\omega_{0} - \omega_{L}} + \frac{1}{\omega_{0} 
+   + \omega_{L}}  \right) I(\bv{r}) 
+\end{equation}
+%where $\isat=5.1\text{mW}/\text{cm}^{2}$.
+
+The associated photon scattering rate is 
+\begin{equation}
+  \Gamma_{\text{sc}} = 
+  \frac{3\pi c^{2}}{ 2 \hbar \omega_{0}^{3} } \Gamma^{2} 
+  \left( \frac{ \omega_{L} }{ \omega_{0} } \right)^{3} 
+  \left( \frac{1}{\omega_{0} - \omega_{L}} + \frac{1}{\omega_{0} 
+   + \omega_{L}}  \right)^{2} I(\bv{r})
+\end{equation} 
+  
+
+The beams that we use in our lattice have a Gaussian cross section such
+that the intensity (of a single beam) is given by
+\begin{equation}
+  I(\bv{r}) = \frac{2P}{\pi w^{2}}  
+   \exp\left[ -2\frac{r_{\perp}^{2} }{w^{2}}  \right]
+\end{equation}
+where $r_{\perp}$ is the perpendicular distance from the beam axis and we
+neglect the small variation of the intensity along the beam axis.
+
+We will calculate the heating rate due to spontaneous emission at the center
+of the potential, where the intensity of all the beams is the largest.   We define the constnats $u_{L}$ and $h_{L}$ according to 
+\begin{equation}
+\begin{split}
+  k_{\text{B}}  u_{L} & =  
+  \frac{3 \pi c^{2}}{ 2 \omega_{0}^{3} } \Gamma
+  \left( \frac{1}{\omega_{0} - \omega_{L}} + \frac{1}{\omega_{0} 
+   + \omega_{L}}  \right)  \\ 
+ &  \\ 
+ h_{L} & =
+  \frac{3 \pi c^{2}}{  2 \hbar \omega_{0}^{3} } \Gamma^{2} 
+  \left( \frac{ \omega_{L} }{ \omega_{0} } \right)^{3} 
+  \left( \frac{1}{\omega_{0} - \omega_{L}} + \frac{1}{\omega_{0} 
+   + \omega_{L}}  \right)^{2} 
+\end{split}
+\end{equation}
+Which allows writing the dipole potential and the scattering rate simply as
+\begin{equation}
+\begin{split} 
+ U_{0}/k_{\text{B}} &  = u_{L} I_{0} \\ 
+ \Gamma_{\text{sc0}} &  = h_{L} I_{0}
+\end{split}
+\label{eq:uLhL}
+\end{equation}
+In our experiments we use lasers at 1064~nm and 532~nm, the values of $u_{L}$
+and $h_{L}$ for this two wavelengths are given in Table~\ref{tab:uLhL} towards
+the end of this document.
+
+%\section{Heating}
+%
+%The energy change for an atom that starts at rest, absorbs a photon of
+%momemtum $\bv{k}$ from the laser,  and then scatters a photon of momentum
+%$\bv{k}'$ ($|\bv{k}'|=|\bv{k}|$) is given by 
+%\begin{equation}
+%  \Delta E = \frac{\hbar^{2}( \bv{k} - \bv{k}')^{2}}{2m} 
+%           = \frac{\hbar^{2}(2k^{2} - 2 \bv{k}\cdot\bv{k}')}{2m} 
+%\end{equation}
+%Averaging over all directions of $\bv{k}'$ results in  
+%\begin{equation}
+%  \overline{\Delta E} = 2 \frac{\hbar^{2} k^{2} }{2m}  = 2 E_{R} 
+%\end{equation}
+%The heating rate is equal to the mean energy deposited per scattering event times the scattering rate:
+%\begin{equation}
+%   \dot{E}_{L}  = ( \Delta E )\Gamma_{\text{sc}0} = 
+%   ( 2 E_{R,L} )\Gamma_{\text{sc}0} =( 2 E_{R,L}) h_{L} I_{0}
+%\end{equation}
+
+\section{Compensated lattice potential: definitions and simplified expressions}
+\label{sec:complatt}
+
+An optical lattice potential results due to the stationary interference pattern
+of two or more laser beams.   The most common configuration, and the one
+relevant to our work, consists on a laser beam that is retroreflected upon
+itself, which produces a standing wave with nodes separated by half the
+wavelength of the light.   Ideally the retroreflected path would have the same
+power and beam waist (at the position of the atoms) as the input path, however
+in practice this is not the case.   The light for the lattice is brought to the
+apparatus using an optical fiber; the retro beam alignment process consists of
+maximizing the light that goes back trough this fiber.   The alignment process
+guarantees that (within $\sim$5\%) the input and retro beam waists will be the
+same. In this treatment we will initially consider different input and retro
+waists, but in the end we will set them to be equal.   On the other hand, the
+retro reflected power can be significantly lower due to losses on the retro
+path, so we do consider a different power for the input and retro beams
+throughout. 
+
+We define a factor, $R$,  which characterizes the lossses of the retro path,
+such that the power of the retro beam is $P_{\text{r}} = P_{\text{i}} R$, where
+r,i stand for retro and input respectively.    Below we tabulate the beam
+waists and retro factors for the three axes of our simple cubic lattice
+potential: 
+\begin{center}
+\begin{tabular}{c|c|c|c|c}
+      & LATTICE& BEAM 1 & BEAM 2 & BEAM 3   \\ \hline \hline 
+  $w  $ &  beam waist  & 48.3 & 45.9 & 41.3 \\
+  $R $ &  retro factor & 0.93 & 0.77 & 0.68\\
+\end{tabular}
+\end{center}
+The calibration method used to obtain these values will be presented in a later
+section. 
+
+In our setup we have the possibility of changing the polarization
+of the retro beam.   We use a liquid crystal retarder, which allows us to
+accurately set the polarization of the retro beam parallel or perpendicular to
+that of the input beam.   In between these two values we can continuously set
+the fraction of retro power that has the same polarization of the input beam,
+and this allows us to smoothly change the potential from a dimple (minimize
+retro power at input polarization) to a lattice (maximize retro power at input
+polarization).    We will use the letter $\alpha$ to refer to the fraction of
+power in the retro beam that has the same polairzation as the input beam, and
+thus can interfere with it to form the lattice. 
+
+\subsection{Electric field}
+
+The electric field on the axis of our lattice (input propagating along $+z$)
+can be determined as a sum of the input and retro electric fields.  We
+independently treat the interfering ($\parallel$) and non-interfering ($\perp$)
+fields.  
+\begin{equation}
+\begin{split}
+  \sqrt{\frac{2}{\epsilon_{0}c}}  
+   E_{1D\parallel}(x,y,z) & = Ae^{ik z} + Be^{-ikz + \phi_{\parallel}(\alpha)} \\
+  \sqrt{\frac{2}{\epsilon_{0}c}}  
+  E_{1D\perp}(x,y,z) & = Ce^{-ikz + \phi_{\perp}(\alpha)} \\
+   & \\ 
+ \text{where}  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  & \\
+   A & = \sqrt{ \frac{2\pin }{\pi w_{\text{i}}^{2} } } 
+         \exp\left[ -\frac{ x^{2} + y^{2} }{w_{\text{i}}^{2}}\right]\\ 
+   B & = \sqrt{ \frac{2\pin  R \alpha}{\pi w_{\text{r}}^{2} } } 
+         \exp\left[ -\frac{ x^{2} + y^{2} }{w_{\text{r}}^{2}}\right]\\ 
+   C & = \sqrt{ \frac{2\pin  R  (1-\alpha)}{\pi w_{\text{r}}^{2} } } 
+         \exp\left[ -\frac{ x^{2} + y^{2} }{w_{\text{r}}^{2}}\right]\\ 
+\end{split}
+\end{equation}
+
+Notice that the field can have phase shifts that depend on $\alpha$.  We have
+not characterized those phase shift for our retarder setup.  We will focus only
+on situations where $\alpha=0$ or $1$,  so that we can neglect them.    
+
+
+\subsection{Lattice depth}
+
+To obtain the lattice depth we need to set $\alpha=1$ and look at the
+oscillatory part of the interfering intensity
+$(\epsilon_{0}c/2)|E_{1D\parallel}|^{2}$.  The lattice depth will have a
+gaussian transverse profile as a function of $x,y$.  To get the lattice depth
+at the axis of the beam we set $x=0,y=0$ and obtain
+\begin{equation}
+  (\epsilon_{0}c/2)|E_{1D\parallel}|^{2} = I_{1D\parallel}(z) =
+  \frac{8}{\pi}  
+   \sqrt{ \frac{ \pin^{2} R }{ \win^{2} \wret^{2}} } 
+ \cos ^2\left(k z\right)
+  - \frac{4}{\pi} \sqrt{ \frac{ \pin^{2}R }{ \win^{2}\wret^{2} }} 
++\frac{2 \pin }{\pi  \win^{2} }
++\frac{2 \pin R}{\pi  \wret^{2} }
+\end{equation}
+The lattice depth is the dipole potential produced by the oscillatory part of
+$I_{1D\parallel}$
+\begin{equation}
+  s = 
+  \frac{V_{\text{latt}}}{E_{R,\text{ir}}}  = 
+  \frac{ k_{\text{B}} |u_{\text{ir}}| }{E_{R,\text{ir}}}
+  \frac{8}{\pi}  
+    \frac{ \pin \sqrt{ R } }{ \win \wret} 
+\end{equation}
+
+Assuming equal beam waists for input and retro this becomes
+\begin{equation}
+  s = 
+  \frac{ k_{\text{B}} |u_{\text{ir}}| }{E_{R,\text{ir}}}
+  \frac{8}{\pi}  
+    \frac{ \pin \sqrt{ R } }{ w^{2}} 
+\end{equation}
+ 
+
+\subsection{Lattice and dimple radial frequencies}
+
+To find the lattice and dimple radial frequencies we have to look at the full
+intensity \[I_{1D}(r) = (\epsilon_{0}c/2)( |E_{1D\parallel}|^{2} + |E_{1D\perp}|^{2} ) \] and
+set $z=0$ and $x^{2}+y^{2}=r^{2}$.
+
+\subsubsection{Lattice $\alpha=1$}
+
+\begin{equation}
+I_{1D}(r) = 
+\frac{4}{\pi} \frac{\pin \sqrt{R}}{ \win \wret} 
+    \exp\left[-\frac{r^2}{\win^{2}} - \frac{r^{2}}{\wret^{2}} \right]
++
+\frac{2 \pin }{\pi \win^{2}}
+\exp\left[-2\frac{ r^2}{\win^{2}}\right]
++\frac{2 \pin R }{\pi \wret^{2}} 
+  \exp\left[-2\frac{ r^2}{\wret^{2}}\right]
+\end{equation}
+
+Expanding the exponentials around $r=0$ gives 
+\begin{equation}
+I_{1D}(r) \approx I_{1D}(0)  - \frac{1}{2} 
+\left[ 
+\frac{8}{\pi} \frac{\pin \sqrt{R}}{ \win \wret}
+ \left( \frac{1}{\win^{2}} +  \frac{1}{\wret^{2}} \right) 
++ 
+\frac{2 \pin }{\pi \win^{2}} \frac{4}{\win^{2}} 
++ 
+\frac{2 \pin R}{\pi \wret^{2}} \frac{4}{\wret^{2}} 
+\right] r^{2}	
+\end{equation}
+Recall that $U(\bv{r}) = u_{L}k_{\text{B}} I(\bv{r})$.  The radial frequency is 
+\begin{equation}
+ \nu_{\text{latt}}^{2} = 
+ \frac{|u_{\text{ir}}| k_{\text{B}} }{m\pi^{2}}
+ \pin
+\left[
+\frac{2}{\pi} \frac{\sqrt{R}}{ \win \wret}
+ \left( \frac{1}{\win^{2}} +  \frac{1}{\wret^{2}} \right) 
++ 
+\frac{2  }{\pi \win^{4}} 
++ 
+\frac{2 R}{\pi \wret^{4}}
+\right]
+\end{equation}
+which for equal beam waists becomes 
+\begin{equation}
+ \nu_{\text{latt}}^{2} = 
+ \frac{|u_{\text{ir}}| k_{\text{B}} }{m\pi^{2}}
+ \pin
+\left[
+\frac{2 + 4 \sqrt{R} + 2R}{ \pi w^{4} }
+\right]
+\end{equation}
+
+\subsubsection{Dimple $\alpha=0$}
+
+\begin{equation}
+ I_{1D}(r) = 
+  \frac{2 \pin}{\pi \win^{2}} 
+  \exp\left[ -2 \frac{r^{2}}{\win^{2}} \right] 
+ +\frac{2 \pin R}{\pi \wret^{2}} 
+  \exp\left[ -2 \frac{r^{2}}{\wret^{2}} \right]
+\end{equation}
+\begin{equation}
+I_{1D}(r) \approx I_{1D}(0)  - \frac{1}{2} 
+  \left[ 
+  \frac{2 \pin}{\pi \win^{2}} \frac{4}{\win^{2}} 
+  + 
+  \frac{2 \pin R}{\pi \wret^{2}} \frac{4}{\wret^{2}} 
+\right] r^{2}
+\end{equation}
+\begin{equation}
+ \nu_{\text{dimp}}^{2} 	= \frac{ |u_{\text{ir}}| k_{\text{B}}   }{m\pi^{2}}
+ \pin  \left[ 
+  \frac{2}{\pi \win^{4}} 
+  + 
+  \frac{2 R}{\pi \wret^{4}} 
+\right]
+\end{equation}
+
+For equal beam waists 
+\begin{equation}
+ \nu_{\text{dimp}}^{2} 	= \frac{ |u_{\text{ir}}| k_{\text{B}}   }{m\pi^{2}}
+ \pin  \left[ 
+  \frac{2+2R}{\pi w^{4}} 
+\right]
+\end{equation}
+
+
+\textbf{Lithium mass}. 
+For the mass of lithium which appears in the expressions for the radial
+frequency we use the convenient expresssion 
+\begin{equation}
+  \frac{m}{ k_{\text{B}}}  = 6\,\frac{ \text{AMU} }{ k_{\text{B}}} 
+    =  6 \frac{  h/k_{\text{B}} }{ 0.4 \,\mu\text{m}^{2}\,\text{MHz} }
+   =  \frac{ 6  ( 48 \, \mu\text{K} / \text{MHz} ) }{ 0.4 \mu\text{m}^{2} \,\text{MHz} }  
+    =  7.2\text{e-4}
+    \frac { \mu\text{K} }{  \mu\text{m}^{2}\, \text{kHz}^{2} } 
+\end{equation}
+A numerical value for $\frac{ |u_{L}| k_{\text{B}} } { m \pi^{2}}$ is listed in
+Table~\ref{tab:uLhL}.   
+ 
+
+\subsection{Compensation beams}
+
+Overlapped on each of our lattice axes we have a repulsive compensation beam at
+a wavelength of 532~nm.  This is a single gaussian beam with a potential given
+by  
+\begin{equation}
+  U_{\text{c}1D}( x,y) =   u_{\text{gr}}k_{\text{B}} \frac{2\pgr }{\pi \wgr^{2}} 
+  \exp\left[ - 2 \frac{r^{2}}{ \wgr^{2}} \right] 
+\end{equation}
+and radial frequency
+\begin{equation}
+  \nu_{\text{gr}}^{2} =  
+   \frac{ |u_{\text{gr}}| k_{\text{B}}   }{m\pi^{2}}
+  \frac{2 \pgr}{\pi \wgr^{4}} 
+\end{equation}
+
+The beam waist for each of the three beams is shown below
+\begin{center}
+\begin{tabular}{c|c|c|c|c}
+      &  COMPENSATION & BEAM 1 & BEAM 2 & BEAM 3   \\ \hline \hline 
+  $w  $ &  beam waist  & 42.9 & 41.4 & 40.4 \\
+\end{tabular}
+\end{center}
+
+
+
+%\section{Calibration of the compensated lattice} 
+
+%This section is not written yet. 
+
+At the moment we use the following compensations for each of the three axes:
+\begin{center}
+\begin{tabular}{ c|c|c|c}
+   axis & 1 & 2 & 3 \\
+   \hline
+   $g_{0}\ (E_{R})$ & 3.65 &  3.90 & 2.9 \\
+\end{tabular}
+\end{center}
+With these values we have found empirically that we can obtain the same
+confinement frequencies in all three directions (which produces spherically
+symmetric samples) and we can achieve $n=1$ at the center. 
+
+
+%The numerical factors that show up are 
+%\begin{equation}
+%\begin{split}
+%   \frac{E_{R}}{4u } & = 9.04\text{e-3} \equiv x_{1}\\  
+%   \frac{m\pi^{2}}{u} & = 1.84\text{e-4} \equiv x_{2} 
+%\end{split}
+%\end{equation}
+%
+%In the experiment we measure the lattice depth, the trap frequencies, and the
+%beam power, so the equations above are written as
+%\begin{equation}
+%\begin{split}
+% \frac{\pin}{V_{0}} 
+% \left[ \frac{\text{mW}}{E_{R}} \right]  
+% & = x_{1} \frac{ \win \wret }{ \sqrt{r}}  \\
+%  & \\ 
+% \frac{\pin}{\nu_{Lr} ^{2}} 
+% \left[ \frac{\text{mW}}{\text{kHz}^{2}} \right]  
+%& = \frac{ x_{2} }{ 
+%   \left( \dfrac{r}{\wret^{4} }
+%      + \dfrac{ \sqrt{ r }}{ \win \wret^{3}} 
+%      +  \dfrac{1}{\win^{4}} 
+%      + \dfrac{ \sqrt{ r }}{ \wret \win^{3} }
+%   \right)} \\ 
+% & \\
+% \frac{\pin}{ \nu_{Dr}^{2} }
+% \left[ \frac{\text{mW}}{\text{kHz}^{2}} \right]  
+% & = \frac{ x_{2} }{
+%   \left(  
+%     \dfrac{ 1 }{ \win^{4} } + \dfrac{ r }{ \wret^{4} } 
+%    \right) } \\
+%\end{split}
+%\end{equation}
+
+\section{Fermi temperature for a compensated dimple}
+
+In our experiment we specify the powers of the IR beams by the lattice depth
+that they would generate if $\alpha$ were equal to 1, that is 
+% The calibration of the
+%beams gives us the proportionality between power and lattice depth such that 
+\begin{equation} 
+%  \pin = s A_{\text{latt}} 
+  \pin =  s  \frac{ E_{R,\text{ir}} }{ k_{\text{B}} |u_{\text{ir}}| } 
+          \frac{ \pi \wir^{2} }{ 8 \sqrt{R}}
+\end{equation}
+%%Similarly the calibration of the beam also gives us the slope and offset that
+%%relate power and the square of the radial frequency
+%%\begin{equation} % \nu_{\text{dimp}}^{2} 	= \pin / F_{\text{dimp}}  +
+%\Delta_{\text{dimp}} %= s A_{\text{latt}}/ F_{\text{dimp}}  +
+%\Delta_{\text{dimp}} %\end{equation} %\begin{equation} % \nu_{\text{latt}}^{2}
+%= \pin/ F_{\text{latt}}  + \Delta_{\text{latt}} %= s A_{\text{latt}}/
+%F_{\text{latt}} + \Delta_{\text{latt}} %\end{equation}
+\begin{equation}
+ \nu_{\text{ir,dimp}}^{2} 	= s \frac{ E_{R,\text{ir}}  }{m\pi^{2}}
+          \frac{ 1+R}{ 4 \wir^{2}\sqrt{R}} 
+\end{equation}
+\begin{equation}
+ \nu_{\text{ir,latt}}^{2} 	= s \frac{ E_{R,\text{ir}}  }{m\pi^{2}}
+          \frac{ 1+R+ \sqrt{R}}{ 2 \wir^{2}\sqrt{R}} 
+\end{equation}
+A value for $\frac{E_{R,\text{ir}}}{m\pi^{2}}$ can be found in
+Table.~\ref{tab:uLhL}.
+
+%For the green beams, the calibration gives us the proportionality factor
+%between power and the square of the radial frequency \begin{equation}
+%\nu_{\text{gr}}^{2} 	= \pgr F_{\text{gr}} \end{equation}
+For the green beams we specify the depth of the potential produced by each beam
+in units of the IR recoil, we call this quantity $g$. 
+\begin{equation}
+ \pgr = g \frac{E_{R,\text{ir}}}{k_{\text{B}} | u_{\text{gr}} | } 
+  \frac{\pi \wgr^{2}} {2}
+\end{equation}
+\begin{equation}
+  \nu_{\text{gr}}^{2} =  g  
+   \frac{ E_{R,\text{ir}}    }{m\pi^{2}}
+  \frac{1}{ \wgr^{2}} 
+\end{equation}
+
+Along each axis we have that the radial frequency of the compensated dimple
+potential is
+\begin{equation}
+\begin{split}
+  \nu_{\text{comp}}^{2}  & = \nu_{\text{ir}}^{2} - \nu_{\text{gr}}^{2}  \\
+   & = 
+  \frac{ E_{R,L} }{ m\pi^{2}} ( s\varphi_{\text{dimp}} - g\varphi_{\text{gr}} )
+%    \equiv
+%  \frac{ E_{R,L} }{ m\pi^{2}}  \varepsilon 
+\end{split}
+\end{equation}
+where we have defined 
+\begin{equation}
+  \varphi_{\text{latt}}  = \frac{1+R+\sqrt{R}}{2\wir^{2}\sqrt{R}} 
+ \ \ \ \ \ \ \ \ \ \ \ \  
+  \varphi_{\text{dimp}}  = \frac{1+R}{4\wir^{2}\sqrt{R}} 
+ \ \ \ \ \ \ \ \ \ \ \ \  
+  \varphi_{\text{gr}}  = \frac{1}{\wgr^{2}}
+\end{equation} 
+
+For each of the three axes we have 
+\begin{center}
+\begin{tabular}{c|c|c|c|c}
+      &  AXIS 1 & AXIS 2 & AXIS 3 & units   \vspace{0.1em} \\  
+  $\varphi_{\text{dimp}}$  
+   &2.14\text{e-4} & 2.39\text{e-4} &  2.99\text{e-4} 
+   &  $\mu\text{m}^{-2}$ \\
+  $\varphi_{\text{latt}}$  
+   &6.433\text{e-4} & 7.160\text{e-4} &  8.903\text{e-4} 
+   &  $\mu\text{m}^{-2}$ \\
+  $\varphi_{\text{gr}} $ 
+ & 5.434\text{e-4} & 5.834 \text{e-4} & 6.127 \text{e-4}
+   &  $\mu\text{m}^{-2}$ \\
+\end{tabular}
+\end{center}
+
+\vspace{1em} In order to produce spherically symmetric samples we set $s$ for
+all three beams to the same (such that if $\alpha$ were equal to 1 the lattice
+depths would be the same along all three directions)  and  we adjust the green
+powers of beams 1 and 2 to match the compensated radial frequency of beam 3.
+To calculate the Fermi temperature we will set the radial frequencies for beams
+1 and 2 equal to that of beam 3, which is given by 
+\begin{equation} 
+ \nu_{\text{comp},3}^{2} =  
+  \frac{ E_{R,\text{ir}} }{ m\pi^{2}}
+  ( s\varphi_{\text{dimp},3} - g\varphi_{\text{gr},3}  ) 
+\end{equation}
+
+
+\vspace{0.5em}
+When the dimple beams in all three axis are turned on at the same time, the
+squares of the trap frequencies add up.   Beams 1,  2, 3 propagate along $x$,
+$y$, and $z$ respectively.  And so we have 
+\begin{equation} 
+\begin{split} 
+  \nu_{\text{comp},x}^{2} & = \nu_{\text{comp},2}^{2} + \nu_{\text{comp},3}^{2} \\ 
+  \nu_{\text{comp},y}^{2} & = \nu_{\text{comp},3}^{2} + \nu_{\text{comp},1}^{2} \\ 
+  \nu_{\text{comp},z}^{2} & = \nu_{\text{comp},1}^{2} + \nu_{\text{comp},2}^{2} \\ 
+\end{split}
+\end{equation}
+
+The Fermi temperature for a spin mixture of $N$ total atoms is 
+\begin{equation}
+ k_{\text{B}} T_{F} = h (3N)^{1/3} \left[ \prod_{i} \nu_{x_{i}} \right]^{1/3}
+\end{equation} 
+
+\begin{equation}
+\begin{split}
+  T_{F} & = \frac{h}{k_{\text{B}}} (3N)^{1/3} 
+ \left( 2\nu_{\text{comp},3 } \right) \\ 
+ & = \frac{h}{k_{\text{B}}} 2(3N)^{1/3}
+ \left( \frac{ E_{R,L}  }{m\pi^{2}} \right)^{1/2}
+  ( s\varphi_{\text{dimp},3} - g\varphi_{\text{gr},3}  )^{1/2 }\\ 
+ & = \left[ 48\text{e-3}\, \mu\text{K}\,\text{kHz}^{-1}\right]
+   2 (3N)^{1/3}  
+  \left[ 14.1 \, \mu\text{m}\,\text{kHz} \right]
+  ( 2.99\, s - 6.13\, g )^{1/2 }
+   \left[ 0.01 \, \mu\text{m}^{-1} \right] 
+   \\ 
+  & =  [ 13.5 \,\text{nK}  ] \times (3N)^{1/3} \sqrt{2.99\,s-6.13\,g} \, \\ 
+%  & =  (3N)^{1/3} \sqrt{s} \, [ 14.7 \,\text{nK} ]
+\end{split} 
+\end{equation} 
+
+
+\section{Heating}
+
+%If we stick to the simple argument above we would find that the heating rate,
+%which is proportional to the intensity could be different for red and blue
+%detuned lattices.  In red detuned lattices the atoms sit in the antinodes of
+%the standing wave where the intensity is the largest, whereas in a blue
+%detuned lattice the atoms sit in the nodes where the intensity vanishes.   
+
+A detailed treatment of heating as a diffusion of momentum has been carried
+out by Gordon and Ashkin~\cite{Gordon1980} and also more recently
+in~\cite{Gerbier2010, Pichler2010,Riou2012}.   These references stay within
+the rotating wave approximation,  so here we have adapted their formulas to
+include the counter-rotating term as well as a factor of
+$(\omega_{L}/\omega_{0})^{3}$ that corrects the decay rate for the different
+density of states at $\omega_{L}$.  From~\cite{Gordon1980} the rate of
+momentum diffusion in the low saturation regime is given by
+\begin{equation}
+  D_{p} = \frac{\hbar^2 k^{2}}{2}  
+   \frac{3\pi c^{2}}{2\hbar\omega_{0}^{3} }  
+   \frac{\Gamma^{2}}{\Delta^{2}} I(\bv{r}) 
+  \left( 1 + \frac{1}{k^{2}}
+    \left| \frac{\nabla( \langle g|\bv{d}|e\rangle\cdot \bv{E}(\bv{r})  )}
+                { \langle g|\bv{d}|e\rangle \cdot \bv{E}(\bv{r})} 
+    \right|^{2} \right) 
+\end{equation}
+where $\bv{E}(\bv{r})e^{-i\omega t}$ is the complex classical field and
+$I(\bv{r})$ is the intensity.  If the polarization of the field is
+$\bv{\varepsilon}$ such that $\bv{E}(\bv{r}) = \bv{\varepsilon} E(\bv{r})$, we
+have  
+\begin{equation}
+\begin{split}
+  D_{p} & = 
+  \frac{\hbar^2 k^{2}}{2}  
+   \frac{3\pi c^{2}}{2\hbar\omega_{0}^{3} }  
+   \frac{\Gamma^{2}}{\Delta^{2}} I(\bv{r}) 
+  \left( 1 + \frac{1}{k^{2}}
+    \left| 
+   \frac{ \langle g|\bv{d}\cdot\bv{\varepsilon}|e\rangle\nabla E(\bv{r}) }
+        { \langle g|\bv{d}\cdot\bv{\varepsilon}|e\rangle E(\bv{r})} 
+    \right|^{2} \right)  \\
+&  =  
+  \frac{\hbar^2 k^{2}}{2}  
+   \frac{3\pi c^{2}}{2\hbar\omega_{0}^{3} }  
+   \frac{\Gamma^{2}}{\Delta^{2}} I(\bv{r}) 
+  \left( 1 + \frac{1}{k^{2}}
+    \left| 
+   \frac{ \nabla E(\bv{r}) }
+        {  E(\bv{r})} 
+    \right|^{2} \right) 
+\end{split}
+\end{equation}
+At this point we generalize the result of Gordon and Ashkin to far detuned light by doing the replacement
+\begin{equation}
+  \frac{1}{\Delta^{2}} \rightarrow 
+  \left( \frac{ \omega_{L} }{ \omega_{0} } \right)^{3}
+   \left(  \frac{1}{\omega_{0}-\omega_{L}} 
+    + \frac{1}{\omega_{0} + \omega_{L} } \right)^{2}
+\end{equation}
+which results in 
+\begin{equation}
+D_{p}  =  
+  \frac{\hbar^2 k^{2}}{2}  
+   \frac{3\pi c^{2}}{2\hbar\omega_{0}^{3} }  
+   \Gamma^{2}
+  \left( \frac{ \omega_{L} }{ \omega_{0} } \right)^{3}
+   \left(  \frac{1}{\omega_{0}-\omega_{L}} 
+    + \frac{1}{\omega_{0} + \omega_{L} } \right)^{2}
+   I(\bv{r}) 
+  \left( 1 + \frac{1}{k^{2}}
+    \left| 
+   \frac{ \nabla E(\bv{r}) }
+        {  E(\bv{r})} 
+    \right|^{2} \right) 
+\end{equation}
+The momentum diffusion term is defined as 
+\begin{equation}
+  D_{p} = \frac{1}{2} \left( \langle p^{2} \rangle - 
+   \langle \bv{p} \rangle \cdot \langle \bv{p} \rangle \right) 
+\end{equation}
+so for an atom that starts at rest the energy deposited per unit time is
+$\dot{E} =  D_{p}/m$.  
+
+For a plane wave propagating along $x$, $E(\bv{r})$ as defined above is
+$E_{0}e^{ikx}$, so this gives a heating rate 
+\begin{equation}
+\begin{split}
+\dot{E} &  =  
+  E_{R,L}
+   \frac{3\pi c^{2}}{2\hbar\omega_{0}^{3} }  
+   \Gamma^{2}
+  \left( \frac{ \omega_{L} }{ \omega_{0} } \right)^{3}
+   \left(  \frac{1}{\omega_{0}-\omega_{L}} 
+    + \frac{1}{\omega_{0} + \omega_{L} } \right)^{2}
+   2  I_{0}  \\
+  & = 
+   2 E_{R,L}  \Gamma_{sc,0}  \\ 
+  & = 
+   2 E_{R,L} \frac{ h_{L} }{k_{\text{B}}|u_{L}|} U_{0} 
+\end{split} 
+\label{eq:heat-dipole}
+\end{equation}
+
+For a standing wave, such as that produced in a optical lattice $E(\bv{r}) =
+E_{0} \cos(kx) $ and $I(\bv{r})=I_{\text{max}}\cos^{2}(kx)$ which results in
+a heating rate 
+\begin{equation}
+\begin{split}
+\dot{E} &  =  
+  E_{R,L}
+   \frac{3\pi c^{2}}{2\hbar\omega_{0}^{3} }  
+   \Gamma^{2}
+  \left( \frac{ \omega_{L} }{ \omega_{0} } \right)^{3}
+   \left(  \frac{1}{\omega_{0}-\omega_{L}} 
+    + \frac{1}{\omega_{0} + \omega_{L} } \right)^{2}
+     I_{\max} \cos^{2}(kx) 
+   \left( 1 + \frac{\sin^{2}(kx)}{\cos^{2}(kx)} \right) \\
+  & = 
+   E_{R,L}  \Gamma_{sc,\text{max}}
+\end{split}
+\end{equation}
+We see that the heating rate is independent of $x$ and so it is the same for
+a red or blue detuned lattice. 
+  
+ 
+ 
+
+\section{Heating due to optical lattice beams} 
+
+\vspace{1em} As we saw in \S\ref{sec:complatt}, our lattice potential suffers
+from losses on the retro path.  The intensity for one of the axis with the
+light propagating along the $x$ direction (neglecting the transverse profile
+$\exp[-2r_{\perp}^{2}/w^{2}]$) is given by 
+\begin{equation}
+\begin{split}
+ I_{1D}(x) 
+%& = 
+%\frac{2 P_{\text{i}}}{\pi w^{2}} 
+%  \left(2 \sqrt{R} \cos (2 k x )+R+1\right) \\
+   & = 
+\frac{2 P_{\text{i}}}{\pi w^{2}} 
+  \left( 4\sqrt{R}\cos^{2}(kz) - 2\sqrt{R} +R+1\right)
+\end{split}
+\label{eq:I1D} 
+\end{equation}
+The corresponding electric field is 
+\begin{equation}
+\begin{split}
+ E_{1D}(x) & \propto  \sqrt{\frac{2P_{\text{i}} }{\pi w^{2}}}
+  e^{ikx} + \sqrt{ \frac{2P_{\text{i}}R }{ \pi w^{2} } } e^{-ikx}  \\
+   & \propto 
+    \sqrt{\frac{2P_{\text{i}} }{\pi w^{2}}} 2\sqrt{R}  \cos(kx) + 
+    \sqrt{\frac{2P_{\text{i}} }{\pi w^{2}}} (1-\sqrt{R})e^{ikx}
+\end{split} 
+\end{equation}
+such that
+\begin{equation}
+\begin{split} 
+    \left| 
+   \frac{ \nabla E(\bv{r}) }
+        {  E(\bv{r})} 
+    \right|^{2} &  =  \frac{  \left|   
+    -2k\sqrt{R} \sin(kx) +  ik(1-\sqrt{R}) e^{ikx}   \right|^{2} }
+    { \left| 2\sqrt{R} \cos(kx) + (1-\sqrt{R})e^{ikx} \right|^{2}}   \\ 
+   &  = k^{2}
+    \frac{   4R\sin^{2}(kx) + (1-\sqrt{R})^{2} +  
+            2\sqrt{R}\sin(kx) (1-\sqrt{R})( 2\sin(kx) )  }
+    {  4R\cos^{2}(kx)  +  (1-\sqrt{R})^{2} +
+            2\sqrt{R}\cos(kx)(1-\sqrt{R}) ( 2\cos(kx) )  } \\
+   &  = k^{2}
+    \frac{   4\sqrt{R}\sin^{2}(kx) + (1-\sqrt{R})^{2} 
+             }
+    {  4\sqrt{R}\cos^{2}(kx)  +  - 2\sqrt{R} + R + 1   
+             }
+\end{split} 
+\end{equation}
+
+The spatially dependent factor that appears in Gordon and Ashkin's formula is
+\begin{equation}
+\begin{split}
+   I(\bv{r}) 
+  \left( 1 + \frac{1}{k^{2}}
+    \left| 
+   \frac{ \nabla E(\bv{r}) }
+        {  E(\bv{r})} 
+    \right|^{2} \right) & =  
+   \frac{2 P_{\text{i}}}{\pi w^{2}} \left(
+   4\sqrt{R}\cos^{2}(kz) - 2\sqrt{R} +R+1 
+  + 
+      4\sqrt{R} \sin^{2}(kx) +(1-\sqrt{R})^{2} 
+  \right)  \\ 
+   & =  
+   \frac{2 P_{\text{i}}}{\pi w^{2}} 2 ( 1+R)
+\end{split} 
+\end{equation}
+The heating rate for the 1D lattice is then
+\begin{equation}
+\begin{split}
+  \dot{E}_{1D} & =  
+   E_{R,L} 
+   \frac{3\pi c^{2}}{2\hbar \omega_{0}^{3} } \Gamma^{2}
+    \left( \frac{ \omega_{L} }{ \omega_{0}} \right)^{3} 
+    \left(  \frac{1}{\omega_{L}-\omega_{0}} 
+           + \frac{1}{\omega_{0} + \omega_{L}}  \right)^{2} 
+   \frac{2 P_{\text{i}}}{\pi w^{2}} 2 ( 1+R) \\
+    & = E_{R,L} h_{L}  
+   \frac{2 P_{\text{i}}}{\pi w^{2}} 2 ( 1+R)  	 
+\end{split}
+\end{equation}
+where $h_{L}$ is defined in Eq.~\ref{eq:uLhL}, and its value for 1064~nm and
+532~nm appears in Table~\ref{tab:uLhL}. 
+
+
+The lattice depth in our retroreflected setup is given by the $\cos^{2}$
+modulation of $I_{1D}$.  This can be read off of Eq.~\ref{eq:I1D}:
+\begin{equation}
+  I_{\text{lattice}} = \frac{ 8 P_{\text{i}}}{\pi w^{2}} \sqrt{R} 
+\end{equation}
+Using the factor $u_{\lambda}$ defined above, this produces a  lattice depth
+\begin{equation} 
+  V_{\text{lattice}} =  k_{\text{B}} |u_{\lambda}|  
+   \frac{ 8 P_{\text{i}}\sqrt{R}}{\pi w^{2}}
+\end{equation}
+The lattice depth in units of $E_{R}$ is usually represented by $s =
+V_{\text{lattice}}/E_{R}$.    
+\begin{equation}
+  s =  
+ \frac{k_{\text{B}}|u_{\lambda}|}{E_{R,\lambda}} 
+  \frac{ 8 P_{\text{i}} \sqrt{R} }{\pi w^{2}}
+ \label{eq:slatt} 
+\end{equation}
+
+This result can be incorporated into the heating rate obtained above
+\begin{equation}
+\boxed{
+ \dot{E}_{1D} =  
+   s  E_{R,L} 
+   \frac{h_{L}  E_{R,L}}{ k_{\text{B}} |u_{\lambda}|} 
+   \frac{  ( 1+R) }{2\sqrt{R}}}
+\end{equation}
+\begin{table}
+\begin{center}
+\begin{tabular}{c|c|c|c}
+      &  1064~nm & 532~nm & units\\ 
+    $u_{\lambda}$ &  -60.81 &  +61.99  &  
+        $\mu\text{K}\dfrac{  \mu\text{m}^{2} }{\text{mW}}$ \\
+    $h_{\lambda}$ & 0.0876 & 0.728 &  
+        $ \text{s}^{-1} 
+         \dfrac{\mu\text{m}^{2} }{\text{mW}}$ \\
+    $ \dfrac{E_{R,\lambda}}{k_{\text{B}}}$ & 1.41 & 5.64 & $\mu\text{K}$ \\
+   $ \dfrac{h_{\lambda} E_{R,\lambda}}{ k_{\text{B}} |u_{\lambda}|}$ 
+      &    2.03e-3 & 6.62e-2  &  s$^{-1}$  \\
+  $\dfrac{ |u_{\lambda}| k_{\text{B}} } { m \pi^{2}}$  &  8.55e3  & 8.72e3  &  
+  $\frac{\mu\text{m}^{4}\,\text{kHz}^{2} }{ \text{mW} }$    \\ 
+  $\dfrac{ E_{R,L} }{m \pi^{2}}$ & 198.4 & 793.68 & 
+  $\mu\text{m}^{2}\, \text{kHz}^{2}$  
+\end{tabular}
+\end{center}
+\caption[Helpful constants for dipole potential, trapping frequencies and
+heating rates]{Helpful constants to calculate dipole potentials, trapping
+frequencies  and heating rates.}
+\label{tab:uLhL} 
+\end{table}
+Numerical values for  $\frac{h_{L}  E_{R,L}}{ k_{\text{B}} |u_{\lambda}|} $
+are given in Table~\ref{tab:uLhL}.  We can also write down the
+expression for it:
+\begin{equation}
+   \frac{h_{L}  E_{R,L}}{ k_{\text{B}} |u_{\lambda}|} = 
+  E_{R,L} \frac{ \Gamma }{\hbar} 
+   \left( \frac{\omega_{L}}{\omega_{0}} \right)^{3} 
+  \left| \frac{1}{\omega_{0} - \omega_{L}} 
+   + \frac{1}{\omega_{0} + \omega_{L}} \right| \approx 
+  \frac{ E_{R,L}}{\hbar |\Delta|} \Gamma
+\end{equation}   
+where on the far right we have neglected the counter-rotating term and the
+different density of states, as it is customarily done in the rotating wave
+approximation (RWA).  Within RWA the heating rate is 
+\begin{equation}
+ \dot{E}_{1D}  = V_{\text{latt}}    \frac{ E_{R,L}}{\hbar |\Delta|} \Gamma
+   \frac{  ( 1+R) }{2\sqrt{R}}
+\end{equation}
+
+
+\section{Heating due to green compensation beams}
+
+
+Our green compensation beams are simply gaussian beams for which the heating
+rate was derived in Eq.~\ref{eq:heat-dipole}.   Since we use this beams to
+compensate a lattice formed by the 1064 nm IR beams we specify the
+repulsive compensation at the center in units of the IR recoil,
+$E_{R,\text{ir}}$:
+\begin{equation} 
+  g = \frac{U_{0,\text{g}}}{ E_{R,\text{ir}}}
+\end{equation}
+The heating rate due to each of the compenstion beams is then 
+\begin{equation}
+\boxed{
+ \dot{E}_{g} = 
+   2 E_{R,\text{ir}} \frac{ h_{g} E_{R,\text{g}} }{k_{\text{B}}|u_{g}|} g }
+\end{equation}
+
+\section{Total heating rate in the compensated lattice}
+
+We can then add up the contributions of the IR and green to obtain 
+\begin{equation}
+\begin{split}
+ \frac{\dot{E}_{1D,\text{tot}}}{ E_{R,\text{ir}} } & =
+ \frac{ h_{ir} E_{R,\text{ir}} }{k_{\text{B}}|u_{ir}|} 
+  \left(
+  s \frac{1+R}{2\sqrt{R}}  + 
+  2g
+ \left. 
+ \frac{ h_{g} E_{R,\text{g}} }{k_{\text{B}}|u_{g}|} \middle /
+ \frac{ h_{ir} E_{R,\text{ir}} }{k_{\text{B}}|u_{ir}|} \right.
+\right) \\
+  & = 
+ \frac{ h_{ir} E_{R,\text{ir}} }{k_{\text{B}}|u_{ir}|} 
+  \left(
+  s \frac{1+R}{2\sqrt{R}}  +
+  \kappa g  
+\right) \\
+\end{split}  
+\end{equation}
+where we have defined $\kappa = \left.  \frac{ h_{g} E_{R,\text{g}}
+}{k_{\text{B}}|u_{g}|} \middle / \frac{ h_{ir} E_{R,\text{ir}}
+}{k_{\text{B}}|u_{ir}|} \right.$ ( For reference $\kappa = 65.22$).  Including
+the contribution from the three orthogonal axes that form our lattice we
+obtain
+\begin{equation}
+ \frac{ \dot{E}_{\text{tot}} }{ E_{R,\text{ir}} }  = 
+ \frac{ h_{ir} E_{R,\text{ir}} }{k_{\text{B}}|u_{ir}|}
+  \sum_{i=1,2,3} 
+  \left(
+  s_{i} \frac{1+R_{i}}{2\sqrt{R_{i}}}  + 
+  \kappa g_{i} \right)
+\end{equation} 
+
+If we assume that the energy increase due to heating is redistributed equally
+in all three dimensions we have for the rate of increase in temperature 
+\begin{equation}
+\boxed{ 
+  \dot{T} = \frac{\dot{E}_{\text{tot}}}{ 3k_{\text{B}}} = 
+  \frac{E_{R,\text{ir}}}{ 3 k_{\text{B}} }  
+ \frac{ h_{ir} E_{R,\text{ir}} }{k_{\text{B}}|u_{ir}|}
+  \sum_{i=1,2,3} 
+  \left(
+  s_{i} \frac{1+R_{i}}{2\sqrt{R_{i}}}  + 
+  \kappa g_{i} \right) }
+\end{equation}
+Since $\overline{R}=0.8$ and  we typically use the same depth for all ir
+beams and nearly the same depth for all green beams this can be approximated
+by 
+\begin{equation}
+\begin{split}
+  \dot{T} & \approx  \frac{E_{R,\text{ir}}}{  k_{\text{B}} }  
+ \frac{ h_{ir} E_{R,\text{ir}} }{k_{\text{B}}|u_{ir}|}
+  \left(
+  s  + 
+  \kappa g\right) \\
+   & \approx  2.9 ( s + 65 g) \,\text{nK/s} 
+\end{split}
+\label{eq:numHeat}
+\end{equation}
+where, once again, $s$ is the lattice depth in IR recoils, and $g$ is the
+compensation, also in IR recoils. It becomes obvious that our heating rate is
+completely dominated by the compensating beams.   Typical values are $s=7.0$
+and $g=2.9$.
+
+Note that the large difference in the heating rate between green and IR can be
+mostly atrributed to the density of states factor and the recoil energy.   The
+density of states factor is $(\omega_{L}/\omega_{0})^{3} =
+(\lambda_{0}/\lambda)^{3}$, which is $\sim$2 for green and $\sim$0.25  for IR,
+giving a factor of 8.   The recoil scales as $\lambda^{-2}$ which gives another
+factor of 4.   This accounts for a factor of 32,  the remaining factor of 2 is
+due to the different heating rates for a traveling wave and a standing wave.  
+
+\section{Total heating rate in the compensated lattice}
+
+In dimple configuration ($\alpha=1$), and using Eq.~\ref{eq:slatt} to relate $s$ and the input power $\pin$, the 1D heating rate is 
+\begin{equation}
+  \dot{E} = E_{R,\text{ir}} = 
+  \frac{ h_{\text{ir}} E_{R,\text{ir}} }{ k_{\text{B}} u_{\text{ir}} } 
+  \frac{s}{\sqrt{R}} 
+\end{equation}
+
+Note that \[  \frac{1}{\sqrt{R}} \approx  \frac{1+R}{2\sqrt{R}} \] for the
+values of $R$ that we deal with.   This means that Eq.~\ref{eq:numHeat} is
+still valid for the heating rate in dimple configuration. 

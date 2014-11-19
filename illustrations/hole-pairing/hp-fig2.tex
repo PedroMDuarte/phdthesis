@@ -1,0 +1,41 @@
+\documentclass{article}
+\input tmp.inputs
+\pagestyle{empty}
+\begin{document}
+\begin{pspicture}(0,0)(16,16)
+\psset{unit=0.7}
+\psgrid % very useful when constructing!
+    \psline[linestyle=dashed,linecolor=blue](0,0)(16,16)
+    \psline[linestyle=dashed,linecolor=blue](0,16)(16,0)
+    \psline[linestyle=dashed,linecolor=blue](0,8)(16,8)
+    \psline[linestyle=dashed,linecolor=blue](8,0)(8,16)
+    \multido{\nx=5+2}{4}{\psdot[linecolor=red,dotstyle=o,dotsize=0.2](\nx,15)}%
+    \multido{\nx=4+2}{5}{\psdot[linecolor=red,dotsize=0.2](\nx,14)}%
+    \multido{\nx=3+2}{6}{\psdot[linecolor=red,dotstyle=o,dotsize=0.2](\nx,13)}%
+    \multido{\ny=4+2}{5}{%
+        \multido{\nx=2+2}{7}{\psdot[linecolor=red,dotsize=0.2](\nx,\ny)}%
+        }
+    \multido{\ny=5+2}{4}{%
+        \multido{\nx=1+2}{8}{\psdot[linecolor=red,dotstyle=o,dotsize=0.2](\nx,\ny)}%
+        }
+    \multido{\nx=2+2}{7}{\psdot[linecolor=red,dotsize=0.2](\nx,4)}%
+    \multido{\nx=3+2}{6}{\psdot[linecolor=red,dotstyle=o,dotsize=0.2](\nx,3)}%
+    \multido{\nx=4+2}{5}{\psdot[linecolor=red,dotsize=0.2](\nx,2)}%
+    \multido{\nx=5+2}{4}{\psdot[linecolor=red,dotstyle=o,dotsize=0.2](\nx,1)}%
+    \rput(3,15){$\rho_1$}
+    \rput(1,13){$\rho_{12}$}
+    \rput(1,3){$\rho_{121}$}
+    \rput(3,1){$\rho_{1212}=\rho_{2121}$}
+    \rput(13,1){$\rho_{212}$}
+    \rput(15,3){$\rho_{21}$}
+    \rput(15,14){$\rho_{2}$}
+    \psline[linecolor=black,arrows=->](8,8)(8,10)
+    \psline[linecolor=black,arrows=->](8,8)(9,9)
+    \psline[linecolor=gray,arrows=->](8,8)(10,8)
+    \psline[linecolor=gray,arrows=->](8,8)(6,10)
+    \uput[270](10,8){$\alpha_2$}
+    \uput[0](9,9){$\lambda_1$}
+    \uput[45](8,10){$\lambda_2$}
+    \uput[45](6,10){$\alpha_2$}
+\end{pspicture}
+\end{document}

@@ -1,0 +1,102 @@
+Useful reports 
+
+# First trials of evaporation 
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2012/August_Week4
+
+# Loss rates in ODT for different fields
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2012/September_Week2
+
+# Pushing the sample as compensation is added if gradient is not cancelled
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2012/September_Week3
+
+# Temperature dependence of ODT position 
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2012/September_Week4
+
+# Field calibration with RF 1-2 splitting
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2012/October_Week3
+
+# Humidity dependence of Trichroic green reflectivity
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2012/November_Week1
+
+# Calibration of field gradient cancelation
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/February_Week2
+
+# Nice display of pi/2 pulse driving
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/February_Week3
+
+# Preliminary results with picomotor
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/May_Week2
+
+# More picomotor results (good ones)
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/May_Week3
+
+# Bragg data as a function of hold time in the lattice 
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/August_Week2
+
+# Rocking curve schematic
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/August_Week3
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/August_Week4
+
+# Some basic results on Bragg detuning
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/September_Week2
+
+# Estimations of tilt of the top lattice beam
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/September_Week3
+
+
+# Bragg AO setup for double kill
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/November_Week2
+
+# Heating data in a 5.5 Er uncompensated lattice.
+# --> shows how data can be sensitive to slight differences in alignment
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2014/January_Week3
+
+# Some roundtrip data 
+# --> Explorations of cooling in lattice
+# --> There is data for 5.5 Er and 7 Er
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2014/January_Week4
+
+# APS talk material + some insitu measuerements
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2014/February_Week3
+
+# Vary Bragg lock Er
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2014/March_Week1
+
+# Heating data 
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2014/March_Week2
+
+# Attempt at cooling in the lattice 
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2014/March_Week3
+
+# Vary green compensation measurements
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2014/April_Week4
+
+
+# END
+
+
+##########################################
+ALREADY IN THESIS
+##########################################
+
+
+# Double occupancy sweeps and suppression of light scattering
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/October_Week1
+
+# Double occupancy - assoc dissoc sweeps 
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/October_Week4
+
+# Lifetime of double occupancies
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/November_Week1
+
+# Double occupancy in an uncompensated/compensated sample with different atom 
+# numbers
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/December_Week3
+
+# Bragg 100 data 
+http://atomcool.rice.edu/atomwiki/index.php/Notebooks:App3/2013/September_Week4
+
+
+
+
+		

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+aspell --home-dir=/home/pmd/Documents/phdthesis/thesis_v0/ --personal=aspell_ignore --mode=tex -c $1

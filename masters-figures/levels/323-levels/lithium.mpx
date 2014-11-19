@@ -1,4 +1,4 @@
-% Written by metapost version 1.504
+% Written by metapost version 1.803
 begingroup save _p,_r,_s,_n; picture _p; _p=nullpicture;
 string _n[];
 vardef _s(expr _t,_f,_m,_x,_y)(text _c)=
@@ -115,10 +115,10 @@ _s(char25,_n1,1.00000,29.4808,0.0000,);
 _s(")",_n0,1.00000,36.5501,0.0000,);
 _s("5",_n0,1.00000,42.0987,0.0000,);
 _s(":",_n1,1.00000,47.9517,0.0000,);
-_s("9",_n0,1.00000,51.2033,0.0000,);
-_s("MHz",_n0,1.00000,59.0488,0.0000,);
-setbounds _p to (0,-2.9888)--(83.7531,-2.9888)--
- (83.7531,8.9664)--(0,8.9664)--cycle;
+_s("86",_n0,1.00000,51.2033,0.0000,);
+_s("MHz",_n0,1.00000,64.9018,0.0000,);
+setbounds _p to (0,-2.9888)--(89.6061,-2.9888)--
+ (89.6061,8.9664)--(0,8.9664)--cycle;
 _p endgroup
 mpxbreak
 begingroup save _p,_r,_s,_n; picture _p; _p=nullpicture;

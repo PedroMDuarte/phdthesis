@@ -1,0 +1,90 @@
+\documentclass{standalone}
+\usepackage{pst-optexp}
+\begin{document}
+\begin{pspicture}(-0.2,0)(22,8)
+\pnode(2,3.5){IR}
+\pnode([Xnodesep=1]IR){P1}
+\pnode([Xnodesep=0.9]P1){WP1}
+\pnode([Xnodesep=0.6]WP1){WP2}
+\pnode([Xnodesep=0.6]WP2){C1}
+\pnode([Xnodesep=0.7]C1){L1}
+\pnode([Xnodesep=2.5]L1){Peri1}
+\pnode([offset=-1.0]Peri1){Peri2}
+\pnode([Xnodesep=4]Peri2){A}
+\pnode([Xnodesep=4]A){L2}
+\pnode([Xnodesep=0.7]L2){WP3}
+\pnode([Xnodesep=0.7]WP3){WP4}
+\pnode([Xnodesep=0.7]WP4){LCR}
+\pnode([Xnodesep=0.7]LCR){M1}
+\pnode([Xnodesep=1]M1){PD}
+
+
+\pnode([offset=2]IR){GR}
+\pnode([Xnodesep=1.7]GR){gWP1}
+\pnode([Xnodesep=0.7]gWP1){gWP2}
+\pnode([Xnodesep=2.7]gWP2){pico}
+\pnode([Xnodesep=-0.8]pico){gL1}
+\pnode([offset=-1]pico){gC1}
+\pnode([offset=-2]pico){D1}
+\pnode([Xnodesep=-1]L2){D2}
+\pnode([offset=2]D2){gM1}
+\pnode([Xnodesep=1]gM1){Dump}
+\pnode([offset=1]gM1){gM2}
+\pnode([Xnodesep=1]gM2){gPD}
+
+
+
+\newpsobject{expander}{optbox}{fillstyle=solid,fillcolor=lightgray,optboxwidth=1.0,optboxheight=0.4,position=end}
+\newpsobject{dump}{optbox}{fillstyle=solid,fillcolor=lightgray,innerlabel,optboxwidth=0.8,optboxheight=0.4,position=end}
+\newpsobject{smirror}{beamsplitter}{bssize=0.5,bsstyle=plate}
+\newpsobject{chamber}{optbox}{linestyle=dashed,fillstyle=none,optboxwidth=3,optboxheight=1,position=end}
+\begin{optexp}
+%	\addtopsstyle{Beam}{ArrowInside=->,fillstyle=solid,fillcolor=red,opacity=1.0, linecolor=red,linewidth=0.05,ArrowInsideMinLength=10,ArrowInsideMaxLength=20}
+
+	\optdetector[detsize=0.4 0.4](WP1)([Xnodesep=1.0]IR)
+	\optretplate[labeloffset=0.9,abspos=0](WP1)(IR){$\frac{\lambda}{4}$}
+	\optretplate[labeloffset=0.9,abspos=0](WP2)(IR){$\frac{\lambda}{2}$}
+	\beamsplitter[labelangle=90,bssize=0.5,bsstyle=cube](IR)(C1)([offset=1]C1){PBS}
+	\optretplate[labeloffset=0.9,abspos=0](WP2)(IR){$\frac{\lambda}{2}$}
+	\lens[labeloffset=0.7,lens=7,abspos=0,labelangle=180](L1)(IR){L1}
+	\mirror[labelangle=-90,labeloffset=0.9](IR)(Peri1)(Peri2){P1}
+	\mirror[labelangle=90,labeloffset=0.9](Peri1)(Peri2)(A){P2}
+	\lens[labeloffset=0.7,lens=4,abspos=0,labelangle=180](L2)(Peri2){L2}
+	\optretplate[labeloffset=0.9,abspos=0](WP3)(Peri2){$\frac{\lambda}{4}$}
+	\optretplate[labeloffset=0.9,abspos=0](WP4)(Peri2){$\frac{\lambda}{2}$}
+	\optretplate[labeloffset=0.9,abspos=0](LCR)(Peri2){LCR}
+	\mirror[labelangle=-90,labeloffset=0.9](Peri2)(M1)(Peri2){Retro}
+	\optdetector[labelangle=0](M1)(PD){IRPD}
+	\addtopsstyle{Beam}{linecolor=black, fillstyle=solid,
+beamwidth=0.2, fillcolor=red, opacity=0.5, beaminside=false}
+	\drawwidebeam[fillcolor=red]{1-4}{6-13}
+	\drawwidebeam[beamwidth=0.15,opacity=0.1]{13-14}
+	
+	
+
+	\optdetector[detsize=0.4 0.4](gWP1)([Xnodesep=1.0]GR)
+	\optretplate[labeloffset=0.9,abspos=0](gWP1)(GR){$\frac{\lambda}{4}$}
+	\optretplate[labeloffset=0.9,abspos=0](gWP2)(GR){$\frac{\lambda}{2}$}
+	\lens[labeloffset=0.7,lens=7.5,abspos=0,labelangle=180](gL1)(GR){L3}
+	\mirror(GR)(pico)(gC1){Pico}
+	\beamsplitter[labelangle=90,bssize=0.5,bsstyle=cube](pico)(gC1)([Xnodesep=1]gC1){PBS}
+	\beamsplitter[labeloffset=0.5,labelangle=20,bssize=0.5,bsstyle=plate](pico)(D1)(Peri1){Dichroic}
+	\beamsplitter[labeloffset=0.5,labelangle=-110,bssize=0.5,bsstyle=plate](Peri2)(D2)([offset=1]D2){Dichroic}
+	\mirror[labelangle=45,labeloffset=0.5](D2)(gM1)(Dump){M1}
+	\dump[optboxsize=1.8 0.6](gM1)(Dump){DUMP}
+	\mirror[labelangle=45,labeloffset=0.5](D2)(gM2)(gPD){M2}
+	\optdetector[labelangle=90,labeloffset=1](gM2)(gPD){GreenPD}
+	
+	\addtopsstyle{Beam}{linecolor=black, fillstyle=solid,
+beamwidth=0.2, fillcolor=green, opacity=0.5, beaminside=false}
+	\drawwidebeam{15-21}{7-8}{22-24}
+	\drawwidebeam[opacity=0.1]{23}{25-26}
+%	\chamber(L1)([Xnodesep=-1.6]A){Vacuum Chamber}	
+	\optfiber[position=start,labelangle=0,labeloffset=0.5](IR)([Xnodesep=-1.1]WP1){IRFiber}
+	\optfiber[position=start,labelangle=0,labeloffset=0.5](GR)([Xnodesep=-1.1]gWP1){GreenFiber}
+	
+	\optretplate[labeloffset=0.9,labelangle=180,abspos=0.5](WP1)(IR){Pickoff}
+	\expander[labelangle=180,labeloffset=0.5](gWP2)([Xnodesep=-1.5]gL1){B.E.}
+	\end{optexp}
+\end{pspicture}
+\end{document}

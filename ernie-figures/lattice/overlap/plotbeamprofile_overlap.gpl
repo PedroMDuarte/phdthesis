@@ -1,0 +1,27 @@
+set terminal png
+set output "overlap.png"
+filename1="130403_lattice2_ir.dat"
+filename2="130403_lattice2_gr.dat"
+filename3="tempX.dat"
+filename4="tempY.dat"
+set style line 1 lt 1 lw 1 pt 4 linecolor rgb "red"
+set style line 2 lt 1 lw 1 pt 3 linecolor rgb "green"
+set style line 3 lt 1 lw 2 pt 5 linecolor rgb "black"
+set style line 4 lt 1 lw 2 pt 2 linecolor rgb "blue"
+set style line 5 lt 1 lw 2 pt 1 linecolor rgb "purple"
+set style line 6 lt 1 lw 2 pt 8 linecolor rgb "orange"
+set yrange [30:75]
+set y2range [-60:60]
+set ytics 30,5
+set ytics nomirror
+set y2tics -60,5
+set xl " Z (10^-3 inch)"
+set yl " Waist Size (um)"
+set y2l " Delta Waist Potstion (um)"
+plot filename1 u 1:2 ls 1 ti "IR Vwaist", filename1 u 1:3 ls 2 ti "IR Hwaist",\
+filename2 u 1:2 ls 3 ti "Green Vwaist", filename2 u 1:3 ls 4 ti "Green Hwaist",\
+0 axes x1y2 notitle,\
+-5 axes x1y2 notitle,\
+5 axes x1y2 notitle,\
+filename3 u 1:(($2-$5)*5.2) w l ls 5 axes x1y2 ti "Delta X Position",\
+filename4 u 1:(($2-$5)*5.2) w l ls 6 axes x1y2 ti "Delta Y Position"

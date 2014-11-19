@@ -82,7 +82,7 @@ beginfig(1)
 	drawdblarrow z0+2.3*z98--z10+0.3*z98-0.*(0,done) withpen pencircle scaled 1.1; 
 	%label.lrt( btex $\bf \bm{\Gamma}\!=\!(2\bm{\pi})\hspace{1pt}5.9\,\unitfont{\bf MHz}$ etex scaled fontE,  z11+(tdlabelX,tdlabelY-done));
 	%label.lrt( btex $\bf T_{D}\!=\!140\,\bm{\mu}  \unitfont{\bf K}$ etex scaled fontE, z11+(tdlabelX,tdlabelY-done-tdY));
-	label.lrt( btex $\mathfont \Gamma\!=\!(2\pi)\hspace{1pt}5.9\,\unitfont{MHz}$ etex scaled fontE,  z11+(tdlabelX,tdlabelY-done));
+	label.lrt( btex $\mathfont \Gamma\!=\!(2\pi)\hspace{1pt}5.86\,\unitfont{MHz}$ etex scaled fontE,  z11+(tdlabelX,tdlabelY-done));
 	label.lrt( btex $\mathfont T_{D}\!=\!140\,\mu  \unitfont{K}$ etex scaled fontE, z11+(tdlabelX,tdlabelY-done-tdY));
 	label.lrt( btex $\mathfont T_{R}\!=\!3.5\,\mu  \unitfont{K}$ etex scaled fontE, z11+(tdlabelX,tdlabelY-done-2*tdY));
 	label.lrt( btex \bfseries \labelfont 671 nm etex scaled fontF,  0.6[z0+2.3*z98,z10+0.5*z98-0.5*(0,done)]); 

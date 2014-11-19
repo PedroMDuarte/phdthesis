@@ -1,0 +1,39 @@
+\documentclass[11pt]{article}
+%\usepackage{siunitx}
+\usepackage{pstricks-add}
+%\usepackage{auto-pst-pdf}  % allow PSTricks code with PDFLaTeX
+
+\begin{document}
+  \begin{pspicture}[showgrid=true](-0.5,0)(7.5,10) 
+    
+	\def\loffsetx{1}    
+    \def\loffsety{0.5}  
+    
+    \pnode(0,1){ts} %%2s
+    \rput([Xnodesep=loffsetx]ts){$2^{2}S_{\frac{1}{2}}$}
+    \psline (ts)([Xnodesep=2]ts) 
+	\pnode([Xnodesep=2.5]ts){thf}
+	\psline ([offset=0.5]thf)([offset=0.5,Xnodesep=2]thf)
+    \psline ([offset=-0.5]thf)([offset=-0.5,Xnodesep=2]thf)
+    
+    \pnode(0,5){tph} %2p 1/2
+    \psline (tph)([Xnodesep=2]tph) 
+	\pnode([Xnodesep=2.5]tph){tphhf}
+	\psline ([offset=0.5]tphhf)([offset=0.5,Xnodesep=2]tphhf)
+    \psline ([offset=-0.5]tphhf)([offset=-0.5,Xnodesep=2]tphhf)
+    
+    \pnode(0,7){tpth} %2p 3/2
+    \psline (tpth)([Xnodesep=2]tpth) 
+	\pnode([Xnodesep=2.5]tpth){tpthhf}
+	\psline ([offset=0.5]tpthhf)([offset=0.5,Xnodesep=2]tpthhf)
+	\psline ([offset=0.1]tpthhf)([offset=0.1,Xnodesep=2]tpthhf)
+    \psline ([offset=-0.5]tpthhf)([offset=-0.5,Xnodesep=2]tpthhf)
+%    \rput(1,5.3){_{55}^{137}Cs} \rput[l](2.2,5){$\num{30.2}\,y$}
+%    \psline (3,2)(5,2) \rput[r](5,2.3){\ce{_{56}^{137m}Ba}}
+%    \psline (3,0)(5,0) \rput[r](5,0.3){\ce{_{56}^{137}Ba}}
+%    \psline{->}(0.5,5)(3.25,0) \rput[r](1.5,2.5){$\beta^-$ \SI{1.2}{\MeV}} \rput[r](0.8,4){\scriptsize \SI{6.5}{\percent}}
+%    \psline{->}(1.5,5)(3.5,2)  \rput[l](3,3.5){$\beta^-$ \SI{0.5}{\MeV}} \rput[l](2.2,4.5){\scriptsize \SI{93.5}{\percent}}
+%    \psline{->}(3.5,2)(3.5,0)
+%    \rput[l](5.2,1){$y=\SI{0.66}{\MeV}$}
+  \end{pspicture}
+\end{document}

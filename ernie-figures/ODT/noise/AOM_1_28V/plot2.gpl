@@ -1,0 +1,8 @@
+set log xy 
+filename1="SERVO_1_2V.dat"
+filename2="AOM_1_28V.dat"
+set xrange [1:100000]
+set xlabel "Frequency(Hz)"
+
+plot filename1  using 1:2 with lines ti "Servo" ,\
+filename2 using 1:2 with lines ti "No Servo" 

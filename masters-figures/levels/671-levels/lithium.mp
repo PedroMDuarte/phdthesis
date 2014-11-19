@@ -67,7 +67,7 @@ beginfig(1)
 	label.urt( btex $2\hspace{1pt}P_{1/2}$ etex scaled fontA, z11+(tdlabelX,-done-1));
 
 	fontE = 0.5;
-	label.lft( btex $\Gamma\!=\!(2\pi)\hspace{1pt}5.9\,\rm{MHz}$ etex scaled fontE,  z10+(-0.5,-0.5));
+	label.lft( btex $\Gamma\!=\!(2\pi)\hspace{1pt}5.86\,\rm{MHz}$ etex scaled fontE,  z10+(-0.5,-0.5));
 	ahlength := 1.8;
 	drawarrow z10+(-2,5)--z10+(-2,1) withpen pensquare scaled 0.1;
 	drawarrow z10+(-2,-5)--z10+(-2,-1) withpen pensquare scaled 0.1;
