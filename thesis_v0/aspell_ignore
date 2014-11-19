@@ -1,4 +1,4 @@
-personal_ws-1.1 en 292 
+personal_ws-1.1 en 297 
 quasiparticles
 AOMs
 PXI
@@ -60,6 +60,7 @@ collisional
 bosonic
 Stratonovich
 superfluidity
+equilibrate
 fermionic
 TTL
 pseudogap
@@ -137,6 +138,7 @@ controllably
 sublattices
 eigenvectors
 photoassociation
+eigenface
 adiabaticity
 LCR
 wavefunctions
@@ -214,6 +216,7 @@ phonons
 plaquette
 symmetrized
 PPCI
+pq
 YBCO
 interf
 resummations
@@ -223,6 +226,7 @@ UC
 th
 quasimomenta
 Mathematica
+sN
 IRPD
 permittivity
 repumping
@@ -256,6 +260,7 @@ nulled
 DMOT
 anticommutation
 dichroic
+yz
 Heisenberg's
 waveplate
 Safronova

@@ -118,22 +118,32 @@ where $C_{\bv{Q}}=e^{2W_{\bv{Q}}(\tau=0) }\left( 1 + \frac{ s_{0} }{ 4
 for $\bv{\pi}$ and $\bv{\theta}$ respectively. 
 
 \subsection{Light collection.} We collect Bragg scattered light in the
-$\bv{\pi}$ direction over a full angular width of  110~mrad,  given by a 2.5
-cm diameter collection lens located 23 cm away from the atoms.    In the
-$\bv{\theta}$ direction, light is collected by a 2.5 cm diameter  lens
-placed 8 cm away from the atoms, corresponding to a full angular width of
-318~mrad.  The scattered light in each of the directions is focused to a few
-pixels on the cameras, so no additional angular information is obtained.
-For $N=1.8\times10^{5}$, $s_{0}=15.5$, $\Delta=6.4\,\Gamma$ and a
+$\bv{\pi}$ direction over a full angular width of  110~mrad,  given by a 2.5 cm
+diameter collection lens located 23 cm away from the atoms.    In the
+$\bv{\theta}$ direction, light is collected by a 2.5 cm diameter  lens placed 8
+cm away from the atoms, corresponding to a full angular width of 318~mrad.  The
+scattered light in each of the directions is focused to a few pixels on the
+cameras, so no additional angular information is obtained.  For
+$N=1.8\times10^{5}$, $s_{0}=15.5$, $\Delta=6.4\,\Gamma$ and a
 $1.7\,\mu\text{s}$ pulse, the detector in the $\bv{\pi}$ direction collects
-approximately 1300 photons, whereas the detector in the $\bv{\theta}$
-direction collects approximately $10^4$ photons.   The noise floor from
-readout, dark current and background light per shot has a standard deviation
-equivalent to approximately 250 photons in the $\bv{\pi}$ direction and 1000
-photons in the $\bv{\theta}$ direction\footnote{Note that we perform
-background subtraction using the eigenface method~\cite{PhysRevA.82.061606}.
-The noise floor is determined from the standard deviation of a set of shots
-without any atoms.}.
+approximately 1300 photons, whereas the detector in the $\bv{\theta}$ direction
+collects approximately $10^4$ photons.   The noise floor from readout, dark
+current and background light per shot has a standard deviation equivalent to
+approximately 250 photons in the $\bv{\pi}$ direction and 1000 photons in the
+$\bv{\theta}$ direction.
+
+Note that we perform background subtraction using the eigenface
+method~\cite{PhysRevA.82.061606}.  The noise figures quoted in the previous
+paragraph are determined from the standard deviation of a set of shots without
+any atoms (which has zero mean by definition, due to the background
+subtraction).  In the previous paragraph we have given the collected light and
+the noise floor in terms of photons, however the measurement at the detector is
+in CCD counts.  The gain settings of the cameras result in approximately 1.4
+counts per photon in the $\bv{\pi}$ direction and approximately 0.3 counts per
+photon in the $\bv{\theta}$ direction.  As an example, if we are imaging an
+uncorrelated sample of $N=1.8\times 10^{5}$ atoms, we expect $\sim1800\pm350$
+counts in the $\bv{\pi}$ direction and $\sim3000\pm300$ counts in the
+$\bv{\theta}$ direction.
 
 \subsection{Data averaging.} The signals we detect are small enough that an
 uncorrelated sample may, in a single shot, produce a scattering signal as
